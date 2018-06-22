@@ -26,6 +26,7 @@
                                                || $route.path === '/three-dimensional'
                                                || $route.path === '/health'
                                                || $route.path === '/fibre'
+                                               || $route.path === '/scada'
             ? 'router-link-exact-active' :'' " href="javascript:;" class="sel sels">公司产品</a>
             <ul class="navlists">
               <li v-for="item in navlist" :key="item.navlist">
