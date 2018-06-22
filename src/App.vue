@@ -192,6 +192,9 @@
   .navList ul li:nth-of-type(4),.navList ul li:nth-of-type(9){
     width: 16%;
   }
+  .navList ul li:nth-of-type(5){
+    width: 24%;
+  }
   .navList ul li .router-link-active,#navLists ul li .router-link-active{
     background: none;
     color: #008fd7;
@@ -300,7 +303,17 @@
     margin-bottom: 0;
   }
   /*移动端*/
-  @media (max-width: 1024px) {
+  @media (max-width: 1608px) {
+    .navList ul {
+      width: 80%;
+    }
+  }
+  @media (max-width: 1460px) {
+    .navList ul {
+      width: 95%;
+    }
+  }
+  @media (max-width: 1199.98px) {
     nav ul .mob-button{
       display: block;
     }
@@ -370,7 +383,7 @@
       color: black;
     }
     .actionnav{
-      height:170px!important;
+      height:350px!important;
       color: #008fd7;
     }
     .activenav{
