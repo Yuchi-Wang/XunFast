@@ -1,0 +1,82 @@
+/*清除默认样式*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+  user-select: none;
+}
+html,body{
+    background-color:#FFFFFF;
+    font:14px/1.5 Helvetica,Tahoma,Arial,
+    "Hiragino Sans GB","Microsoft YaHei",
+    SimSun,Heiti,sans-serif;
+    position: relative;
+    height: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+input,button,img,select,textarea {
+    border: 0;
+    outline: none;
+    font-size: 100%;
+}
+textarea {
+    overflow: auto;
+    vertical-align: top
+}
+em,i {
+    font-style: normal;
+}
+img {
+    vertical-align: middle;
+}
+/*清除浮动*/
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: visible;
+}
+.clearfix {
+    zoom: 1;
+}
+/*H5兼容ie H5*/
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+.col-sm-2,.col-sm-9,.col-sm-3,.col-sm-4,.col-sm-12,.col-md-9,.col-md-4{
+  padding: 0;
+}
+.container-fluid>.row{
+  margin: 0 5%;
+}

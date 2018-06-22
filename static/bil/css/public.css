@@ -1,0 +1,21 @@
+.left{
+    float: left!important;
+}
+.right{
+    float: right!important;
+}
+.m_r_70{
+    margin-right: 70px;
+}
+.p_b_35{
+   padding-bottom: .5rem;
+    border-bottom: 1px solid #999999;
+}
+.p_t_35{
+    padding-top:.5rem;
+}
+.m-p-0{
+  margin-left:0!important;
+  margin-right: 0!important;
+  padding-left: 0!important;
+}
