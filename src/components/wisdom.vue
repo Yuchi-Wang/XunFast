@@ -3,15 +3,38 @@
     <div class="bg">
       <div class="bottom-round"></div>
     </div>
-    <div class="question container-fluid">
-      <h3 class="animated slideInDown">国内制造业存在的问题</h3>
-      <div class="row animated fadeInRightBig">
-        <div class="col-md-4 questionlist" v-for="item in disadvantage" :key="item.disadvantage">
-          <img :src="item.imgArray" alt="" width="135" height="135">
-          <p>{{item.title}}</p>
-          <div class="question_txt">
-             <span><img :src="item.point" width="40" height="40">{{item.txt}}</span><br>
-            <span><img :src="item.point" width="40" height="40">{{item.txts}}</span>
+    <div class="container-fluid content"  id="content">
+      <div class="row">
+        <h3 class="animated  fadeInDown">智能制造面临的挑战</h3>
+        <div class="mod-wrap new">
+          <div class="mod-inner">
+            <div class="mod-content qc-grids with-slot">
+              <div data-index="0" class="product qc-unit-5-24 qc-unit-active b_l  b_b" style="height:400px;" >
+                <img src="../../static/bil/imgamge/20180622164918.png" alt="" width="" height="">
+                <h4>全连接</h4>
+                <p>资金量、管理信息流、物流信息流、服务信息流等各个相关环节需要全面连接，缺少任一节点的连接，都有可能影响全面自动化的实现。</p>
+              </div>
+              <div data-index="1" class="product qc-unit-5-24 b_b">
+                <img src="../../static/bil/imgamge/20180622164945.png" alt="" width="" height="">
+                <h4>全控制</h4>
+                <p>智能制造将数据流转作为核心，连接全部制造和相关环节，每个节点的交互设计和计算能力是实现全控制的基础。同时对智能设备(包括工业机器人)进行监测和控制。</p>
+              </div>
+              <div data-index="2" class="product qc-unit-5-24 b_b">
+                <img src="../../static/bil/imgamge/20180622165047.png" alt="" width="" height="">
+                <h4>资源整合</h4>
+                <p>智能制造系统化工程需整合供应链、生产、物流、服务平台、营销资源等等，才能最大化的实现智能制造的自动化及产能最大化。</p>
+              </div>
+              <div data-index="3" class="product qc-unit-5-24 b_b">
+                <img src="../../static/bil/imgamge/20180622165109.png" alt="" width="" height="">
+                <h4>数据采集</h4>
+                <p>企业内外大小数据的采集是智能制造效率的基础，尤其是外部环境数据、行业数据和用户数据的获取能力。</p>
+              </div>
+              <div data-index="4" class="product qc-unit-5-24 b_b">
+                <img src="../../static/bil/imgamge/20180622165142.png" alt="" width="" height="">
+                <h4>数据应用</h4>
+                <p>数据将成为智能制造的生命线，数据收集、存储、快速调拨、模型搭建、规则创建及整合、计算和应用，每个环节都与连接、控制和自动化息息相关。</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -20,15 +43,21 @@
       <h3>解决方案</h3>
       <div class="row">
         <p>{{solution}}</p>
+        <ul class="clearfix">
+          <li v-for="item in disadvantage" :key="item.disadvantage" >
+              <span> <img :src="item.point" alt="">{{item.txt}}</span>
+          </li>
+        </ul>
       </div>
     </div>
     <!--核心-->
     <div class="container-fluid core" id="core">
-      <h3>智能制造核心</h3>
+      <h3>  一个网络：CPS</h3>
       <div class="row">
         <p id="core_txt">
-          CPS是一个综合计算、网络和物理环境的多维复杂系统，通过3C（Computation、Communication、Control）技术的有机融合与
-          深度协作，实现制造系统的实时感知、动态控制和信息服务。
+          CPS是英文CyberPhysical System的缩写，本质就是构建一套（Cyber空间与物理（Physical）空间之间基于数
+          据自动流动的状态感知、实时分析、科学决策、精准执行的闭环赋能体系，解决生产制造、应用服务过程中的复杂性和不确定
+          性问题，提高资源配置效率，实现资源优化。
         </p>
         <div class="col-md-4">
           <div class="core_img">
@@ -36,87 +65,80 @@
           </div>
           <div class="core_txt">
             <div>
-              <h4>虚拟与现实世界的完美融合</h4>
-              <p>生产过程中的每一步都将在虚拟世界被设计、仿真以及优化，为真实的物理世界包括物料、产品、工厂等建立起一个高仿
-                真的数字“双胞胎”。</p>
+              <h4>科学决策</h4>
+              <p>通过大数据平台，实现异构系统数据的流动与知识的分享</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="core_txt">
             <div>
-              <h4>生产网络</h4>
-              <p>
-                生产系统种所有生产要素构成庞大的物联网络，生产价值链中所有环节和用户可以实时获得和交换实时的生产信息。
-              </p>
+              <h4>状态感知</h4>
+              <p>通过各种各样的传感器感知物质世界的运行状态</p>
             </div>
           </div>
-          <div class="core_img">
-            <img src="../../static/bil/imgamge/20180524163439.jpg" alt="" width="100%" height="auto">
+          <div class="core_txt">
+            <div>
+              <h4>精准执行</h4>
+              <p>通过控制器、执行器等机械硬件实现对决策的反馈响应，这一切都依赖于一个实时、可靠、安全的网络。</p>
+            </div>
           </div>
         </div>
         <div class="col-md-4">
+          <div class="core_txt">
+            <div>
+              <h4>实时分析</h4>
+              <p>通过工业软件实现数据、信息、知识的转化</p>
+            </div>
+          </div>
           <div class="core_img">
             <img src="../../static/bil/imgamge/20180524163159.png" alt="" width="100%" height="auto">
-          </div>
-          <div class="core_txt">
-            <div>
-              <h4>制造系统的沟通与交流</h4>
-              <p>产品信息被输入到产品零部件本身，根据自身生产需求，直接与生产系统和设备沟通，发出生产工序指令，指挥设备进行
-                自组织生产，满足每个用户的“定制需求”。</p>
-            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="container-fluid threeD" id="threeD">
       <div>
-        <h3>智能制造系统三维架构图</h3>
+        <h3>智能车间架构图</h3>
         <img src="../../static/bil/imgamge/20180524184941.png" alt="" width="600" height="603">
       </div>
     </div>
-    <div class="container-fluid content"  id="content">
+    <div class="container-fluid" id="solution">
       <div class="row">
-        <h3>生产管理核心指标</h3>
-        <div class="mod-wrap new">
-          <div class="mod-inner">
-            <div class="mod-content qc-grids with-slot">
-              <div data-index="0" class="product qc-unit-5-24 qc-unit-active b_l  b_b" style="height:500px;" >
-                <img src="../../static/bil/imgamge/20180511151747.png" alt="" width="" height="">
-                <h4>生命周期管理</h4>
-                <p>
-                  对设备的参数、健康状态等数据进行实时监测和预测，对设备故障进行智能预警，有效地及时地预防事故的发生，消除隐患减少损失。
-                </p>
-              </div>
-              <div data-index="1" class="product qc-unit-5-24 b_b">
-                <img src="../../static/bil/imgamge/20180511151802.png" alt="" width="" height="">
-                <h4>产品质量保证</h4>
-                <p>
-                  运用新一代光纤传感技术+自动化技术实现严格周密的质量控制过程、全周期质量追溯，可以减少不良产品数量，提升产品质量。
-                </p>
-              </div>
-              <div data-index="2" class="product qc-unit-5-24 b_b">
-                <img src="../../static/bil/imgamge/20180511151816.png" alt="" width="" height="">
-                <h4>企业成本控制</h4>
-                <p>
-                  通过物联网技术达到设备自动化、信息自动收集到云端以控制人力成本、材料消耗，最大限度的减少资源浪费，降低生产能耗。
-                </p>
-              </div>
-              <div data-index="3" class="product qc-unit-5-24 b_b">
-                <img src="../../static/bil/imgamge/20180511151827.png" alt="" width="" height="">
-                <h4>企业生产效率</h4>
-                <p>
-                  整合工业软件信息系统，极力打造中国制造2025数字化共厂：工业物联网，MES，现场管理提升生产效率，直接缩短交期，实现柔性制造。
-                </p>
-              </div>
-              <div data-index="4" class="product qc-unit-5-24 b_b">
-                <img src="../../static/bil/imgamge/20180511151841.png" alt="" width="" height="">
-                <h4>大数据可视化</h4>
-                <p>
-                  采集个系统零散数据，整合数据资产，通过数据分析帮助企业快速定位问题，预测市场变化，快速决策。
-                </p>
-              </div>
-            </div>
+        <h3 class="solution_title">三项集成</h3>
+        <div class="col-md-4">
+          <div class="cardlist">
+            <div class="imgbox imgbox1"></div>
+            <h4>纵向集成</h4>
+          </div>
+          <div class="imgtxt imgtxt2">
+            <p>
+              纵向集成就是解决企业内部信息孤岛的集成，智能制造所要追求的就是在企业内部实现所有环节信息无缝链接，这是所有智能化的基础。
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cardlist">
+            <div class="imgbox imgbox2"></div>
+            <h4>横向集成</h4>
+          </div>
+          <div class="imgtxt  imgtxt3">
+            <p>
+              横向集成是企业之间通过价值链以及信息网络所实现的一种资源整合，为实现各企业间的无缝合作，提供实时产品与服务，
+              推动企业间研产供销、经营管理与生产控制、业务与财务全流程的无缝衔接和综合集成，实现产品开发、生产制造、经营
+              管理等在不同的企业间的信息共享和业务协同。
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cardlist">
+            <div class="imgbox imgbox3"></div>
+            <h4>端到端集成</h4>
+          </div>
+          <div class="imgtxt imgtxt1">
+            <p>端对端集成是“通过产品全价值链和为客户需求而协作的不同公司，使现实世界与数字世界完成整合”。更是突出了以产
+              品的研发、生产、销售、服务等为主线，实现企业间的集成。
+            </p>
           </div>
         </div>
       </div>
@@ -135,22 +157,19 @@
     data () {
       return {
         disadvantage: [
-          {imgArray: '../../static/bil/imgamge/20180524144215.png', title: '数据管理',
-            point:'../../static/bil/imgamge/point.png',txt:'  数据更新慢',txts:'数据零散，互通困难'},
-          {imgArray: '../../static/bil/imgamge/20180524144827.png', title: '技术问题',
-            point:'../../static/bil/imgamge/point.png',txt:'高耗能高污染低附加值',txts:'缺乏自主创新'},
-          {imgArray: '../../static/bil/imgamge/20180524154403.png', title: '设备问题',
-            point:'../../static/bil/imgamge/point.png',txt:'设备无法进行自动监测',txts:'设备无法进行自动预警'}
+          {point:'../../static/bil/imgamge/point.png',txt:'  一个网络：CPS'},
+          {point:'../../static/bil/imgamge/point.png',txt:'  两大主题：智能工厂、智能车间'},
+          {point:'../../static/bil/imgamge/point.png',txt:' 三项集成：横向集成、纵向集成、端到端集成'}
         ],
-        solution:'迅发信息智能制造解决方案是基于互联网、大数据和物联网的整合，使得产品与生产设备之间、不同的生产设备之间以及数字世界和物理世界之间能够互\n' +
-        '          联，使得机器、工作部件、系统以及企业人员会通过网络持续地保持数字信息的交流，实现产品生命周期各环节以及制造装\n' +
-        '          备（生产线、工厂）智能化。'
+        solution:'智能制造技术是传感技术、网络技术、自动化技术、人工智能技术等新一代信息技术与先进自动化技术、传感技术、' +
+        '控制技术、数字制造技术结合，通过智能化的感知、人机交互、决策和执行技术，实现产品生命周期各环节以及制造装备（车间、' +
+        '工厂）智能化。智能实现工厂和企业内部、企业之间和产品全生命周期的实时管理和优化的新型制造系统。'
       }
     },
     mounted: function () {
       $('.mod-content .product').hover(function () {
         $(this).addClass('qc-unit-active').siblings().removeClass('qc-unit-active')
-        $(this).css('height', '500px').siblings().css('height', '400px')
+        $(this).css('height', '400px').siblings().css('height', '320px')
       })
     }
   }
@@ -167,7 +186,7 @@
     margin-top: 70px;
   }
 
- .question h3,.solution h3,.core h3,.threeD h3 {
+  .solution h3,.core h3,.threeD h3 {
     color: #FFF;
     font-size: .28rem;
     margin-bottom: .6rem;
@@ -186,64 +205,111 @@
     z-index: 99;
     border-radius: 100%;
   }
-  /*question*/
-  .question {
-    width: 100%;
-    background-size: cover;
-    padding: 30px 0;
+  /*  挑战开始 */
+  .content{
     text-align: center;
-    position: relative;
-    z-index: 999;
+    padding-bottom: .4rem;
   }
-
-  .question h3,.solution h3{
-    color: black;
+  .content h3{
+    font-size: .28rem;
+    margin:.7rem auto .4rem;
+    font-weight: 100;
   }
-
-  .question h3:after,.solution h3:after,.core h3:after,.content h3:after,.threeD h3:after{
-    width: 60px;
-    position: absolute;
-    left: 50%;
-    margin-left: -30px;
-    top: .5rem;
-    border-bottom: 2px solid #008fd7;
-    content: "";
+  .content p{
+    width: 100%;
+    font-size: .15rem;
+    margin:.2rem auto;
+    font-weight: 300;
   }
-
-  .question .row {
-    margin: 0 10%;
-
+  .content .mod-wrap{
+    margin-top: .2rem;
+    width: 100%;;
+    height: 400px;
   }
-  .question .row > div {
-    position: relative;
+  .qc-grids {
+    font-size: 0
   }
-
-  .question .row > div>img {
-    width: 135px;
-    transition: .8s;
+  .mod-inner img{
+    width: .6rem!important;
+    margin-top: .4rem;
   }
-  .question .row > div>.question_txt img{
-    width: 40px;
-  }
-  .question .row > div>img:hover{
-    transform: rotateY(180deg);
-  }
-  .question .row > div p {
+  .mod-inner h4{
+    width: 100%;
     font-size: .18rem;
-    margin: 15px 0;
+    margin-top: .1rem;
+    color: #1790d4;
   }
-
-  .question .row > div span {
+  .mod-inner h4:after{
+    width: 12%;
+    position: absolute;
+    top: 1.5rem;
+    left:50%;
+    margin-left: -6%;
+    border-bottom: 2px solid #cdcdcd;
+    content: '';
+  }
+  .qc-grids [class*=qc-unit] {
     display: inline-block;
-    font-size: .16rem;
-    text-align: left;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
   }
-
-  .question_txt {
-    display: inline-block;
-    text-align: left;
+  .qc-unit-5-24 {
+    width: 16.75%
   }
+  .b_l{
+    border-left: 1px solid #d9d9d9;
+  }
+  .b_b{
+    border-bottom: 1px solid #d9d9d9;
+  }
+  /*改变宽度*/
+  .qc-unit-active {
+    width: 20%
+  }
+  .new .product {
+    background-color: #fff;
+    border-top: 4px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    padding: 0 38px;
+    position: relative;
+    height: 320px;
+    transition: all .3s cubic-bezier(.4, 0, .2, 1), z-index 0s .12s;
+    min-height: 0;
+    overflow: hidden
+  }
+  .product.qc-unit-active {
+    border-top: 4px solid #008fd7;
+    margin-top: -30px;
+    border-left: 1px solid #008fd7;
+    border-right: 1px solid #008fd7;
+    border-bottom: 1px solid #008fd7;
+    padding-bottom: 20px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .1);
+    transform: translate3d(0, -2px, 0)
+  }
+  .mod-inner p{
+    opacity: 0;
+    margin-top: .4rem;
+    text-align: justify;
+    transition: all .3s;
+  }
+  .product.qc-unit-active p{
+    opacity: 1
+  }
+  .product.qc-unit-active h4:after{
+    left:50%;
+    margin-left: -40%;
+    width:80%;
+    border-bottom: 1px solid #7ECEF4;
+  }
+  /*挑战结束*/
 
+  /* 解决方案 */
   .solution{
     width: 100%;
     margin-top:80px;
@@ -252,6 +318,33 @@
     padding: .5rem 0;
     text-align: center;
     position: relative;
+  }
+  .solution h3{
+    color: black;
+    margin-bottom: .4rem;
+  }
+  .solution h3:after,.core h3:after,.content h3:after,.threeD h3:after, #solution h3:after{
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    top: .5rem;
+    border-bottom: 2px solid #008fd7;
+    content: "";
+  }
+  .solution .row {
+    margin:  0 18%;
+  }
+  .solution img{
+    width: 40px;
+  }
+  .solution ul{
+   margin: auto;
+  }
+  .solution ul li {
+    float: left;
+    margin-left: 30px;
+    font-size: .16rem;
   }
   .solution p,.core p{
     display: block;
@@ -303,107 +396,8 @@
   .core_txt p{
       font-size: .16rem;
   }
-  .content{
-    text-align: center;
-    padding-bottom: 1.5rem;
-  }
-  .content h3{
-    display: inline-block;
-    width: 100%;
-    font-size: .28rem;
-    margin:.7rem auto .4rem;
-    letter-spacing:10px;
-  }
-  .content p{
-    width: 100%;
-    font-size: .15rem;
-    margin:.2rem auto;
-    font-weight: 300;
-  }
-  .content .mod-wrap{
-    margin-top: .2rem;
-    width: 100%;;
-    height: 400px;
-  }
-  .qc-grids {
-    font-size: 0
-  }
-  .mod-inner img{
-    width: .6rem!important;
-    margin-top: .4rem;
-  }
-  .mod-inner h4{
-    width: 100%;
-    font-size: .18rem;
-    margin-top: .2rem;
-  }
-  .mod-inner h4:after{
-    width: 12%;
-    position: absolute;
-    top: 2rem;
-    left:50%;
-    margin-left: -6%;
-    border-bottom: 2px solid #cdcdcd;
-    content: '';
-  }
-  .qc-grids [class*=qc-unit] {
-    display: inline-block;
-    zoom: 1;
-    letter-spacing: normal;
-    word-spacing: normal;
-    vertical-align: top;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box
-  }
-  .qc-unit-5-24 {
-    width: 18.75%
-  }
-  .b_l{
-    border-left: 1px solid #d9d9d9;
-  }
-  .b_b{
-    border-bottom: 1px solid #d9d9d9;
-  }
-  /*改变宽度*/
-  .qc-unit-active {
-    width: 25%
-  }
-  .new .product {
-    background-color: #fff;
-    border-top: 4px solid #d9d9d9;
-    border-right: 1px solid #d9d9d9;
-    padding: 0 15px;
-    position: relative;
-    height: 400px;
-    transition: all .3s cubic-bezier(.4, 0, .2, 1), z-index 0s .12s;
-    min-height: 0;
-    overflow: hidden
-  }
-  .product.qc-unit-active {
-    border-top: 4px solid #7ECEF4;
-    margin-top: -30px;
-    border-left: 1px solid #7ECEF4;
-    border-right: 1px solid #7ECEF4;
-    border-bottom: 1px solid #7ECEF4;
-    padding-bottom: 20px;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, .1);
-    transform: translate3d(0, -2px, 0)
-  }
-  .mod-inner p{
-    opacity: 0;
-    margin-top: 1rem;
-    text-align: justify;
-    transition: all .3s;
-  }
-  .product.qc-unit-active p{
-    opacity: 1
-  }
-  .product.qc-unit-active h4:after{
-    left:10%;
-    width:90%;
-    border-bottom: 1px solid #7ECEF4;
-  }
+  /* 核心结束 */
+  /* 三维架构图 */
   .threeD{
     text-align: center;
     position: relative;
@@ -420,28 +414,89 @@
   .threeD img{
       width: 600px;
   }
+  /* 解决方案 */
+  #solution {
+    width: 100%;
+    background: #f9f9f9;
+    padding: .7rem 0;
+    position: relative;
+  }
+
+ #solution > .row {
+    text-align: center;
+  }
+
+  #solution > .row > div {
+    padding: 24px;
+    transition: .8s;
+  }
+
+  #solution h3{
+    display: block;
+    width: 100%;
+    font-size: .28rem;
+    margin-bottom: .6rem;
+  }
+
+  .cardlist {
+    background: white;
+  }
+
+  .imgbox {
+    width: 100%;
+    background: url("../../static/bil/imgamge/20180622155509.png") no-repeat;
+    height: 3rem;
+    background-size: cover;
+    transition: .3s;
+    background-position: 50% 50%;
+  }
+
+  #solution > .row > div:hover {
+    transform: scale(1.05);
+  }
+
+  .imgbox1 {
+    background: url("../../static/bil/imgamge/20180622155427.png") no-repeat;
+    height: 3rem;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .imgbox2 {
+    background: url("../../static/bil/imgamge/20180622153205.png") no-repeat;
+    height: 3rem;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .imgtxt {
+    position: relative;
+    padding: 40px 35px 0;
+  }
+
+  .cardlist h4 {
+    font-size: .18rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 15px 0;
+  }
+
+  .imgtxt p {
+    font-size: .15rem;
+    text-align: justify;
+    line-height: .25rem;
+  }
+  /* 解决方案结束 */
   @media (max-width:1024px) {
     .bg{
       height: 8rem;
     }
-    .question h3, .solution h3, .core h3, .threeD h3,.content h3 {
+   .solution h3, .core h3, .threeD h3,.content h3 {
       font-size: .38rem;
       margin-bottom: .8rem;
     }
-    .question h3:after, .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after,.content h3:after {
+    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after,.content h3:after {
       top: .7rem;
-    }
-    .question .row > div>img{
-      width: 100px;
-      height: 100px;
-    }
-    .question .row > div p {
-      font-size: .25rem;
-    }
-    .question .row > div span {
-      font-size: .2rem;
-      height: 30px;
-      line-height: 30px ;
     }
     .core_txt h4 {
       font-size: .28rem;
@@ -479,28 +534,12 @@
     .bg{
       height: 9rem;
     }
-    .question h3, .solution h3, .core h3, .threeD h3,.content h3 {
+    .solution h3, .core h3, .threeD h3,.content h3 {
       font-size: .56rem;
       margin-bottom: 1rem;
     }
-    .question h3:after, .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after,.content h3:after {
+     .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after,.content h3:after {
       top: 1rem;
-    }
-    .questionlist{
-      margin-top: 30px;
-    }
-    .question .row > div>img{
-      width: 100px;
-      height: 100px;
-    }
-    .question .row > div p {
-      margin: 10px 0;
-      font-size: .4rem;
-    }
-    .question .row > div span {
-      font-size: .36rem;
-      height: 30px;
-      line-height: 30px ;
     }
     .core_txt h4 {
       font-size: .4rem;
@@ -541,18 +580,11 @@
     .bg{
       height: 12rem;
     }
-    .question h3, .solution h3, .core h3, .threeD h3,.content h3 {
+    .solution h3, .core h3, .threeD h3,.content h3 {
       font-size: .8rem;
     }
-    .question h3:after, .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after,.content h3:after {
+    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after,.content h3:after {
       top: 1.3rem;
-    }
-
-    .question .row > div p {
-      font-size: .56rem;
-    }
-    .question .row > div span {
-      font-size: .52rem;
     }
     .core_txt h4 {
       font-size: .6rem;

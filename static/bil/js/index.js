@@ -24,7 +24,6 @@ window.onscroll=function(){
   var point=document.getElementById("point");
   var wSolution=document.getElementById("w_solution");
   var core=document.getElementById("core");
-  var content=document.getElementById("content");
   var person=document.getElementById("person");
   var introduce=document.getElementById("introduce");
   var threeD=document.getElementById("threeD");
@@ -100,12 +99,6 @@ window.onscroll=function(){
     if (yHeight + Stop >= core.offsetTop) {
       $("#core>h3").addClass('animated  fadeInLeft');
       $("#core_txt").addClass('animated  fadeInUp')
-    }
-  }
-  if(content !=null) {
-    if (yHeight + Stop >= content.offsetTop) {
-      $("#content h3").addClass('animated  fadeInUp')
-
     }
   }
   if(person !=null) {

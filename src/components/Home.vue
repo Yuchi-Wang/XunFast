@@ -71,7 +71,7 @@
         <div class="col-md-12  a_img row" id="aimg">
           <div class="aimg1 col-md-6"><img src="../../static/bil/imgamge/20180612160849.png" alt="" style="width: 100%">
           </div>
-          <div class="aimg2 col-md-6"><img src="../../static/bil/imgamge/20180622093821.png" alt="" style="width: 100%">
+          <div class="aimg2 col-md-6"><img src="../../static/bil/imgamge/20180622154348.png" alt="" style="width: 100%">
           </div>
         </div>
         <div class="col-md-12 abouttxt">
@@ -236,13 +236,9 @@
 
   @keyframes zoom {
     0% {
-      -webkit-transform: scale(0.6);
-      -moz-transform: scale(0.6);
       transform: scale(0.6);
     }
     100% {
-      -webkit-transform: scale(1);
-      -moz-transform: scale(1);
       transform: scale(1);
     }
   }
@@ -312,8 +308,9 @@
     z-index: 99;
     border-radius: 100%;
   }
+  /* banner结束 */
 
-  /*产品*/
+  /* 产品 */
   .product {
     width: 100%;
     background: white;
@@ -407,8 +404,9 @@
     height: 1.2rem;
     margin-top: .8rem;
   }
+  /* 产品结束 */
 
-  /*解决方案*/
+  /* 解决方案 */
   .solution {
     width: 100%;
     background: #f9f9f9;
@@ -438,7 +436,7 @@
 
   .imgbox {
     width: 100%;
-    background: url("../../static/bil/imgamge/20180622122337.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180622155509.png") no-repeat;
     height: 3rem;
     background-size: cover;
     transition: .3s;
@@ -450,14 +448,14 @@
   }
 
   .imgbox1 {
-    background: url("../../static/bil/imgamge/20180622122254.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180622155427.png") no-repeat;
     height: 3rem;
     background-size: cover;
     background-position: 50% 50%;
   }
 
   .imgbox2 {
-    background: url("../../static/bil/imgamge/20180622122359.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180622153205.png") no-repeat;
     height: 3rem;
     background-size: cover;
     background-position: 50% 50%;
@@ -480,6 +478,7 @@
     text-align: justify;
     line-height: .25rem;
   }
+  /* 解决方案结束 */
 
   /*关于我们*/
   .about {
@@ -517,7 +516,7 @@
   }
 
   .about .a_img > div {
-    height: 2.6671733967rem;
+    height: 3rem;
     overflow: hidden;
     margin-bottom: .15rem;
     padding-left: 0;

@@ -7,7 +7,7 @@
     <div class="container-fluid select">
       <div class="row">
         <div class="col-md-5">
-          <img src="../../static/bil/imgamge/20180622122359.png" alt="" class="fuel_img" width="100%" height="auto">
+          <img src="../../static/bil/imgamge/20180622153205.png" alt="" class="fuel_img" width="100%" height="auto">
         </div>
         <div class="col-md-6" id="introduce" style="padding-left: 30px">
           <h4 class="introduce">案列介绍</h4>
