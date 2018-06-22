@@ -28,7 +28,7 @@
       <h4 id="advance_title">光纤传感技术应用于管线安防的优势</h4>
       <div class="row">
         <div class="col-md-5">
-          <img src="../../static/bil/imgamge/20180615153122.png" alt="" width="100%" height="auto">
+          <img src="../../static/bil/imgamge/20180621164758.png" alt="" width="100%" height="auto">
         </div>
         <div class="col-md-6" style="padding-left: 30px">
           <p v-for="item in advance" :key="item.advance">{{item}}</p>

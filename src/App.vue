@@ -25,6 +25,7 @@
                                                || $route.path === '/bigData'
                                                || $route.path === '/three-dimensional'
                                                || $route.path === '/health'
+                                               || $route.path === '/fibre'
             ? 'router-link-exact-active' :'' " href="javascript:;" class="sel sels">公司产品</a>
             <ul class="navlists">
               <li v-for="item in navlist" :key="item.navlist">
@@ -35,7 +36,6 @@
           <li :class="'col-md-2 navlist ' + (isactive ? 'activenav':'')" @click="isactive = !isactive" id="solve"><a :class=" $route.path == '/fuelDetailed'
                                                 || $route.path === '/fuel'
                                                 || $route.path === '/system'
-                                                || $route.path === '/fibre'
                                                 || $route.path === '/wisdom'
             ? 'router-link-exact-active' :'' " href="javascript:;" class="sel sels">解决方案
           </a>
@@ -73,15 +73,22 @@
         isactive:false,
         isclick:false,
         navlist: [
-          {urlArray: '/lab', title: '实验室云平台'},
-          {urlArray: '/health', title: '设备动态监测与智能预警'},
+          {urlArray: '/scada', title: '设备数据智能采集系统'},
+          {urlArray: '/lab', title: '实验室信息管理与应用分析平台'},
+          {urlArray: '/three-dimensional', title: '数字三维实景可视化平台'},
           {urlArray: '/bigData', title: '大数据建模与可视化'},
-          {urlArray: '/three-dimensional', title: '三维全景数字化平台'}
+          {urlArray: '/encoding', title: '信息编码标准与主数据管理工具平台'},
+          {urlArray: '/fibre', title: '基于光纤传感的智慧安防平台'},
+         /* {urlArray: '/health', title: '设备动态监测与智能预警'},*/
+          {urlArray: '/party', title: '智慧党建'},
+          {urlArray: '/education', title: '智慧职教'},
+          {urlArray: '/lock', title: '智能门锁'},
+          {urlArray: '/academic', title: '学业诊断与考试分析系统'}
         ],
         navlists: [
-          {urlArray: '/fibre', title: '新一代光纤传感'},
           {urlArray: '/wisdom', title: '智能制造'},
           {urlArray: '/fuel', title: '互联网+航油安全'},
+          {urlArray: '/building', title: '智慧建筑'}
         ]
       }
     },
@@ -163,10 +170,27 @@
     line-height: 70px;
     display: inline-block;
   }
+  .navList,.navList ul{
+    height: 120px;
+  }
+  .navList ul {
+    width: 68%;
+    padding: 10px 0;
+  }
   .navList ul li,#navLists ul li{
     color: black;
     float: left;
     margin-left: 60px;
+  }
+  .navList ul li {
+    height: 50px;
+    width: 20%;
+    line-height: 50px;
+    margin-left:0;
+    text-align: left;
+  }
+  .navList ul li:nth-of-type(4),.navList ul li:nth-of-type(9){
+    width: 16%;
   }
   .navList ul li .router-link-active,#navLists ul li .router-link-active{
     background: none;

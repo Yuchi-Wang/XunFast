@@ -56,13 +56,11 @@
         <div class="col-md-4">
           <div class="cardlist">
             <div class="imgbox imgbox3"></div>
-            <h4><router-link to="/fibre">智慧建筑</router-link></h4>
+            <h4><a href="javascript:;">智慧建筑</a></h4>
           </div>
           <div class="imgtxt imgtxt1">
-            <p>
-              迅发科技光纤传感解决方案基于OFDR的新一代传感技术+三维全景可视化技术+大数据建模技术可帮实现企业可全天候、实时、无
-              盲区、高可靠性的可视化智慧安防。
-            </p>
+            <p>智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑
+              智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑</p>
           </div>
         </div>
       </div>
@@ -73,7 +71,7 @@
         <div class="col-md-12  a_img row" id="aimg">
           <div class="aimg1 col-md-6"><img src="../../static/bil/imgamge/20180612160849.png" alt="" style="width: 100%">
           </div>
-          <div class="aimg2 col-md-6"><img src="../../static/bil/imgamge/20180621173020.png" alt="" style="width: 100%">
+          <div class="aimg2 col-md-6"><img src="../../static/bil/imgamge/20180622093821.png" alt="" style="width: 100%">
           </div>
         </div>
         <div class="col-md-12 abouttxt">
@@ -440,7 +438,7 @@
 
   .imgbox {
     width: 100%;
-    background: url("../../static/bil/imgamge/20180621164758.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180622122337.png") no-repeat;
     height: 3rem;
     background-size: cover;
     transition: .3s;
@@ -452,14 +450,14 @@
   }
 
   .imgbox1 {
-    background: url("../../static/bil/imgamge/20180621151742.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180622122254.png") no-repeat;
     height: 3rem;
     background-size: cover;
     background-position: 50% 50%;
   }
 
   .imgbox2 {
-    background: url("../../static/bil/imgamge/20180621180132.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180622122359.png") no-repeat;
     height: 3rem;
     background-size: cover;
     background-position: 50% 50%;
