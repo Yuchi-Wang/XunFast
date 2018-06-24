@@ -141,6 +141,7 @@ export default {
     background: rgb(245,251,254);
     text-align: justify;
   }
+  
   .solve h4,.point h4,.advantage h4,.system_function h4{
     width: 100%;
     display: block;
