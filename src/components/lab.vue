@@ -161,11 +161,12 @@ export default {
   .solve p{
     display: block;
     width: 100%;
-    font-size: .17rem;
+    font-size: .15rem;
     font-weight: 200;
-    line-height: .33rem;
+    line-height: .32rem;
     margin-bottom: .2rem;
     text-align: justify;
+    color: #666666;
   }
   .point{
     margin: 1rem 0;

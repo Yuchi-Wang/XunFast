@@ -428,6 +428,7 @@
     width: 100%;
     font-size: .28rem;
     margin-bottom: .6rem;
+    color: #151515;
   }
 
   .cardlist {
@@ -471,12 +472,14 @@
     text-align: center;
     font-weight: 600;
     padding: 15px 0;
+    color: #333333;
   }
 
   .imgtxt p {
     font-size: .15rem;
     text-align: justify;
     line-height: .25rem;
+    color: #666666;
   }
   /* 解决方案结束 */
 
@@ -503,6 +506,7 @@
     line-height: .32rem;
     letter-spacing: 1px;
     margin-top: 20px;
+    color:#666666;
   }
 
   .abouttxt {

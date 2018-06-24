@@ -7,16 +7,25 @@
     <div class="container-fluid select">
       <div class="row">
         <div class="col-md-5">
-          <img src="../../static/bil/imgamge/20180622153205.png" alt="" class="fuel_img" width="100%" height="auto">
+          <div class="slider" v-on:mouseover="stop()" v-on:mouseout="move()">
+            <transition-group tag="div" name="image" id="slider">
+              <div v-for="(item, index) in banner" v-show="index===mark" :key="index" class="bg">
+              </div>
+            </transition-group>
+            <div id="slider-btn">
+        <span v-for="(item, index) in banner" v-on:mouseover="change(index)" :key="item.index"
+              v-bind:style="{background:index===mark?'#FFF':'',}"></span>
+            </div>
+          </div>
         </div>
         <div class="col-md-6" id="introduce" style="padding-left: 30px">
           <h4 class="introduce">案列介绍</h4>
           <p class="content">{{introduction}}</p>
-          <router-link to="fuelDetailed" class="learn">了解详情</router-link>
+          <!--<router-link to="fuelDetailed" class="learn">了解详情</router-link>-->
         </div>
       </div>
     </div>
-    <div class="container-fluid person" id="person">
+    <!--<div class="container-fluid person" id="person">
       <h3>专家顾问</h3>
       <div class="row">
         <div class="col-md-4 personlist" v-for="item in person" :key="item.person">
@@ -25,27 +34,27 @@
           <p>{{item.introduction}}</p>
         </div>
       </div>
-    </div>
+    </div>-->
     <div class="project container-fluid" id="project">
-      <h4>项目分类</h4>
+      <h4>创新成果</h4>
       <div class="row">
         <div class="col-md-4 projectlist">
           <div class="project-img"></div>
           <div class="txt">
-            <h5>航空油品计量检测系统</h5>
+            <h5>中国航空油质量检测实验室信息管理平台</h5>
             <p>
-              运用云计算、大数据、移动互联网等新一代信息技术、采用SOA的服务架构体系，基于物联网的数据智能采集，在实验
-              大数据的深度挖掘分析的基础下，结合可视化图形报表的形式直观展现。
+              为了高效地管理实验室油品检测业务，确保航油质量安全，中国航空油料责任有限公司华东公司质量计量检测中心与上海迅发信息技
+              术有限公司，严格按照优良实验室规范...
             </p>
             <router-link to="system" class="detail">了解详情</router-link>
           </div>
         </div>
         <div class="col-md-4 projectlist">
           <div class="txt">
-            <h5>航空油品质量检测实验室</h5>
+            <h5>中国航油计量检定信息智慧管理平台</h5>
             <p>
-              运用云计算、大数据、移动互联网等新一代信息技术、采用SOA的服务架构体系，基于物联网的数据智能采集，在实验
-              大数据的深度挖掘分析的基础下，结合可视化图形报表的形式直观展现。
+              计量检定作为测量设备量值传递的主要形式，是保证量值准确一致的重要措施，具有准确度判定要求严格、数据处理工作量大等特点。
+              一直以来，中国航油计量检定/校准...
             </p>
             <router-link to="lab" class="detail">了解详情</router-link>
           </div>
@@ -55,10 +64,10 @@
           <div class="project-img project-img2"></div>
 
           <div class="txt">
-            <h5>油品标准密度换算</h5>
+            <h5>密度换算APP</h5>
             <p>
-              运用云计算、大数据、移动互联网等新一代信息技术、采用SOA的服务架构体系，基于物联网的数据智能采集，在实验
-              大数据的深度挖掘分析的基础下，结合可视化图形报表的形式直观展现。
+              中国航油华东公司原来在做密度检测时，需要根据修正后实测温度 ， 修正后实测密度计算出密度15  密度20，原始的方式是根据人
+              工根据经验进行计算，结合Excel计算...
             </p>
             <a href="javascript:;" class="detail">了解详情</a>
           </div>
@@ -77,6 +86,13 @@
     name: 'fuel',
     data: function () {
       return {
+        timer: null,
+        mark: 0,
+        banner: [
+          '',
+          '',
+          ''
+        ],
         person: [
           {
             imgArray: '../../static/bil/imgamge/20180524183027.png', name: '何祖源  公司高级顾问',
@@ -101,11 +117,35 @@
 
 
         ],
-        introduction: '通过质量目标可视化管理云平台的建设，实现有关质量目标维护、数据采集、趋势推移图、月度考评、监控管理。\n' +
-        '        并实现数据体系从图形到原始数据的贯通，为企业管理经营层提供可视化、穿透式的目标管理、考核支撑平台。基于过程\n' +
-        '        计量型质量控制点，基于SPC（统计过程控制）系统展开，将涵盖过程自定义、质量特性自定义、控制图、直方统计图分析、\n' +
-        '        统计量分析、过程能力监控、过程能力考评功能。'
+        introduction: '为积极推进中国航油与互联网、大数据、人工智能等新一代信息技术的深度融合，经过合作各方充分的酝酿和协商，中国' +
+        '航空油料责任有限公司华东公司、上海交通大学先进产业技术研究院、上海迅发信息技术有限公司共同签署“互联网+航油安全服务”战略合' +
+        '作协议。旨在本着“平等互利、资源整合、优势互补、共同发展”的原则，充分发挥三方各自的资源优势，共同成立互联网+航油安全服务协' +
+        '同创新中心，运用互联网、大数据、人工智能、物联网等新一代信息技术，构建互联网+航油安全服务智慧平台，实现华东公司安全智能化、' +
+        '管理智能化、物流智能化、渠道智能化以及服务智能化的信息化建设目标，力争成为中国航油与新一代信息技术深度融合的示范。'
       }
+    },
+    methods: {
+      autoPlay() {
+        this.mark++;
+        if (this.mark === 3) {
+          this.mark = 0
+        }
+      },
+      play() {
+        this.timer = setInterval(this.autoPlay, 4000)
+      },
+      change(i) {
+        this.mark = i
+      },
+      stop() {
+        clearInterval(this.timer)
+      },
+      move() {
+        this.timer = setInterval(this.autoPlay, 4000)
+      }
+    },
+    created() {
+      this.play()
     }
   }
 </script>
@@ -118,7 +158,7 @@
   .f_banner {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180614135941.jpg");
+    background: url("../../static/bil/imgamge/20180624184614.jpg");
     background-size: cover;
     background-position: 50% 30%;
     margin-top: 70px;
@@ -136,6 +176,9 @@
 
   .select .row {
     position: relative;
+  }
+  .select {
+    padding-bottom: .8rem;
   }
 
   .main .safe {
@@ -155,18 +198,82 @@
     border-bottom: 2px solid #008fd7;
     content: "";
   }
-
+  .slider {
+    width: 100%;
+    height: 4rem;
+    position: relative;
+  }
+  /* 轮播图 */
+  #slider {
+    width: 100%;
+    height: inherit;
+  }
   .main .introduce {
     font-size: .2365744026rem;
     text-align: left;
   }
 
-  .fuel_img {
-    position: relative;
+  #slider > div {
     width: 100%;
+    position: absolute;
+    height: inherit;
+    z-index: 99;
+  }
+
+  #slider-btn {
+    position: absolute;
+    left: 50%;
+    margin-left: -24px;
+    bottom: 25px;
+    font-size: 0;
     z-index: 9999;
   }
 
+  #slider-btn span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ff8020;
+    display: inline-block;
+    margin: 0 7px;
+    cursor: pointer;
+  }
+
+  #slider > div:nth-of-type(1) {
+    background: url("../../static/bil/imgamge/20180624190210.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  #slider > div:nth-of-type(2) {
+    background: url("../../static/bil/imgamge/20180624190232.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  #slider > div:nth-of-type(3) {
+    background: url("../../static/bil/imgamge/20180624190246.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .image-enter-active {
+    opacity: 1;
+    transition: opacity .8s linear;
+  }
+
+  .image-leave-active {
+    opacity: 0;
+    transition: opacity .8s linear;
+  }
+
+  .image-enter {
+    opacity: 0;
+  }
+
+  .image-leave {
+    opacity: 1;
+  }
+/* 轮播结束 */
   .main .content {
     font-size: .1677rem;
     text-align: justify;
@@ -194,7 +301,7 @@
   }
 
   /*专家栏目开始*/
-  .person {
+  /*.person {
     width: 100%;
     background: whitesmoke;
     margin-top: .7rem;
@@ -206,7 +313,7 @@
   .person h3 {
     font-size: .28rem;
     margin-bottom: .8rem;
-  }
+  }*/
 
   .person h3:after, .project h4:after {
     width: 60px;
@@ -262,7 +369,7 @@
 
   .txt {
     background: #FFF;
-    padding: .15rem 20px 0 20px;
+    padding: 30px 30px 0 30px;
     height: 2.5rem;
   }
 
@@ -299,28 +406,35 @@
   .project-img {
     width: 100%;
     height: 2.5rem;
-    background: url("../../static/bil/imgamge/20180508134228.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180624183016.png") no-repeat;
     background-size: cover;
+    background-position: 50% 50%;
   }
 
   .project-img1 {
     width: 100%;
     height: 2.5rem;
-    background: url("../../static/bil/imgamge/20180508134210.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180624184222.png") no-repeat;
     background-size: cover;
+    background-position: 50% 50%;
   }
 
   .project-img2 {
     width: 100%;
     height: 2.5rem;
-    background: url("../../static/bil/imgamge/20180508134220.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180624184253.jpg") no-repeat;
     background-size: cover;
+    background-position: 50% 50%;
   }
 
   #project > div > div {
     transition: .5s;
     position: relative;
     z-index: 1;
+  }
+  #project > div > div:nth-of-type(2){
+   border-left: 1px solid #a8a8a8;
+   border-right: 1px solid #a8a8a8;
   }
 
   #project > div > div:hover {

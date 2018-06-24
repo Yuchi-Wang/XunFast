@@ -3,13 +3,13 @@
     <div class="bg">
       <div class="bottom-round"></div>
     </div>
-    <div class="container-fluid content"  id="content">
+    <div class="container-fluid content" id="content">
       <div class="row">
         <h3 class="animated  fadeInDown">智能制造面临的挑战</h3>
         <div class="mod-wrap new">
           <div class="mod-inner">
             <div class="mod-content qc-grids with-slot">
-              <div data-index="0" class="product qc-unit-5-24 qc-unit-active b_l  b_b" style="height:400px;" >
+              <div data-index="0" class="product qc-unit-5-24 qc-unit-active b_l  b_b" style="height:400px;">
                 <img src="../../static/bil/imgamge/20180622164918.png" alt="" width="" height="">
                 <h4>全连接</h4>
                 <p>资金量、管理信息流、物流信息流、服务信息流等各个相关环节需要全面连接，缺少任一节点的连接，都有可能影响全面自动化的实现。</p>
@@ -44,15 +44,15 @@
       <div class="row">
         <p>{{solution}}</p>
         <ul class="clearfix">
-          <li v-for="item in disadvantage" :key="item.disadvantage" >
-              <span> <img :src="item.point" alt="">{{item.txt}}</span>
+          <li v-for="item in disadvantage" :key="item.disadvantage">
+            <span> <img :src="item.point" alt="">{{item.txt}}</span>
           </li>
         </ul>
       </div>
     </div>
     <!--核心-->
     <div class="container-fluid core" id="core">
-      <h3>  一个网络：CPS</h3>
+      <h3> 一个网络：CPS</h3>
       <div class="row">
         <p id="core_txt">
           CPS是英文CyberPhysical System的缩写，本质就是构建一套（Cyber空间与物理（Physical）空间之间基于数
@@ -98,50 +98,61 @@
       </div>
     </div>
     <div class="container-fluid threeD" id="threeD">
-      <div>
-        <h3>智能车间架构图</h3>
-        <img src="../../static/bil/imgamge/20180524184941.png" alt="" width="600" height="603">
+      <h3>智能工厂（六化）</h3>
+      <div class="row">
+        <div class="col-md-4 zd">
+          <h4>自动化</h4>
+          <div>
+            <p>建设了覆盖全厂的DCS、SIS等系统，实现对整个工艺过程的监测与控制</p>
+          </div>
+        </div>
+        <div class="col-md-4 zd">
+          <h4>数字化</h4>
+          <div>
+            <p>
+              借助覆盖全厂的网路平台实现生产数据的实时采集，快速掌握生产运行情况，实现生产环境与信息系统的无缝对接，提升了管理人员
+              对生产现场的感知和监控能力
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 zd">
+          <h4>模型化</h4>
+          <div>
+            <p>基于工厂模型构建煤化工的各类工艺、业务模型与规则，并与各种生产管理活动相匹配。</p>
+          </div>
+        </div>
+        <div class="col-md-4 zd">
+          <h4>决策科学化</h4>
+          <div>
+            <p>利用大数据技术，对各应用系统的数据进行集中存储和分析，协助公司领导层及时发现问题、分析问题原因、进行风险预警，实现决策的科学化</p>
+          </div>
+        </div>
+        <div class="col-md-4 zd">
+          <h4>可视化</h4>
+          <div>
+            <p>根据设计院提供的设计图纸搭建了三维可视化工厂，并与生产工艺、设备信息、作业票、应急演练等功能进行集成，为生产操作和管
+              理人员提供直接的业务场景展示
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 zd">
+          <h4>集成化</h4>
+          <div>
+            <p>建设了企业信息集成平台，以MES为核心，向上支撑企业经营管理，向下与生产过程的实时数据高度集成，将各自独立的信息系统连
+              接成为一个完整可靠和有效的整体
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+    <!--智能车间-->
+    <div class="container-fluid wisdom">
+      <h3 class="wisdom-title">智能车间架构图</h3>
+      <img src="../../static/bil/imgamge/20180624175301.jpg" alt="">
+    </div>
     <div class="container-fluid" id="solution">
-      <div class="row">
-        <h3 class="solution_title">三项集成</h3>
-        <div class="col-md-4">
-          <div class="cardlist">
-            <div class="imgbox imgbox1"></div>
-            <h4>纵向集成</h4>
-          </div>
-          <div class="imgtxt imgtxt2">
-            <p>
-              纵向集成就是解决企业内部信息孤岛的集成，智能制造所要追求的就是在企业内部实现所有环节信息无缝链接，这是所有智能化的基础。
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="cardlist">
-            <div class="imgbox imgbox2"></div>
-            <h4>横向集成</h4>
-          </div>
-          <div class="imgtxt  imgtxt3">
-            <p>
-              横向集成是企业之间通过价值链以及信息网络所实现的一种资源整合，为实现各企业间的无缝合作，提供实时产品与服务，
-              推动企业间研产供销、经营管理与生产控制、业务与财务全流程的无缝衔接和综合集成，实现产品开发、生产制造、经营
-              管理等在不同的企业间的信息共享和业务协同。
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="cardlist">
-            <div class="imgbox imgbox3"></div>
-            <h4>端到端集成</h4>
-          </div>
-          <div class="imgtxt imgtxt1">
-            <p>端对端集成是“通过产品全价值链和为客户需求而协作的不同公司，使现实世界与数字世界完成整合”。更是突出了以产
-              品的研发、生产、销售、服务等为主线，实现企业间的集成。
-            </p>
-          </div>
-        </div>
-      </div>
+      <h3 class="solution_title">三项集成</h3>
+      <img src="../../static/bil/imgamge/20180624165550.jpg" alt="">
     </div>
     <bottom></bottom>
   </div>
@@ -150,18 +161,18 @@
 <script>
   import bottom from '../components/bottom'
   import * as $ from 'jquery'
- // console.log($)
+  // console.log($)
   export default {
     components: {bottom},
     name: 'wisdom',
-    data () {
+    data() {
       return {
         disadvantage: [
-          {point:'../../static/bil/imgamge/point.png',txt:'  一个网络：CPS'},
-          {point:'../../static/bil/imgamge/point.png',txt:'  两大主题：智能工厂、智能车间'},
-          {point:'../../static/bil/imgamge/point.png',txt:' 三项集成：横向集成、纵向集成、端到端集成'}
+          {point: '../../static/bil/imgamge/point.png', txt: '  一个网络：CPS'},
+          {point: '../../static/bil/imgamge/point.png', txt: '  两大主题：智能工厂、智能车间'},
+          {point: '../../static/bil/imgamge/point.png', txt: ' 三项集成：横向集成、纵向集成、端到端集成'}
         ],
-        solution:'智能制造技术是传感技术、网络技术、自动化技术、人工智能技术等新一代信息技术与先进自动化技术、传感技术、' +
+        solution: '智能制造技术是传感技术、网络技术、自动化技术、人工智能技术等新一代信息技术与先进自动化技术、传感技术、' +
         '控制技术、数字制造技术结合，通过智能化的感知、人机交互、决策和执行技术，实现产品生命周期各环节以及制造装备（车间、' +
         '工厂）智能化。智能实现工厂和企业内部、企业之间和产品全生命周期的实时管理和优化的新型制造系统。'
       }
@@ -186,68 +197,79 @@
     margin-top: 70px;
   }
 
-  .solution h3,.core h3,.threeD h3 {
+  .solution h3, .core h3, .threeD h3 {
     color: #FFF;
     font-size: .28rem;
     margin-bottom: .6rem;
     font-weight: 100;
   }
+
   .bg p {
     color: #FFFF;
     font-size: .15rem;
   }
+
   .bottom-round {
     width: 100%;
     position: absolute;
-    bottom:-30px;
+    bottom: -30px;
     height: 60px;
     background: white;
     z-index: 99;
     border-radius: 100%;
   }
+
   /*  挑战开始 */
-  .content{
+  .content {
     text-align: center;
     padding-bottom: .4rem;
   }
-  .content h3{
+
+  .content h3 {
     font-size: .28rem;
-    margin:.7rem auto .4rem;
+    margin: .7rem auto .4rem;
     font-weight: 100;
   }
-  .content p{
+
+  .content p {
     width: 100%;
     font-size: .15rem;
-    margin:.2rem auto;
+    margin: .2rem auto;
     font-weight: 300;
   }
-  .content .mod-wrap{
+
+  .content .mod-wrap {
     margin-top: .2rem;
     width: 100%;;
     height: 400px;
   }
+
   .qc-grids {
     font-size: 0
   }
-  .mod-inner img{
-    width: .6rem!important;
+
+  .mod-inner img {
+    width: .6rem !important;
     margin-top: .4rem;
   }
-  .mod-inner h4{
+
+  .mod-inner h4 {
     width: 100%;
     font-size: .18rem;
     margin-top: .1rem;
     color: #1790d4;
   }
-  .mod-inner h4:after{
+
+  .mod-inner h4:after {
     width: 12%;
     position: absolute;
-    top: 1.5rem;
-    left:50%;
+    top: 2rem;
+    left: 50%;
     margin-left: -6%;
     border-bottom: 2px solid #cdcdcd;
     content: '';
   }
+
   .qc-grids [class*=qc-unit] {
     display: inline-block;
     zoom: 1;
@@ -258,19 +280,24 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box
   }
+
   .qc-unit-5-24 {
     width: 16.75%
   }
-  .b_l{
+
+  .b_l {
     border-left: 1px solid #d9d9d9;
   }
-  .b_b{
+
+  .b_b {
     border-bottom: 1px solid #d9d9d9;
   }
+
   /*改变宽度*/
   .qc-unit-active {
     width: 20%
   }
+
   .new .product {
     background-color: #fff;
     border-top: 4px solid #d9d9d9;
@@ -282,6 +309,7 @@
     min-height: 0;
     overflow: hidden
   }
+
   .product.qc-unit-active {
     border-top: 4px solid #008fd7;
     margin-top: -30px;
@@ -292,38 +320,45 @@
     box-shadow: 0 3px 20px rgba(0, 0, 0, .1);
     transform: translate3d(0, -2px, 0)
   }
-  .mod-inner p{
+
+  .mod-inner p {
     opacity: 0;
     margin-top: .4rem;
     text-align: justify;
     transition: all .3s;
   }
-  .product.qc-unit-active p{
+
+  .product.qc-unit-active p {
     opacity: 1
   }
-  .product.qc-unit-active h4:after{
-    left:50%;
+
+  .product.qc-unit-active h4:after {
+    left: 50%;
     margin-left: -40%;
-    width:80%;
+    width: 80%;
     border-bottom: 1px solid #7ECEF4;
+    top: 1.5rem;
   }
+
   /*挑战结束*/
 
   /* 解决方案 */
-  .solution{
+  .solution {
     width: 100%;
-    margin-top:80px;
+    margin-top: 80px;
     background: whitesmoke;
     background-size: cover;
     padding: .5rem 0;
     text-align: center;
     position: relative;
   }
-  .solution h3{
+
+  .solution h3 {
     color: black;
     margin-bottom: .4rem;
   }
-  .solution h3:after,.core h3:after,.content h3:after,.threeD h3:after, #solution h3:after{
+
+  .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after, #solution h3:after,.wisdom h3:after {
     width: 60px;
     position: absolute;
     left: 50%;
@@ -332,31 +367,37 @@
     border-bottom: 2px solid #008fd7;
     content: "";
   }
+
   .solution .row {
-    margin:  0 18%;
+    margin: 0 18%;
   }
-  .solution img{
+
+  .solution img {
     width: 40px;
   }
-  .solution ul{
-   margin: auto;
+
+  .solution ul {
+    margin: auto;
   }
+
   .solution ul li {
     float: left;
     margin-left: 30px;
     font-size: .16rem;
   }
-  .solution p,.core p{
+
+  .solution p, .core p {
     display: block;
     width: 100%;
     font-size: .17rem;
     font-weight: 200;
     line-height: .33rem;
     margin-bottom: .2rem;
-    text-align:center;
+    text-align: center;
   }
+
   /*核心开始*/
-  .core{
+  .core {
     width: 100%;
     position: relative;
     text-align: center;
@@ -364,256 +405,343 @@
     background: url("../../static/bil/imgamge/20180524142826.png") no-repeat;
     background-size: cover;
   }
-  .core p{
+
+  .core p {
     color: white;
   }
-  .core_img{
+
+  .core_img {
     height: 2.6665994047rem;
     overflow: hidden;
     padding: 10px;
   }
-  .core_img img{
+
+  .core_img img {
     width: 100%;
     transition: .5s;
   }
-  .core_img img:hover{
+
+  .core_img img:hover {
     transform: scale(1.08);
   }
-  .core_txt{
-    padding:10px;
+
+  .core_txt {
+    padding: 10px;
   }
-  .core_txt>div{
+
+  .core_txt > div {
     height: 2.55rem;
     border: 2px solid #008fd7;
-    padding:0 15px;
+    padding: 0 15px;
   }
-  .core_txt h4{
+
+  .core_txt h4 {
     color: white;
     font-size: .18rem;
     font-weight: 100;
     margin: .5rem 0;
   }
-  .core_txt p{
-      font-size: .16rem;
+
+  .core_txt p {
+    font-size: .16rem;
   }
+
   /* 核心结束 */
-  /* 三维架构图 */
-  .threeD{
+  /* 智能工厂（六化） */
+  .threeD {
     text-align: center;
     position: relative;
     background: url("../../static/bil/imgamge/20180524142826.png") no-repeat;
     background-size: cover;
+    padding: .7rem 0;
   }
-  .threeD>div{
-    width: 100%;
+
+  .threeD > .row > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+  }
+
+  .threeD > .row > div h4 {
+    font-size: .4rem;
+    color: white;
+    text-shadow: 5px 5px 5px #FF0000;
+  }
+
+  .threeD > .row > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    width: inherit;
     height: inherit;
-    background: rgba(4,10,16,.3);
-    opacity: 50%;
-    padding: .7rem 0;
+    background: white;
+    position: absolute;
+    opacity: 0;
+    transition: .3s;
   }
-  .threeD img{
-      width: 600px;
+
+  .threeD > .row > div:hover.zd > div {
+    opacity: 1;
   }
-  /* 解决方案 */
-  #solution {
+
+  .threeD > .row > div > div p {
+    font-size: .18rem;
+    text-align: justify;
+  }
+
+  .threeD > .row > div:nth-of-type(1) {
     width: 100%;
-    background: #f9f9f9;
+    height: 2.8rem;
+    background: url("../../static/bil/imgamge/20180624171022.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .threeD > .row > div:nth-of-type(2) {
+    width: 100%;
+    height: 2.8rem;
+    background: url("../../static/bil/imgamge/20180624171530.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .threeD > .row > div:nth-of-type(3) {
+    width: 100%;
+    height: 2.8rem;
+    background: url("../../static/bil/imgamge/20180624171715.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .threeD > .row > div:nth-of-type(4) {
+    width: 100%;
+    height: 2.8rem;
+    background: url("../../static/bil/imgamge/20180624171826.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .threeD > .row > div:nth-of-type(5) {
+    width: 100%;
+    height: 2.8rem;
+    background: url("../../static/bil/imgamge/20180624172154.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .threeD > .row > div:nth-of-type(6) {
+    width: 100%;
+    height: 2.8rem;
+    background: url("../../static/bil/imgamge/20180624172210.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  /* 智能车间架构图 */
+  .wisdom {
     padding: .7rem 0;
+    text-align: center;
     position: relative;
   }
 
- #solution > .row {
+  .wisdom h3 {
+    display: block;
+    width: 100%;
+    font-size: .28rem;
+    margin: 0 auto .6rem;
+    position: relative;
+  }
+
+  .wisdom img {
+    width: 1000px;
+  }
+
+  /* 解决方案 */
+  #solution {
+    width: 100%;
+    background: white;
+    padding: .7rem 0;
+    position: relative;
     text-align: center;
   }
 
-  #solution > .row > div {
-    padding: 24px;
-    transition: .8s;
-  }
-
-  #solution h3{
+  #solution h3 {
     display: block;
     width: 100%;
     font-size: .28rem;
     margin-bottom: .6rem;
   }
 
-  .cardlist {
-    background: white;
+  #solution img {
+    width: 1000px;
   }
 
-  .imgbox {
-    width: 100%;
-    background: url("../../static/bil/imgamge/20180622155509.png") no-repeat;
-    height: 3rem;
-    background-size: cover;
-    transition: .3s;
-    background-position: 50% 50%;
-  }
-
-  #solution > .row > div:hover {
-    transform: scale(1.05);
-  }
-
-  .imgbox1 {
-    background: url("../../static/bil/imgamge/20180622155427.png") no-repeat;
-    height: 3rem;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  .imgbox2 {
-    background: url("../../static/bil/imgamge/20180622153205.png") no-repeat;
-    height: 3rem;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  .imgtxt {
-    position: relative;
-    padding: 40px 35px 0;
-  }
-
-  .cardlist h4 {
-    font-size: .18rem;
-    text-align: center;
-    font-weight: 600;
-    padding: 15px 0;
-  }
-
-  .imgtxt p {
-    font-size: .15rem;
-    text-align: justify;
-    line-height: .25rem;
-  }
   /* 解决方案结束 */
-  @media (max-width:1024px) {
-    .bg{
+  @media (max-width: 1024px) {
+    .bg {
       height: 8rem;
     }
-   .solution h3, .core h3, .threeD h3,.content h3 {
+
+    .solution h3, .core h3, .threeD h3, .content h3 {
       font-size: .38rem;
       margin-bottom: .8rem;
     }
-    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after,.content h3:after {
+
+    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after, .content h3:after {
       top: .7rem;
     }
+
     .core_txt h4 {
       font-size: .28rem;
       margin: .3rem 0;
     }
-    .solution p, .core p,.mod-inner p {
+
+    .solution p, .core p, .mod-inner p {
       font-size: .25rem;
       line-height: .4rem;
     }
-    .core_txt>div {
+
+    .core_txt > div {
       height: 3.2rem;
     }
+
     .core_img {
       height: 3.2rem;
       overflow: hidden;
     }
-    .core_img img{
+
+    .core_img img {
       height: 100%;
     }
+
     .threeD img {
       width: 500px;
       height: auto;
     }
+
     .mod-inner h4 {
       font-size: .28rem;
     }
+
     .content h3 {
-      margin:0.4rem auto 1rem;
+      margin: 0.4rem auto 1rem;
     }
+
     .content {
       padding-bottom: 1.5rem;
     }
-    }
-  @media (max-width:767.98px) {
-    .bg{
+  }
+
+  @media (max-width: 767.98px) {
+    .bg {
       height: 9rem;
     }
-    .solution h3, .core h3, .threeD h3,.content h3 {
+
+    .solution h3, .core h3, .threeD h3, .content h3 {
       font-size: .56rem;
       margin-bottom: 1rem;
     }
-     .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after,.content h3:after {
+
+    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after, .content h3:after {
       top: 1rem;
     }
+
     .core_txt h4 {
       font-size: .4rem;
     }
-    .solution p, .core p,.mod-inner p {
+
+    .solution p, .core p, .mod-inner p {
       font-size: .35rem;
       line-height: .6rem;
       text-align: justify;
     }
-    .core_txt>div {
+
+    .core_txt > div {
       height: 6rem;
     }
+
     .core_img {
-      height:6rem;
+      height: 6rem;
     }
 
     .threeD img {
       width: 90%;
       height: 90%;
     }
+
     .qc-unit-5-24 {
-      width:100%
+      width: 100%
     }
+
     .qc-unit-active {
       width: 100%;
     }
+
     .mod-inner h4 {
       font-size: .4rem;
     }
+
     .new .product {
       border-left: 1px solid #d9d9d9;
     }
+
     .content {
       height: 2300px;
     }
   }
-  @media (max-width:575.98px) {
-    .bg{
+
+  @media (max-width: 575.98px) {
+    .bg {
       height: 12rem;
     }
-    .solution h3, .core h3, .threeD h3,.content h3 {
+
+    .solution h3, .core h3, .threeD h3, .content h3 {
       font-size: .8rem;
     }
-    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after,.content h3:after {
+
+    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after, .content h3:after {
       top: 1.3rem;
     }
+
     .core_txt h4 {
       font-size: .6rem;
     }
-    .solution p, .core p,.mod-inner p {
+
+    .solution p, .core p, .mod-inner p {
       font-size: .58rem;
       line-height: .8rem;
     }
-    .core_txt>div {
+
+    .core_txt > div {
       height: 8rem;
     }
+
     .core_img {
-      height:8rem;
+      height: 8rem;
     }
+
     .content h3 {
       margin-bottom: 50px;
     }
+
     .mod-inner h4 {
       font-size: .6rem;
     }
+
     .mod-inner img {
-      width: 2rem!important;
+      width: 2rem !important;
     }
+
     .product.qc-unit-active h4:after {
       top: 20%;
     }
+
     .mod-inner h4:after {
       top: 25%;
     }
+
     .mod-inner p {
       margin-top: 2rem;
     }
