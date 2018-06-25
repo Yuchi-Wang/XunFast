@@ -104,7 +104,7 @@
     font-weight: 100;
   }
   .threeD h3{
-    color: black;
+    color: #151515;
   }
   .bottom-round {
     width: 100%;
@@ -172,9 +172,10 @@
   .solution p,.threeD p{
     display: block;
     width: 100%;
-    font-size: .17rem;
+    font-size: .15rem;
     font-weight: 200;
-    line-height: .33rem;
+    line-height: .32rem;
+    color: #666666;
     margin-bottom: .2rem;
     text-align: center;
   }
@@ -213,7 +214,7 @@
   }
   .main .del{
     padding-left: 40px;
-    font-size: .16rem;
+    font-size: .15rem;
   }
   .solution p{
     margin: auto;

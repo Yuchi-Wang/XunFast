@@ -102,7 +102,7 @@
   }
 
   .threeD h3 {
-    color: black;
+    color: #151515;
   }
 
   .bottom-round {
@@ -179,9 +179,9 @@
   }
 
   .solution p, .threeD p {
-    font-size: .18rem;
+    font-size: .15rem;
     font-weight: 100;
-    line-height: .4rem;
+    line-height: .32rem;
   }
 
   .threeD {

@@ -246,7 +246,7 @@
   .about h3 {
     font-family: "Source Han Serif SC";
     font-size: .28rem;
-    color: #333333;
+    color: #151515;
     position: relative;
     margin:.7rem 0;
     text-align: center;
@@ -275,7 +275,7 @@
     text-align: center;
     height: .5rem;
     line-height: .5rem;
-    color: #666666;
+    color: #333333;
     cursor: pointer;
     transition: .3s;
   }
@@ -297,8 +297,9 @@
   }
 
   #service_content p {
-    font-size: .1777rem;
+    font-size: .15rem;
     text-align: justify;
+    color: #666666;
     line-height: .3631376121rem;
   }
   .about-us .certificate-list{
@@ -393,7 +394,7 @@
     display: inline-block;
     padding: 0 .4rem;
     cursor: pointer;
-    border-right: 1px solid #999999;
+    border-right: 1px solid #666666;
   }
 
   .jobs > li:hover {
@@ -401,6 +402,7 @@
   }
 
   .jobName {
+    color: #151515;
     font-size: .21rem;
     margin-top: 30px;
   }
@@ -413,14 +415,15 @@
 
   .count, .count > span {
     font-size: .17rem !important;
-    color: #000 !important;
+    color: #333333 !important;
     margin-top: .1rem;
   }
 
   .qualification {
-    font-size: .16rem;
+    font-size: .15rem;
     font-weight: 300;
-    line-height: .35rem;
+    line-height: .32rem;
+    color: #666666;
   }
 
   .jobs > li:nth-of-type(1) {

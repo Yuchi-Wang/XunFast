@@ -126,6 +126,7 @@
   .content h4, .sou h4 {
     width: 100%;
     display: block;
+    color: #151515;
     font-size: .28rem;
     text-align: center;
     position: relative;
@@ -144,9 +145,10 @@
   .content p, .sou p {
     display: block;
     width: 100%;
-    font-size: .17rem;
+    font-size: .15rem;
     font-weight: 200;
-    line-height: .33rem;
+    line-height: .32rem;
+    color: #666666;
     margin-bottom: .2rem;
     text-align: justify;
   }

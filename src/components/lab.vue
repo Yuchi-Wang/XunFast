@@ -94,7 +94,7 @@ export default {
   name: 'lab',
   data () {
     return {
-      sou:" 运用云计算、大数据、移动互联等新一代信息技术，采用SOA的服务架构体系，基于物联网的数据智能采集，在实验大数据的深度\n" +
+      sou:" 运用云计算、大数据、移动互联等新一代信息技术，采用SOA的服务架构体系，基于物联网的数据智能采集，在实验大数据深度\n" +
       "挖掘分析的基础下，结合可视化图形报表的形式直观展现。依托IS09001的标准管理体系来管理油品质量过程，强化数据管理，规\n" +
       "范管理流程，从而达到夯实研发基础，降低工作成本，增强工作效率，提高工作质量，提升工作水平的作用。实现工作流程化、\n" +
       "运营体系化、管理信息化、服务主动化的目标。",
@@ -141,10 +141,11 @@ export default {
     background: rgb(245,251,254);
     text-align: justify;
   }
-  
+
   .solve h4,.point h4,.advantage h4,.system_function h4{
     width: 100%;
     display: block;
+    color: #151515;
     font-size: .28rem;
     text-align: center;
     position: relative;
@@ -256,10 +257,12 @@ export default {
   .bannertxt h5{
     font-size: .22rem;
     margin-bottom: .1rem;
+    color: #333333;
   }
   .bannertxt p{
-    font-size: .167rem;
-    line-height: .4631376121rem;
+    font-size: .15rem;
+    line-height: .32rem;
+    color: #666666;
   }
   @media (max-width:1024px) {
     .system_banner{

@@ -158,7 +158,7 @@
   .f_banner {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180624184614.jpg");
+    background: url("../../static/bil/imgamge/20180625095517.jpg");
     background-size: cover;
     background-position: 50% 30%;
     margin-top: 70px;
@@ -184,7 +184,7 @@
   .main .safe {
     font-family: "Source Han Serif SC";
     font-size: .28rem;
-    color: #333333;
+    color: #151515;
     margin: .8rem auto .6rem;
     position: relative;
   }
@@ -209,6 +209,7 @@
     height: inherit;
   }
   .main .introduce {
+    color: #333333;
     font-size: .2365744026rem;
     text-align: left;
   }
@@ -275,9 +276,9 @@
   }
 /* 轮播结束 */
   .main .content {
-    font-size: .1677rem;
+    font-size: .15rem;
     text-align: justify;
-    line-height: .4631376121rem;
+    line-height: .32rem;
     color: #787878;
   }
 
@@ -374,14 +375,16 @@
   }
 
   .txt h5 {
+    color: #333333;
     font-size: .22rem;
     margin-bottom: .1rem;
   }
 
   .txt p {
     text-align: justify;
-    font-size: .16rem;
+    font-size: .15rem;
     line-height: .281rem;
+    color: #666666;
     font-weight: 200;
   }
 

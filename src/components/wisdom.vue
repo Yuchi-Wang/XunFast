@@ -229,6 +229,7 @@
     font-size: .28rem;
     margin: .7rem auto .4rem;
     font-weight: 100;
+    color: #151515;
   }
 
   .content p {
@@ -326,6 +327,7 @@
     margin-top: .4rem;
     text-align: justify;
     transition: all .3s;
+    color: #666666;
   }
 
   .product.qc-unit-active p {
@@ -382,16 +384,18 @@
 
   .solution ul li {
     float: left;
+    color: #666666;
     margin-left: 30px;
-    font-size: .16rem;
+    font-size: .15rem;
   }
 
   .solution p, .core p {
     display: block;
     width: 100%;
-    font-size: .17rem;
+    font-size: .15rem;
     font-weight: 200;
-    line-height: .33rem;
+    line-height: .32rem;
+    color: #666666;
     margin-bottom: .2rem;
     text-align: center;
   }
@@ -466,7 +470,8 @@
   .threeD > .row > div h4 {
     font-size: .4rem;
     color: white;
-    text-shadow: 5px 5px 5px #FF0000;
+    text-shadow: 5px 5px 5px #151515;
+    font-weight: bold;
   }
 
   .threeD > .row > div > div {
@@ -487,7 +492,9 @@
   }
 
   .threeD > .row > div > div p {
-    font-size: .18rem;
+    font-size: .15rem;
+    color: #666666;
+    line-height: .32rem;
     text-align: justify;
   }
 
@@ -550,6 +557,7 @@
     display: block;
     width: 100%;
     font-size: .28rem;
+    color: #151515;
     margin: 0 auto .6rem;
     position: relative;
   }
