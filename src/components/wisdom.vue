@@ -85,14 +85,14 @@
           </div>
         </div>
         <div class="col-md-4">
+          <div class="core_img">
+            <img src="../../static/bil/imgamge/20180524163159.png" alt="" width="100%" height="auto">
+          </div>
           <div class="core_txt">
             <div>
               <h4>实时分析</h4>
               <p>通过工业软件实现数据、信息、知识的转化</p>
             </div>
-          </div>
-          <div class="core_img">
-            <img src="../../static/bil/imgamge/20180524163159.png" alt="" width="100%" height="auto">
           </div>
         </div>
       </div>
@@ -384,9 +384,10 @@
 
   .solution ul li {
     float: left;
-    color: #666666;
+    color: #333333;
     margin-left: 30px;
-    font-size: .15rem;
+    font-size: .18rem;
+    font-weight: bolder;
   }
 
   .solution p, .core p {
@@ -563,7 +564,7 @@
   }
 
   .wisdom img {
-    width: 1000px;
+    width: 1180px;
   }
 
   /* 解决方案 */
@@ -583,7 +584,7 @@
   }
 
   #solution img {
-    width: 1000px;
+    width: 1115px;
   }
 
   /* 解决方案结束 */

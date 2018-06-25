@@ -2,8 +2,18 @@
   <div class="news">
     <div class="news-bg"></div>
     <div>
-      <h3 class="animated slideInDown">服务下载 <br>
-      </h3>
+      <h3 class="animated slideInDown">服务承诺</h3>
+      <p>公司严格按照ISO9001国际质量体系认证企业的《服务控制》要求，以客户满意为第一宗旨，以互联网远程部署、远程维护、电
+        话维护、现场维护等有效的方式，确保系统稳定运行。</p>
+      <div class="tel">
+        <ul>
+          <li>运维技术支持工程师电话：123456789 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp 运维技术支持工程师手机:123456789</li>
+          <li>运维技术支持工程师邮箱：123456789 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp 运维技术支持微信号:123456789</li>
+          <li>运维技术支持QQ号：123456789 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp 运维负责人电话:123456789</li>
+          <li>运维负责人邮箱：123456789 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp 运维监督投诉电话:123456788</li>
+          <li>运维监督投诉电话：123456789</li>
+        </ul>
+      </div>
     </div>
     <div class="container-fluid down">
       <img src="../../static/bil/imgamge/20180625100148.png" alt="">
@@ -44,6 +54,18 @@ export default {
     top: .6rem;
     border-bottom: 2px solid #008fd7;
     content: "";
+  }
+  .news p,.tel {
+    font-size: .15rem;
+    text-align: center;
+    color: #666666;
+    line-height: .32rem;
+  }
+  .tel {
+    background: #f9f9f9;
+    margin: .5rem 0;
+    padding: 30px 0;
+    font-weight: bolder;
   }
  .down {
    text-align: center;

@@ -18,7 +18,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6" id="introduce" style="padding-left: 30px">
+        <div class="col-md-7" id="introduce" style="padding-left: 30px">
           <h4 class="introduce">案列介绍</h4>
           <p class="content">{{introduction}}</p>
           <!--<router-link to="fuelDetailed" class="learn">了解详情</router-link>-->
@@ -200,7 +200,7 @@
   }
   .slider {
     width: 100%;
-    height: 4rem;
+    height: 2.7rem;
     position: relative;
   }
   /* 轮播图 */
@@ -243,18 +243,18 @@
   #slider > div:nth-of-type(1) {
     background: url("../../static/bil/imgamge/20180624190210.jpg");
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 50% 20%;
   }
 
   #slider > div:nth-of-type(2) {
     background: url("../../static/bil/imgamge/20180624190232.jpg");
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 50% 20%;
   }
   #slider > div:nth-of-type(3) {
     background: url("../../static/bil/imgamge/20180624190246.jpg");
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 50% 20%;
   }
 
   .image-enter-active {

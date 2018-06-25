@@ -17,7 +17,7 @@
     </div>
     <div class="container-fluid product">
       <h3 class="animated slideInDown">公司产品</h3>
-      <div class="row animated fadeInLeftBig">
+      <div class="row">
         <div class="col-md-3 col-sm-6 production" v-for="item in production" :key="item.production">
           <div>
             <img :src="item.imgArray" alt="" width="135" height="135">

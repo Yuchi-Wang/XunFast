@@ -7,7 +7,8 @@
         <div class="row">
           <ul class="service_title row" id="service_title">
             <li class="col-3" v-for="(item,index) in lists" :key="item.index" @click="tabs(index)"
-                v-bind:style="{background:index===checkIndex?'#008fd7':'',color:index===checkIndex?'white':''}">{{ item }}
+                v-bind:style="{background:index===checkIndex?'#008fd7':'',color:index===checkIndex?'white':''}">{{ item
+              }}
             </li>
           </ul>
           <ul id="service_content" class="row col-12 clearfix">
@@ -33,7 +34,7 @@
                                 </div>
                                 <p>学业诊断与分析云平台</p>
                               </li>
-                              <li class="third" >
+                              <li class="third">
                                 <div>
                                   <img src="../../static/bil/imgamge/zhxy.jpg" alt="">
                                 </div>
@@ -69,36 +70,60 @@
                 </div>
               </div>
               <ol class="jobs" v-show="index===2">
-                <li v-for="(item,index) in listdata" :key="item.index" @click="select(index)" v-bind:style="{color:index===tabsIndex?'#008fd7':''}">{{item.PostName}}</li>
+                <li v-for="(item,index) in listdata" :key="item.index" @click="select(index)"
+                    v-bind:style="{color:index===tabsIndex?'#008fd7':''}">{{item.PostName}}
+                </li>
               </ol>
               <ol v-show="index===2" style="margin-bottom: 60px">
-                <li v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex" class="jobName">{{item.PostName}}
+                <li v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex" class="jobName">
+                  {{item.PostName}}
                   <span v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex" class="salary">{{item.Salary}}</span>
                 </li>
-                <li class="count">招聘人数:<span v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex">{{item.Count}}</span>人</li>
+                <li class="count">招聘人数:<span v-for="(item,index) in listdata" :key="item.index"
+                                             v-show="index===tabsIndex">{{item.Count}}</span>人
+                </li>
                 <li class="count">岗位职责:</li>
-                <li v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex" v-html="item.PostDuties" class="qualification">{{item.PostDuties }}</li>
+                <li v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex"
+                    v-html="item.PostDuties" class="qualification">{{item.PostDuties }}
+                </li>
                 <li class="count">任职要求:</li>
-                <li v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex" v-html="item.Qualification" class="qualification">{{item.Qualification}}</li>
+                <li v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex"
+                    v-html="item.Qualification" class="qualification">{{item.Qualification}}
+                </li>
               </ol>
               <div v-show="index===3" id="content_us">
-                <div class="row m-p-0">
-                  <div class="col-md-5 m-p-0">
-                    <ul>
-                      <li v-for="item in contact" :key="item.contact">
-                        <span class="bold" v-html="item.message">{{item.message}}</span>
-                        {{item.connection}}
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-md-7 mob-sub">
-                    <p style="margin-top: 0"><span class="info">姓名：</span><input type="text" v-model="formData.Name" maxlength="6" placeholder="姓名"></p>
-                    <p><span class="info">邮箱：</span><input type="text" v-model="formData.Email" placeholder="邮箱"></p>
-                    <p><span class="info">电话：</span><input type="text" v-model="formData.Phone" placeholder="电话"></p>
-                    <div class="textarea">
-                      <span class="info">内容：</span><textarea v-model="formData.FeedContent" placeholder="请输入留言内容....."></textarea>
+                <!--   <div class="col-md-5 m-p-0">
+                     <ul>
+                       <li v-for="item in contact" :key="item.contact">
+                         <span class="bold" v-html="item.message">{{item.message}}</span>
+                         {{item.connection}}
+                       </li>
+                     </ul>
+                   </div>
+                   <div class="col-md-7 mob-sub">
+                     <p style="margin-top: 0"><span class="info">姓名：</span><input type="text" v-model="formData.Name" maxlength="6" placeholder="姓名"></p>
+                     <p><span class="info">邮箱：</span><input type="text" v-model="formData.Email" placeholder="邮箱"></p>
+                     <p><span class="info">电话：</span><input type="text" v-model="formData.Phone" placeholder="电话"></p>
+                     <div class="textarea">
+                       <span class="info">内容：</span><textarea v-model="formData.FeedContent" placeholder="请输入留言内容....."></textarea>
+                     </div>
+                     <a href="javascript:;" class="submit" @click="sub()">提交留言</a>
+                   </div>-->
+
+                <div v-for="item in newsdata" class="container-fluid news" :key="item.newsdata">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="news-img">
+                        <img :src="imgurl + item.PATH">
+                      </div>
                     </div>
-                    <a href="javascript:;" class="submit" @click="sub()">提交留言</a>
+                    <div class="col-md-8 news-content">
+                      <h4>
+                        <router-link :to="{ path: `/article/${item.Id}` }"> {{item.Title}}</router-link>
+                      </h4>
+                      <time>发布日期：{{item.CreateDateStr}}</time>
+                      <p v-html="item.InfoContent">{{item.InfoContent}}</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -113,6 +138,7 @@
 
 <script>
   import bottom from '../components/bottom'
+
   export default {
     components: {bottom},
     name: 'about',
@@ -122,7 +148,7 @@
           '资质荣誉',
           '公司介绍',
           '加入我们',
-          '联系我们',
+          '新闻资讯',
         ],
         imgArray: [
           '',
@@ -131,6 +157,7 @@
           ''
         ],
         listdata: [],
+        newsdata: [],
         content: [
           '',
           '上海迅发信息技术有限公司是拥有一支技术实力雄厚的硕士博士生团队的高科 技企业，充分利用互联网、物联网、大数据、' +
@@ -140,13 +167,13 @@
           '研究关系，整合了一支高水平的专家团队和高效率的技术开发团队，致力于通 过持续的技术创新和优质的服务，不断为客户' +
           '创造价值。',
         ],
-        contact: [
-          {message:"联系方式" ,connection:""},
-          {message:"联系电话:" ,connection:"021-6816 0161"},
-          {message:"传 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真:" ,connection:"021-6816 0161"},
-          {message:"联系邮箱:" ,connection:"xunfast@xunfast.com"},
-          {message:"联系地址:" ,connection:"上海浦东新区康桥路666号三幢四楼"}
-        ],
+        /*  contact: [
+            {message:"联系方式" ,connection:""},
+            {message:"联系电话:" ,connection:"021-6816 0161"},
+            {message:"传 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真:" ,connection:"021-6816 0161"},
+            {message:"联系邮箱:" ,connection:"xunfast@xunfast.com"},
+            {message:"联系地址:" ,connection:"上海浦东新区康桥路666号三幢四楼"}
+          ],*/
         checkIndex: 0,
         tabsIndex: 0,
         formData: {
@@ -158,33 +185,50 @@
       }
     },
     mounted: function () {
-      var classArr = ['first','second','third','fourth','fifth'];
-      $('.left-arrow').click(function(){
+      var classArr = ['first', 'second', 'third', 'fourth', 'fifth'];
+      $('.left-arrow').click(function () {
         classArr.unshift(classArr.pop());
         changeClass();
       });
-      $('.right-arrow').click(function(){
+      $('.right-arrow').click(function () {
         classArr.push(classArr.shift());
         changeClass();
       });
-      $('.certificate-list li').click(function(e){
+      $('.certificate-list li').click(function (e) {
         var index = $(this).index();
-        if(classArr[index] == 'first')return;
+        if (classArr[index] == 'first') return;
         classArr = chooseClass(index);
         changeClass();
       });
-      function changeClass(){
-        classArr.forEach(function(item,i){
+
+      function changeClass() {
+        classArr.forEach(function (item, i) {
           $('.certificate-list li').eq(i).get(0).className = item;
         })
       }
-      function chooseClass(n){
-        var classList = ['first','second','third','fourth','fifth'],arr=[];
-        for(var i=0;i<5;i++){
-          arr[(n+i)%5] = classList[i];
+
+      function chooseClass(n) {
+        var classList = ['first', 'second', 'third', 'fourth', 'fifth'], arr = [];
+        for (var i = 0; i < 5; i++) {
+          arr[(n + i) % 5] = classList[i];
         }
         return arr;
       }
+    },
+    beforeCreate() {
+      this.$axios
+        .get(`/Api/Areas/SysNewsInfo/GetNewsInfoAll?type=0`, {
+          headers: {
+            'signature': 'xunfast@123!'
+          }
+        })
+        .then(response => {
+          console.log(response.data.Data)
+          this.newsdata = response.data.Data
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
     },
     methods: {
       tabs: function (index) {
@@ -248,7 +292,7 @@
     font-size: .28rem;
     color: #151515;
     position: relative;
-    margin:.7rem 0;
+    margin: .7rem 0;
     text-align: center;
   }
 
@@ -279,14 +323,17 @@
     cursor: pointer;
     transition: .3s;
   }
-  .service_title > li:hover{
+
+  .service_title > li:hover {
     background: #008fd7;
     color: white;
   }
+
   .service_title li:nth-of-type(1) {
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
   }
+
   .service_title li:nth-of-type(4) {
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
@@ -300,87 +347,100 @@
     font-size: .15rem;
     text-align: justify;
     color: #666666;
-    line-height: .3631376121rem;
+    line-height: .32rem;
   }
-  .about-us .certificate-list{
+
+  .about-us .certificate-list {
     width: 800px;
     position: relative;
     margin: auto;
   }
+
   .about-us {
     margin-top: .6rem;
   }
-  .about-us .certificate-list>span{
+
+  .about-us .certificate-list > span {
     position: absolute;
     width: 14px;
     height: 32px;
-    opacity:0.25;
+    opacity: 0.25;
     top: 50%;
     margin-top: -16px;
     left: 0;
     transition: all 0.4s;
     cursor: pointer;
     z-index: 2;
-    background:#000000 url("../../static/bil/imgamge/left.png") no-repeat center;
-    background-size:50% 30%;
+    background: #000000 url("../../static/bil/imgamge/left.png") no-repeat center;
+    background-size: 50% 30%;
   }
-  .about-us .certificate-list>span:hover{
-    opacity:0.68;
-    background-color:#2a97f3;
+
+  .about-us .certificate-list > span:hover {
+    opacity: 0.68;
+    background-color: #2a97f3;
   }
-  .about-us .certificate-list .right-arrow{
-    left:auto;
+
+  .about-us .certificate-list .right-arrow {
+    left: auto;
     right: 0;
-    background:#000000 url("../../static/bil/imgamge/right.png") no-repeat center;
-    background-size:50% 30%;
+    background: #000000 url("../../static/bil/imgamge/right.png") no-repeat center;
+    background-size: 50% 30%;
   }
-  .about-us .certificate-list .list{
+
+  .about-us .certificate-list .list {
     width: 595px;
     height: 525px;
-    margin:0 auto .7rem;
+    margin: 0 auto .7rem;
     position: relative;
   }
-  .about-us .certificate-list .list li{
+
+  .about-us .certificate-list .list li {
     cursor: pointer;
     width: 344px;
     position: absolute;
     transition: all 0.5s;
   }
-  .about-us .certificate-list .list li.first{
+
+  .about-us .certificate-list .list li.first {
     left: 150px;
     top: 0;
-    transform:scale(1);
+    transform: scale(1);
     z-index: 5;
   }
-  .about-us .certificate-list .list li.second{
+
+  .about-us .certificate-list .list li.second {
     left: 300px;
     top: 0;
     transform: scale(0.8);
     z-index: 4;
   }
-  .about-us .certificate-list .list li.third{
+
+  .about-us .certificate-list .list li.third {
     left: 218px;
     top: -40px;
     transform: scale(0.7);
     z-index: 3;
   }
-  .about-us .certificate-list .list li.fourth{
+
+  .about-us .certificate-list .list li.fourth {
     left: 82px;
     top: -40px;
     transform: scale(0.7);
     z-index: 3;
   }
-  .about-us .certificate-list .list li.fifth{
+
+  .about-us .certificate-list .list li.fifth {
     left: 0;
     top: 0;
     transform: scale(0.8);
     z-index: 4;
   }
-  #service_content .about-us .certificate-list .list li p{
+
+  #service_content .about-us .certificate-list .list li p {
     text-align: center;
-    font-size:.16rem;
-    color:#000000;
-    letter-spacing:3.36px;
+    font-size: .16rem;
+    color: #000000;
+    letter-spacing: 3.36px;
   }
 
   .jobs {
@@ -432,10 +492,46 @@
 
   #content_us {
     padding: 0;
-    margin: 20px 20% 0;
+    margin: 0 7%;
+  }
+  .news {
+    margin-bottom: 60px;
+  }
+  .news-img {
+    overflow: hidden;
+    height: 2rem;
+  }
+  #content_us img {
+    width: inherit;
+  }
+  .news-content {
+    height: 1.8rem;
+    overflow: hidden;
+    padding-left: 60px;
+    padding-right: 30px;
+    position: relative;
+  }
+  .news-content p:after {
+    content: "...";
+    position: absolute;
+    right: 13px;
+    bottom: -5px;
   }
 
-  #content_us input {
+  #content_us h4 {
+    font-size: .18rem;
+    color: #333333;
+    font-weight: bolder;
+  }
+  #content_us time {
+    display: block;
+    font-size: .14rem;
+    color: #666666;
+    margin-bottom: 10px;
+  }
+
+
+ /* #content_us input {
     width: 80%;
     border: 1px solid #747474;
     height: 40px;
@@ -443,9 +539,9 @@
     line-height: 40px;
     border-radius: 6px;
     font-size: .15rem;
-  }
+  }*/
 
-  #content_us .info {
+  /*#content_us .info {
     font-size: 18px;
   }
 
@@ -498,115 +594,136 @@
   #content_us p {
     margin-top: 10px;
   }
-
+*/
   .about-bg {
     background: url("../../static/bil/imgamge/gs.jpg") no-repeat;
     width: 100%;
     background-size: cover;
     padding: 0 !important;
   }
-  @media (max-width:1024px) {
+
+  @media (max-width: 1024px) {
     .service_title {
       margin: .1rem 15% 40px;
     }
+
     #content_us {
       margin: 20px 15% 0;
     }
-    .about_bg{
+
+    .about_bg {
       height: 6rem;
     }
+
     .about h3 {
       font-size: .38rem;
       margin: 30px 0;
     }
+
     .about h3:after {
       top: .7rem;
     }
-    .service_title > li{
+
+    .service_title > li {
       height: .86rem;
       line-height: .86rem;
       font-size: .25rem;
     }
 
-    #service_content p,#service_content .time-line p,.qualification,#content_us ul li{
+    #service_content p, #service_content .time-line p, .qualification, #content_us ul li {
       font-size: .25rem;
       line-height: .35rem;
     }
-     .jobs{
+
+    .jobs {
       font-size: .22rem;
       letter-spacing: 1.2px;
     }
-    .jobs > li{
+
+    .jobs > li {
       margin-top: .2rem;
     }
-    .jobName,.about div .salary,.count, .count > span{
-      font-size: .25rem!important;
-    }
-    #content_us input {
-      width: 75%;
-      height: 35px;
-      line-height: 35px;
-      font-size: 16px;
-    }
-    textarea {
-      width: 75%;
-      height: 1.5rem;
-    }
-    .submit{
-      width:2.2rem;
-      height: .5rem;
-      line-height: .5rem;
-      margin-left: .8rem;
+
+    .jobName, .about div .salary, .count, .count > span {
+      font-size: .25rem !important;
     }
 
+    /*  #content_us input {
+        width: 75%;
+        height: 35px;
+        line-height: 35px;
+        font-size: 16px;
+      }
+      textarea {
+        width: 75%;
+        height: 1.5rem;
+      }
+      .submit{
+        width:2.2rem;
+        height: .5rem;
+        line-height: .5rem;
+        margin-left: .8rem;
+      }*/
+
   }
-  @media (max-width:767.98px) {
+
+  @media (max-width: 767.98px) {
     .service_title {
       margin: .1rem 10% 0;
     }
+
     #content_us {
       margin: 0 10% 0;
     }
-    .m-p-0{
-      padding: 0!important;
+
+    .m-p-0 {
+      padding: 0 !important;
     }
-    .about_bg{
+
+    .about_bg {
       height: 8rem;
     }
+
     .about h3 {
       font-size: .56rem;
     }
+
     .about h3:after {
       top: 1rem;
     }
-    .about-bg{
+
+    .about-bg {
       height: 4rem;
       margin-top: 30px;
     }
-    .service_title > li{
-      height:1rem;
+
+    .service_title > li {
+      height: 1rem;
       line-height: 1rem;
       font-size: .45rem;
     }
 
-    #service_content p,#service_content .time-line p,.qualification,#content_us ul li{
+    #service_content p, #service_content .time-line p, .qualification, #content_us ul li {
       font-size: .34rem;
       line-height: .66rem;
     }
 
-    .jobs{
+    .jobs {
       font-size: .34rem;
     }
 
-    .jobName,.about div .salary,.count, .count > span{
-      font-size: .34rem!important;
+    .jobName, .about div .salary, .count, .count > span {
+      font-size: .34rem !important;
     }
-    .mob-sub{
+
+    .mob-sub {
       padding: 0;
     }
+
     #service_content .mob-sub p, #service_content .mob-sub {
       text-align: left;
     }
+
     .submit {
       width: 2.5rem;
       height: .7rem;
@@ -614,56 +731,65 @@
       margin-left: 1.1rem;
     }
   }
-  @media (max-width:575.98px) {
-    .col-3{
+
+  @media (max-width: 575.98px) {
+    .col-3 {
       padding: 0;
     }
-    .about_bg{
+
+    .about_bg {
       height: 11rem;
     }
+
     .about h3 {
       font-size: .8rem;
     }
+
     .about h3:after {
       top: 1.5rem;
     }
-    .about-bg{
+
+    .about-bg {
       height: 7rem;
     }
-    .service_title > li{
-      height:1.5rem;
+
+    .service_title > li {
+      height: 1.5rem;
       line-height: 1.5rem;
       font-size: .5rem;
     }
-    #content_us ul li:nth-of-type(1) {
-      display: none;
-    }
-    #content_us input {
-      width: 65%;
-    }
-    textarea {
-      width: 65%;
-      height:4rem;
-      margin-top: 10px;
-      border-radius: 6px;
-    }
 
-    .submit {
-      width: 3.5rem;
-      height: 1.2rem;
-      line-height: 1.2rem;
-      margin-left: 2rem;
-    }
+    /* #content_us ul li:nth-of-type(1) {
+       display: none;
+     }
+     #content_us input {
+       width: 65%;
+     }
+     textarea {
+       width: 65%;
+       height:4rem;
+       margin-top: 10px;
+       border-radius: 6px;
+     }
 
-    #service_content p,#service_content .time-line p,.qualification,#content_us ul li{
+     .submit {
+       width: 3.5rem;
+       height: 1.2rem;
+       line-height: 1.2rem;
+       margin-left: 2rem;
+     }
+ */
+    #service_content p, #service_content .time-line p, .qualification {
       font-size: .58rem;
       line-height: .8rem;
     }
-    .jobs{
+
+    .jobs {
       font-size: .34rem;
     }
-    .jobName,.about div .salary,.count, .count > span{
-      font-size: .34rem!important;
+
+    .jobName, .about div .salary, .count, .count > span {
+      font-size: .34rem !important;
     }
   }
 </style>
