@@ -188,6 +188,7 @@
   }
   .threeD img{
     width: 1080px;
+    margin-top: 30px;
   }
 
   .main{
@@ -225,13 +226,16 @@
     height: inherit;
     background-size: cover;
   }
-  @media (max-width:1024px) {
+  @media (max-width:1199.98px) {
     .bg{
       height: 8rem;
     }
     .solution p, .threeD p {
       font-size: .25rem;
-      line-height: .4rem;
+      line-height: .35rem;
+    }
+    .threeD img{
+      width: 750px;
     }
     .question h3, .threeD h3, .main h3 {
       font-size: .38rem;
@@ -262,8 +266,8 @@
       background-position: 50% 30%;
     }
     .solution p, .threeD p {
-      font-size: .36rem;
-      line-height: .5rem;
+      font-size: .35rem;
+      line-height: .6rem;
       text-align: justify;
     }
     .question h3, .threeD h3, .main h3 {

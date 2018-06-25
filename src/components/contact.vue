@@ -15,7 +15,7 @@
 import bottom from '../components/bottom'
 export default {
   components: {bottom},
-  name: 'News',
+  name: 'contact',
 }
 </script>
 

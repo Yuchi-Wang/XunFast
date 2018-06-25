@@ -449,7 +449,7 @@
     z-index: 999;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1199.98px) {
     .f_banner {
       height: 8rem;
     }
@@ -463,13 +463,13 @@
     }
 
     .main .introduce, .txt h5 {
-      font-size: .3rem;
+      font-size: .25rem;
       font-weight: bold;
     }
 
     .main .content, .person p, .txt p {
       font-size: .25rem;
-      line-height: .38rem;
+      line-height: .35rem;
     }
 
     .learn {
@@ -488,7 +488,7 @@
     }
 
     .project-img, .txt {
-      height: 3.5rem;
+      height: 4rem;
     }
 
     .project .detail {
@@ -500,6 +500,9 @@
 
   @media (max-width: 767.98px) {
     .f_banner {
+      height: 9rem;
+    }
+    .slider {
       height: 9rem;
     }
 
@@ -549,7 +552,7 @@
     }
 
     .txt {
-      height: 4rem;
+      height: 5rem;
     }
 
     .project .detail {
@@ -604,7 +607,7 @@
     }
 
     .txt {
-      height: 7rem;
+      height: 10rem;
     }
 
     .project .detail {

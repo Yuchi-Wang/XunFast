@@ -239,14 +239,14 @@
     height: inherit;
     background-size: cover;
   }
-  @media (max-width:1024px) {
+  @media (max-width:1199.98px) {
     .banner {
       height: 8rem;
     }
     .solution p,.threeD p{
       font-size: .25rem;
       line-height: .4rem;
-      text-align: center;
+      text-align: justify;
     }
     .question h3, .threeD h3, .main h3 {
       font-size: .38rem;
@@ -259,15 +259,19 @@
       width: 100px;
       height: 100px;
     }
+    .threeD img {
+      width: 738px;
+    }
     .question .row > div p{
       font-size: .25rem;
     }
     .main p{
-      font-size: .25rem;
+      font-size: .28rem;
     }
     .main .del{
-      font-size: .23rem;
+      font-size: .25rem;
       font-weight: 100;
+      text-align: justify;
     }
 
   }
@@ -276,9 +280,8 @@
       height: 9rem;
     }
     .solution p, .threeD p {
-      font-size: .36rem;
-      line-height: .5rem;
-      text-align: justify;
+      font-size: .35rem;
+      line-height: .6rem;
     }
     .question h3, .threeD h3, .main h3 {
       font-size: .56rem;

@@ -10,10 +10,10 @@ export default new Router({
         require(['../components/Home'], resolve)
       }
     }, {
-      path: '/News',
-      name: 'News',
+      path: '/contact',
+      name: 'contact',
       component: (resolve) => {
-        require(['../components/News'], resolve)
+        require(['../components/contact'], resolve)
       }
     }, {
       path: '/about',

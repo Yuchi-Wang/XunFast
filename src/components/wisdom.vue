@@ -587,18 +587,30 @@
   }
 
   /* 解决方案结束 */
-  @media (max-width: 1024px) {
+  @media (max-width: 1199.98px) {
     .bg {
       height: 8rem;
     }
 
-    .solution h3, .core h3, .threeD h3, .content h3 {
+    .solution h3, .core h3, .threeD h3, .content h3,.wisdom h3,#solution h3{
       font-size: .38rem;
       margin-bottom: .8rem;
     }
 
-    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after, .content h3:after {
+    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after, .content h3:after,.wisdom h3:after,#solution h3:after {
       top: .7rem;
+    }
+    .new .product {
+      padding: 0 15px;
+    }
+    .mod-inner p {
+      margin-top: .3rem;
+    }
+    .mod-inner h4:after {
+      top: 3rem;
+    }
+    .product.qc-unit-active h4:after {
+      top: 1.7rem;
     }
 
     .core_txt h4 {
@@ -608,11 +620,17 @@
 
     .solution p, .core p, .mod-inner p {
       font-size: .25rem;
-      line-height: .4rem;
+      line-height: .35rem;
+    }
+    .solution .row {
+      margin: 0 10%;
     }
 
     .core_txt > div {
       height: 3.2rem;
+    }
+    .solution ul li {
+      font-size: .2rem;
     }
 
     .core_img {
@@ -640,24 +658,48 @@
     .content {
       padding-bottom: 1.5rem;
     }
+    .wisdom img,#solution img {
+      width:738px;
+    }
   }
 
   @media (max-width: 767.98px) {
     .bg {
       height: 9rem;
     }
+    .content h3 {
+      margin-top: .5rem;
+    }
 
-    .solution h3, .core h3, .threeD h3, .content h3 {
+    .solution h3, .core h3, .threeD h3, .content h3,.wisdom h3,#solution h3 {
       font-size: .56rem;
       margin-bottom: 1rem;
     }
 
-    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after, .content h3:after {
+    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after, .content h3:after,.wisdom h3:after,#solution h3:after {
       top: 1rem;
+    }
+    .solution .row {
+      margin: 0 5%;
+    }
+    .solution ul li {
+      margin-left:0;
+    }
+    .new .product {
+      padding: 0 60px;
     }
 
     .core_txt h4 {
-      font-size: .4rem;
+      font-size: .6rem;
+    }
+    .mod-inner img {
+      width:1.2rem !important;
+    }
+    .product.qc-unit-active h4:after {
+      top: 2.5rem;
+    }
+    .content p {
+      margin: .5rem auto;
     }
 
     .solution p, .core p, .mod-inner p {
@@ -669,14 +711,23 @@
     .core_txt > div {
       height: 6rem;
     }
-
-    .core_img {
+    .core_txt p {
+      text-align: center;
+    }
+    .threeD > .row > div:nth-of-type(1), .threeD > .row > div:nth-of-type(2), .threeD > .row > div:nth-of-type(3),
+    .threeD > .row > div:nth-of-type(4), .threeD > .row > div:nth-of-type(5), .threeD > .row > div:nth-of-type(6){
       height: 6rem;
     }
+    .threeD > .row > div > div p {
+      font-size: .35rem;
+      line-height: .6rem;
+    }
 
-    .threeD img {
-      width: 90%;
-      height: 90%;
+    .core_img {
+      height: 7rem;
+    }
+    .wisdom img, #solution img {
+      width: 577px;
     }
 
     .qc-unit-5-24 {
@@ -696,7 +747,7 @@
     }
 
     .content {
-      height: 2300px;
+      height: 39rem;
     }
   }
 
@@ -705,11 +756,11 @@
       height: 12rem;
     }
 
-    .solution h3, .core h3, .threeD h3, .content h3 {
+    .solution h3, .core h3, .threeD h3, .content h3, .wisdom h3,#solution h3{
       font-size: .8rem;
     }
 
-    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after, .content h3:after {
+    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after, .content h3:after,.wisdom h3:after,#solution h3:after {
       top: 1.3rem;
     }
 
@@ -731,27 +782,38 @@
     }
 
     .content h3 {
+      margin-top: 1.2rem;
       margin-bottom: 50px;
+    }
+    .content {
+      height: 78rem;
+    }
+    .threeD > .row > div h4 {
+      font-size: .6rem;
     }
 
     .mod-inner h4 {
       font-size: .6rem;
+    }
+    .product.qc-unit-active h4:after {
+      top: 4rem;
     }
 
     .mod-inner img {
       width: 2rem !important;
     }
 
-    .product.qc-unit-active h4:after {
-      top: 20%;
-    }
+
 
     .mod-inner h4:after {
-      top: 25%;
+      top: 5rem;
     }
 
     .mod-inner p {
       margin-top: 2rem;
+    }
+    .wisdom img, #solution img {
+      width: 90%;
     }
 
   }

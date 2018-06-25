@@ -27,10 +27,10 @@
     <div class="container-fluid content advance">
       <h4 id="advance_title">光纤传感技术应用于管线安防的优势</h4>
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-5 advance-img">
           <img src="../../static/bil/imgamge/20180621164758.png" alt="" width="100%" height="auto">
         </div>
-        <div class="col-md-6" style="padding-left: 30px">
+        <div class="col-md-6">
           <p v-for="item in advance" :key="item.advance">{{item}}</p>
         </div>
       </div>
@@ -229,7 +229,7 @@
     padding: .5rem 0;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1199.98px) {
     .bg {
       height: 8rem;
       background-position: 50% 50%;
@@ -246,7 +246,7 @@
     .content p, .sou p {
       font-size: .25rem;
       font-weight: 100;
-      line-height: .4rem;
+      line-height: .35rem;
     }
 
     .introduction > div {
@@ -264,15 +264,13 @@
     }
     .content h4, .sou h4 {
       font-size: .56rem;
-      margin-bottom: 1rem;
+      margin-bottom: .5rem;
     }
     .content h4:after, .sou h4:after {
       top: .9rem;
     }
 
-    .content h4, .sou h4 {
-      font-size: .4rem;
-    }
+
 
     .content p, .sou p {
       font-size: .35rem;
@@ -284,7 +282,7 @@
     }
 
     .nowadays h5 {
-      font-size: .45rem;
+      font-size: .4rem;
     }
   }
 
@@ -294,11 +292,11 @@
     }
     .content h4, .sou h4 {
       font-size: .8rem;
+      margin-bottom: 1rem;
     }
     .content h4:after, .sou h4:after {
       top: 1.5rem;
     }
-
 
     .content p, .sou p {
       font-size: .58rem;
@@ -309,6 +307,9 @@
       height: 5.5rem;
     }
 
+    .advance-img {
+      margin-bottom: 20px;
+    }
     .nowadays h5 {
       font-size: .65rem;
     }

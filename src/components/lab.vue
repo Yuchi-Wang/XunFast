@@ -135,6 +135,7 @@ export default {
   }
   .system_banner h3{
     font-size: .28rem;
+    color: #151515;
   }
   .solve{
     padding: .7rem 0;
@@ -264,13 +265,13 @@ export default {
     line-height: .32rem;
     color: #666666;
   }
-  @media (max-width:1024px) {
+  @media (max-width:1199.98px) {
     .system_banner{
       height: 11rem;
       background-position: 50% 50%;
     }
     .system_banner h3{
-      font-size: .4rem;
+      font-size: .38rem;
     }
     .solve h4, .point h4, .advantage h4, .system_function h4{
       font-size: .38rem;
@@ -282,7 +283,7 @@ export default {
     .solve p{
       font-size: .25rem;
       font-weight: 300;
-      line-height: .43rem;
+      line-height: .35rem;
     }
     .point>div>div span{
       font-size: .28rem;
@@ -313,15 +314,15 @@ export default {
     }
     .solve h4, .point h4, .advantage h4, .system_function h4{
       font-size: .56rem;
-      margin-bottom: 1rem;
+      margin-bottom: .8rem;
     }
     .solve h4:after, .point h4:after, .advantage h4:after, .system_function h4:after {
       top: .9rem;
     }
     .solve p{
-      font-size: .34rem;
+      font-size: .35rem;
       font-weight: 300;
-      line-height: .66rem;
+      line-height: .6rem;
     }
     #point>div{
       height: 4rem;
@@ -334,21 +335,25 @@ export default {
       font-size: .45rem;
     }
     .carousel-item>.row>div:nth-of-type(1){
-      height: 4rem;
+      height: 6rem;
       background-size: cover;
     }
+    .carousel-indicators[data-v-0118b34d] {
+      bottom: -10px!important;
+    }
     .bannertxt{
-      height: 3.5rem;
+      height: 4rem;
       padding: 0;
     }
     .bannertxt h5{
-      margin-top: 30px;
+      text-align: center;
+      margin-top: 15px;
       font-size: .4rem;
       margin-bottom: .1rem;
     }
     .bannertxt p{
-      font-size: .34rem;
-      line-height: .4831376121rem;
+      font-size: .35rem;
+      line-height: .6rem;
     }
   }
   @media (max-width:575.98px) {
@@ -389,21 +394,20 @@ export default {
       font-size: .55rem;
     }
     .carousel-item>.row>div:nth-of-type(1){
-      height: 6rem;
+      height:8rem;
       background-size: cover;
     }
     .bannertxt{
-      height:7rem;
+      height:8rem;
       padding: 0;
     }
     .bannertxt h5{
-      margin-top: 30px;
-      font-size: .62rem;
+      font-size: .65rem;
       margin-bottom: .1rem;
     }
     .bannertxt p{
       font-size: .58rem;
-      line-height: .7rem;
+      line-height: .8rem;
     }
   }
 </style>

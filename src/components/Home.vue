@@ -456,7 +456,7 @@
   }
 
   .imgbox2 {
-    background: url("../../static/bil/imgamge/20180622153205.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180625152209.png") no-repeat;
     height: 3rem;
     background-size: cover;
     background-position: 50% 50%;
@@ -568,7 +568,7 @@
       font-size: .38rem;
     }
 
-    .product h3:after, .solution h3:after {
+    .product h3:after, .solution h3:after,.about h4:after {
       top: .6rem;
     }
 
@@ -589,15 +589,33 @@
     .production {
       padding: 0 7.5px;
     }
+    .solution > .row > div {
+      padding: 15px;
+    }
 
     .cardlist h4{
       font-size: .25rem;
     }
-
+    .imgbox {
+      height: 3.5rem;
+    }
 
     .imgtxt p, .about p {
       font-size: .25rem;
       line-height: .35rem;
+    }
+    .about>.row {
+      margin: 0 5%;
+    }
+    .about .a_img > div {
+      height: 3.19rem;
+    }
+    .about .a_img > div {
+      padding-right: 15px;
+    }
+    .about .a_img > div:nth-of-type(2) {
+      padding-right: 0;
+      padding-left: 15px;
     }
 
     .about span {
@@ -614,7 +632,7 @@
       font-size: .56rem;
     }
 
-    .product h3:after, .solution h3:after {
+    .product h3:after, .solution h3:after,.about h4:after {
       top: 1rem;
     }
 
@@ -643,7 +661,12 @@
       height: 100px;
       margin-top: 1.2rem;
     }
-
+    .imgbox {
+      height: 8rem;
+    }
+    .imgtxt {
+      padding: 20px 15px 0;
+    }
 
     .cardlist h4 {
       font-size: .4rem;
@@ -654,9 +677,9 @@
       font-size: .35rem;
       line-height: .6rem;
     }
-
     .about .a_img > div {
       height: 5.2rem;
+      padding: 0!important;
     }
 
     .about span {
@@ -674,7 +697,7 @@
       margin-bottom: 1rem;
     }
 
-    .product h3:after, .solution h3:after {
+    .product h3:after, .solution h3:after,.about h4:after{
       top: 1.5rem;
     }
 
@@ -701,7 +724,9 @@
       height: 13rem;
       margin-bottom: 30px;
     }
-
+    .imgbox {
+      height: 10rem;
+    }
     .imgtxt {
       padding: 20px 15px;
     }

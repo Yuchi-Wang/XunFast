@@ -237,10 +237,10 @@
   .about_bg {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180620175712.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180625104804.jpg") no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    margin-top: 70px;
+    margin-top: 69px;
   }
 
   .about h3 {
