@@ -94,10 +94,10 @@
         timer: null,
         mark: 0,
         production: [
-          {imgArray: '../../static/bil/imgamge/20180613102324.png', title: '实验室云平台', url: '/lab'},
-          {imgArray: '../../static/bil/imgamge/20180613102413.png', title: '设备动态监测与智能预警', url: '/health'},
+          {imgArray: '../../static/bil/imgamge/20180626114012.png', title: '设备数据智能采集系统', url: '/scada'},
+          {imgArray: '../../static/bil/imgamge/20180626113943.png', title: '实验室信息管理与应用分析平台', url: '/lab'},
+          {imgArray: '../../static/bil/imgamge/20180613102454.png', title: '数字三维实景可视化平台', url: '/three-dimensional'},
           {imgArray: '../../static/bil/imgamge/20180613102436.png', title: '大数据建模与可视化', url: '/bigData'},
-          {imgArray: '../../static/bil/imgamge/20180613102454.png', title: '三维全景数字化平台', url: '/three-dimensional'},
         ],
         introduction: '  上海迅发信息技术有限公司是拥有一支技术实力雄厚的硕士博士生团队的高科技企业，充分利用互联网、物联网、大数据、\n' +
         '            人工智能等新一代信息技术，专注于互联网+、大数据+行业应用的研发和产品化。公司在信息系统整体架构、大数\n' +
@@ -332,23 +332,27 @@
   }
 
   .product > div > div:nth-of-type(1) > div {
-    background: url("../../static/bil/imgamge/20180613100424.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180626113254.jpg") no-repeat;
     background-size: cover;
+    background-position: 50% 50%;
   }
 
   .product > div > div:nth-of-type(2) > div {
-    background: url("../../static/bil/imgamge/20180613101906.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180626113428.jpg") no-repeat;
     background-size: cover;
+    background-position: 50% 50%;
   }
 
   .product > div > div:nth-of-type(3) > div {
-    background: url("../../static/bil/imgamge/20180613102014.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180613151524.png") no-repeat;
     background-size: cover;
+    background-position: 50% 50%;
   }
 
   .product > div > div:nth-of-type(4) > div {
-    background: url("../../static/bil/imgamge/20180613151524.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180613102014.png") no-repeat;
     background-size: cover;
+    background-position: 50% 50%;
   }
 
   .product a {
@@ -400,8 +404,8 @@
   }
 
   .product img {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1rem;
+    height: 1rem;
     margin-top: .8rem;
   }
   /* 产品结束 */

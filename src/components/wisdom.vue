@@ -14,7 +14,8 @@
                 <h4>全连接</h4>
                 <p>资金量、管理信息流、物流信息流、服务信息流等各个相关环节需要全面连接，缺少任一节点的连接，都有可能影响全面自动化的实现。</p>
               </div>
-              <div v-for="item in challenge" :key="item.challenge" class="product qc-unit-5-24 b_b" v-bind:data-index="item.index" >
+              <div v-for="item in challenge" :key="item.challenge" class="product qc-unit-5-24 b_b"
+                   v-bind:data-index="item.index">
                 <img :src="item.imgArray" alt="">
                 <h4>{{item.title}}</h4>
                 <p>{{item.txt}}</p>
@@ -49,24 +50,18 @@
             <img src="../../static/bil/imgamge/20180524162004.jpg" alt="" width="100%" height="auto">
           </div>
           <div class="core_txt">
-            <div>
               <h4>科学决策</h4>
               <p>通过大数据平台，实现异构系统数据的流动与知识的分享</p>
-            </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="core_txt">
-            <div>
               <h4>状态感知</h4>
               <p>通过各种各样的传感器感知物质世界的运行状态</p>
-            </div>
           </div>
           <div class="core_txt">
-            <div>
               <h4>精准执行</h4>
               <p>通过控制器、执行器等机械硬件实现对决策的反馈响应，这一切都依赖于一个实时、可靠、安全的网络。</p>
-            </div>
           </div>
         </div>
         <div class="col-md-4">
@@ -74,27 +69,26 @@
             <img src="../../static/bil/imgamge/20180524163159.png" alt="" width="100%" height="auto">
           </div>
           <div class="core_txt">
-            <div>
               <h4>实时分析</h4>
               <p>通过工业软件实现数据、信息、知识的转化</p>
-            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="container-fluid threeD" id="threeD">
       <h3>两大主题：智能工厂、智能车间</h3>
+      <h4>智能工厂（六化）</h4>
       <div class="row">
         <div class="col-md-4" v-for="item in certificate" :key="item.certificate"
              v-bind:style="{ 'background-image': 'url(' + item.imgArray + ')','background-repeat':'no-repeat','background-size':'cover',' background-position':'50% 50%' }">
-        <h4>{{item.title}}</h4>
+          <h4>{{item.title}}</h4>
           <p>{{item.txt}}</p>
         </div>
       </div>
     </div>
     <!--智能车间-->
     <div class="container-fluid wisdom">
-  <!--    <h3 class="wisdom-title">智能车间架构图</h3>-->
+      <h4>智能车间</h4>
       <img src="../../static/bil/imgamge/20180624175301.jpg" alt="">
     </div>
     <div class="container-fluid" id="solution">
@@ -120,28 +114,48 @@
           {point: '../../static/bil/imgamge/point.png', txt: ' 三项集成：横向集成、纵向集成、端到端集成'}
         ],
         challenge: [
-          { index:'1',title: '全控制',imgArray: '../../static/bil/imgamge/20180622164945.png',
-            txt:'资金量、管理信息流、物流信息流、服务信息流等各个相关环节需要全面连接，缺少任一节点的连接，都有可能影响全面自动化的实现。'},
-          { index:'2',title: '资源整合',imgArray: '../../static/bil/imgamge/20180622165047.png',
-            txt:'智能制造系统化工程需整合供应链、生产、物流、服务平台、营销资源等等，才能最大化的实现智能制造的自动化及产能最大化。'},
-          { index:'3',title: '数据采集',imgArray: '../../static/bil/imgamge/20180622165109.png',
-            txt:'企业内外大小数据的采集是智能制造效率的基础，尤其是外部环境数据、行业数据和用户数据的获取能力。'},
-          { index:'4',title: '数据应用',imgArray: '../../static/bil/imgamge/20180622165142.png',
-            txt:'数据将成为智能制造的生命线，数据收集、存储、快速调拨、模型搭建、规则创建及整合、计算和应用，每个环节都与连接、控制和自动化息息相关。'},
+          {
+            index: '1', title: '全控制', imgArray: '../../static/bil/imgamge/20180622164945.png',
+            txt: '资金量、管理信息流、物流信息流、服务信息流等各个相关环节需要全面连接，缺少任一节点的连接，都有可能影响全面自动化的实现。'
+          },
+          {
+            index: '2', title: '资源整合', imgArray: '../../static/bil/imgamge/20180622165047.png',
+            txt: '智能制造系统化工程需整合供应链、生产、物流、服务平台、营销资源等等，才能最大化的实现智能制造的自动化及产能最大化。'
+          },
+          {
+            index: '3', title: '数据采集', imgArray: '../../static/bil/imgamge/20180622165109.png',
+            txt: '企业内外大小数据的采集是智能制造效率的基础，尤其是外部环境数据、行业数据和用户数据的获取能力。'
+          },
+          {
+            index: '4', title: '数据应用', imgArray: '../../static/bil/imgamge/20180622165142.png',
+            txt: '数据将成为智能制造的生命线，数据收集、存储、快速调拨、模型搭建、规则创建及整合、计算和应用，每个环节都与连接、控制和自动化息息相关。'
+          },
         ],
         certificate: [
-          {imgArray: '../../static/bil/imgamge/20180626100442.jpg', title:'自动化',
-            txt: '建设了覆盖全厂的DCS、SIS等系统，实现对整个工艺过程的监测与控制'},
-          {imgArray: '../../static/bil/imgamge/20180626100553.jpg', title:'数字化',
-            txt: '借助覆盖全厂的网路平台实现生产数据的实时采集，快速掌握生产运行情况，实现生产环境与信息系统的无缝对接，提升了管理人员对生产现场的感知和监控能力'},
-          {imgArray: '../../static/bil/imgamge/20180626100617.jpg', title:'模型化',
-            txt: '基于工厂模型构建煤化工的各类工艺、业务模型与规则，并与各种生产管理活动相匹配'},
-          {imgArray: '../../static/bil/imgamge/20180626100641.jpg', title:'决策科学化',
-            txt: '利用大数据技术，对各应用系统的数据进行集中存储和分析，协助公司领导层及时发现问题、分析问题原因、进行风险预警，实现决策的科学化'},
-          {imgArray: '../../static/bil/imgamge/20180626100707.jpg', title:'可视化',
-            txt: '根据设计院提供的设计图纸搭建了三维可视化工厂，并与生产工艺、设备信息、作业票、应急演练等功能进行集成，为生产操作和管理人员提供直接的业务场景展示'},
-          {imgArray: '../../static/bil/imgamge/20180626100925.jpg', title:'集成化',
-            txt: '建设了企业信息集成平台，以MES为核心，向上支撑企业经营管理，向下与生产过程的实时数据高度集成，将各自独立的信息系统连接成为一个完整可靠和有效的整体'},
+          {
+            imgArray: '../../static/bil/imgamge/20180626150929.jpg', title: '自动化',
+            txt: '建设了覆盖全厂的DCS、SIS等系统，实现对整个工艺过程的监测与控制'
+          },
+          {
+            imgArray: '../../static/bil/imgamge/20180626151002.jpg', title: '数字化',
+            txt: '借助覆盖全厂的网路平台实现生产数据的实时采集，快速掌握生产运行情况，实现生产环境与信息系统的无缝对接，提升了管理人员对生产现场的感知和监控能力'
+          },
+          {
+            imgArray: '../../static/bil/imgamge/20180626150829.jpg', title: '模型化',
+            txt: '基于工厂模型构建煤化工的各类工艺、业务模型与规则，并与各种生产管理活动相匹配'
+          },
+          {
+            imgArray: '../../static/bil/imgamge/20180626151027.jpg', title: '决策科学化',
+            txt: '利用大数据技术，对各应用系统的数据进行集中存储和分析，协助公司领导层及时发现问题、分析问题原因、进行风险预警，实现决策的科学化'
+          },
+          {
+            imgArray: '../../static/bil/imgamge/20180626151100.jpg', title: '可视化',
+            txt: '根据设计院提供的设计图纸搭建了三维可视化工厂，并与生产工艺、设备信息、作业票、应急演练等功能进行集成，为生产操作和管理人员提供直接的业务场景展示'
+          },
+          {
+            imgArray: '../../static/bil/imgamge/20180626151135.jpg', title: '集成化',
+            txt: '建设了企业信息集成平台，以MES为核心，向上支撑企业经营管理，向下与生产过程的实时数据高度集成，将各自独立的信息系统连接成为一个完整可靠和有效的整体'
+          },
         ],
         solution: '智能制造技术是传感技术、网络技术、自动化技术、人工智能技术等新一代信息技术与先进自动化技术、传感技术、' +
         '控制技术、数字制造技术结合，通过智能化的感知、人机交互、决策和执行技术，实现产品生命周期各环节以及制造装备（车间、' +
@@ -331,7 +345,7 @@
     margin-bottom: .4rem;
   }
 
-  .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after, #solution h3:after,.wisdom h3:after {
+  .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after, #solution h3:after, .wisdom h3:after {
     width: 60px;
     position: absolute;
     left: 50%;
@@ -381,15 +395,20 @@
     background: url("../../static/bil/imgamge/20180524142826.png") no-repeat;
     background-size: cover;
   }
+  .core .row>div {
+    padding: 0 10px;
+  }
+  .core .row>div>div:nth-of-type(1) {
+    margin-bottom: 30px;
+  }
 
   .core p {
     color: white;
   }
 
   .core_img {
-    height: 2.6665994047rem;
+    height: 2.55rem;
     overflow: hidden;
-    padding: 10px;
   }
 
   .core_img img {
@@ -402,13 +421,13 @@
   }
 
   .core_txt {
-    padding: 10px;
+    height: 2.55rem;
+    border: 2px solid #008fd7;
+    padding: 0 30px;
   }
 
   .core_txt > div {
-    height: 2.55rem;
-    border: 2px solid #008fd7;
-    padding: 0 15px;
+    height: inherit;
   }
 
   .core_txt h4 {
@@ -420,6 +439,7 @@
 
   .core_txt p {
     font-size: .16rem;
+    text-align: center;
   }
 
   /* 核心结束 */
@@ -429,32 +449,55 @@
     position: relative;
     padding: .7rem 0;
   }
+
   .threeD h3 {
     color: #151515;
   }
 
+  .threeD > h4, .wisdom h4 {
+    text-align: left;
+    font-size: .23rem;
+    margin-bottom: 20px;
+    color: #151515;
+    margin-left: 7%;
+    padding-left: 15px;
+    border-left: 4px solid #008fd7;
+
+  }
+
   .threeD > .row > div {
-      padding: .378348rem .46242rem 0;
+    padding: .378348rem .46242rem 0;
+    transition: .8s;
+    z-index: 1;
+  }
+  .threeD > .row > div:hover {
+    transform:rotateZ(360deg);
+    z-index: 999;
+  }
+  .threeD > .row {
+    margin: 0 7%;
   }
 
   .threeD > .row > div h4 {
-    font-size: .4rem;
+    font-size: .25rem;
     color: white;
     text-shadow: 5px 5px 5px #151515;
     font-weight: bold;
     margin-bottom: 10px;
   }
 
-  .threeD > .row > div  p {
+  .threeD > .row > div p {
     font-size: .15rem;
     color: white;
     line-height: .32rem;
     text-align: justify;
   }
+
   .threeD > .row > div {
     width: 100%;
     height: 2.8rem;
   }
+
   /* 智能车间架构图 */
   .wisdom {
     padding: .7rem 0;
@@ -501,23 +544,27 @@
       height: 8rem;
     }
 
-    .solution h3, .core h3, .threeD h3, .content h3,.wisdom h3,#solution h3{
+    .solution h3, .core h3, .threeD h3, .content h3, .wisdom h3, #solution h3 {
       font-size: .38rem;
       margin-bottom: .8rem;
     }
 
-    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after, .content h3:after,.wisdom h3:after,#solution h3:after {
+    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after, .content h3:after, .wisdom h3:after, #solution h3:after {
       top: .7rem;
     }
+
     .new .product {
       padding: 0 15px;
     }
+
     .mod-inner p {
       margin-top: .3rem;
     }
+
     .mod-inner h4:after {
       top: 3rem;
     }
+
     .product.qc-unit-active h4:after {
       top: 1.7rem;
     }
@@ -531,6 +578,7 @@
       font-size: .25rem;
       line-height: .35rem;
     }
+
     .solution .row {
       margin: 0 10%;
     }
@@ -538,6 +586,7 @@
     .core_txt > div {
       height: 3.2rem;
     }
+
     .solution ul li {
       font-size: .2rem;
     }
@@ -567,8 +616,9 @@
     .content {
       padding-bottom: 1.5rem;
     }
-    .wisdom img,#solution img {
-      width:738px;
+
+    .wisdom img, #solution img {
+      width: 738px;
     }
   }
 
@@ -576,24 +626,28 @@
     .bg {
       height: 9rem;
     }
+
     .content h3 {
       margin-top: .5rem;
     }
 
-    .solution h3, .core h3, .threeD h3, .content h3,.wisdom h3,#solution h3 {
+    .solution h3, .core h3, .threeD h3, .content h3, .wisdom h3, #solution h3 {
       font-size: .56rem;
       margin-bottom: 1rem;
     }
 
-    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after, .content h3:after,.wisdom h3:after,#solution h3:after {
+    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after, .content h3:after, .wisdom h3:after, #solution h3:after {
       top: 1rem;
     }
+
     .solution .row {
       margin: 0 5%;
     }
+
     .solution ul li {
-      margin-left:0;
+      margin-left: 0;
     }
+
     .new .product {
       padding: 0 60px;
     }
@@ -601,12 +655,15 @@
     .core_txt h4 {
       font-size: .6rem;
     }
+
     .mod-inner img {
-      width:1.2rem !important;
+      width: 1.2rem !important;
     }
+
     .product.qc-unit-active h4:after {
       top: 2.5rem;
     }
+
     .content p {
       margin: .5rem auto;
     }
@@ -620,13 +677,16 @@
     .core_txt > div {
       height: 6rem;
     }
+
     .core_txt p {
       text-align: center;
     }
+
     .threeD > .row > div:nth-of-type(1), .threeD > .row > div:nth-of-type(2), .threeD > .row > div:nth-of-type(3),
-    .threeD > .row > div:nth-of-type(4), .threeD > .row > div:nth-of-type(5), .threeD > .row > div:nth-of-type(6){
+    .threeD > .row > div:nth-of-type(4), .threeD > .row > div:nth-of-type(5), .threeD > .row > div:nth-of-type(6) {
       height: 6rem;
     }
+
     .threeD > .row > div > div p {
       font-size: .35rem;
       line-height: .6rem;
@@ -635,6 +695,7 @@
     .core_img {
       height: 7rem;
     }
+
     .wisdom img, #solution img {
       width: 577px;
     }
@@ -665,11 +726,11 @@
       height: 12rem;
     }
 
-    .solution h3, .core h3, .threeD h3, .content h3, .wisdom h3,#solution h3{
+    .solution h3, .core h3, .threeD h3, .content h3, .wisdom h3, #solution h3 {
       font-size: .8rem;
     }
 
-    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after, .content h3:after,.wisdom h3:after,#solution h3:after {
+    .solution h3:after, .core h3:after, .content h3:after, .threeD h3:after, .content h3:after, .wisdom h3:after, #solution h3:after {
       top: 1.3rem;
     }
 
@@ -694,9 +755,11 @@
       margin-top: 1.2rem;
       margin-bottom: 50px;
     }
+
     .content {
       height: 78rem;
     }
+
     .threeD > .row > div h4 {
       font-size: .6rem;
     }
@@ -704,6 +767,7 @@
     .mod-inner h4 {
       font-size: .6rem;
     }
+
     .product.qc-unit-active h4:after {
       top: 4rem;
     }
@@ -712,8 +776,6 @@
       width: 2rem !important;
     }
 
-
-
     .mod-inner h4:after {
       top: 5rem;
     }
@@ -721,6 +783,7 @@
     .mod-inner p {
       margin-top: 2rem;
     }
+
     .wisdom img, #solution img {
       width: 90%;
     }

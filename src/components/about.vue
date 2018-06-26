@@ -13,62 +13,28 @@
             </li>
           </ul>
           <ul id="service_content" class="row col-12 clearfix">
-            <li v-for="(img,index) in imgArray" :key="img.index" v-show="index===checkIndex" class="col-sm-12">
-              <div v-show="index===0" class="development">
-                <div class="about-us">
-                  <div class="wrap">
-                    <div class="info">
-                      <div class="honorary-certificate">
-                        <div class="certificate-list">
-                          <span class="left-arrow"></span>
-                          <div class="list">
-                            <ul>
-                              <li v-for="item in certificate" :key="item.certificate" :class="item.className">
-                                <div>
-                                  <img :src="item.imgArray" alt="">
-                                  <p>{{item.txt}}</p>
-                                </div>
-                              </li>
-                            </ul>
-                          </div>
-                          <span class="right-arrow"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <li v-for="(item,index) in imgArray" :key="item.index" v-show="index===checkIndex" class="col-sm-12">
               <div v-show="index===1" class="container-fluid m-p-0" style="margin-bottom: 60px;padding-bottom: .7rem">
                 <div class="row m-p-0">
                   <div class="col-md-6 m-p-0" style="padding-right: 50px">
-                    <p v-for="(item,index) in content" :key="item.index" v-show="index===checkIndex">{{ item }}</p>
+                    <p>{{content}}</p>
                   </div>
                   <div class="col-md-6 about-bg"></div>
                 </div>
               </div>
-              <ol class="jobs" v-show="index===2">
-                <li v-for="(item,index) in listdata" :key="item.index" @click="select(index)"
-                    v-bind:style="{color:index===tabsIndex?'#008fd7':''}">{{item.PostName}}
-                </li>
-              </ol>
-              <ol v-show="index===2" style="margin-bottom: 60px">
-                <li v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex" class="jobName">
-                  {{item.PostName}}
-                  <span v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex" class="salary">{{item.Salary}}</span>
-                </li>
-                <li class="count">招聘人数:<span v-for="(item,index) in listdata" :key="item.index"
-                                             v-show="index===tabsIndex">{{item.Count}}</span>人
-                </li>
-                <li class="count">岗位职责:</li>
-                <li v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex"
-                    v-html="item.PostDuties" class="qualification">{{item.PostDuties }}
-                </li>
-                <li class="count">任职要求:</li>
-                <li v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex"
-                    v-html="item.Qualification" class="qualification">{{item.Qualification}}
-                </li>
-              </ol>
-              <div v-show="index===3" id="content_us">
+              <div v-show="index===0" class="development">
+                <div class="certificate-list">
+                  <ul class="list">
+                    <li v-for="item in certificate" :key="item.certificate" :class="item.className">
+                      <img :src="item.imgArray" alt="">
+                        <p>{{item.txt}}</p>
+                    </li>
+                  </ul>
+                  <span class="left-arrow"></span>
+                  <span class="right-arrow"></span>
+                </div>
+              </div>
+              <div v-show="index===2" id="content_us">
                 <div v-for="item in newsdata" class="container-fluid news" :key="item.newsdata">
                   <div class="row">
                     <div class="col-md-4">
@@ -86,6 +52,28 @@
                   </div>
                 </div>
               </div>
+              <ol class="jobs" v-show="index===3">
+                <li v-for="(item,index) in listdata" :key="item.index" @click="select(index)"
+                    v-bind:style="{color:index===tabsIndex?'#008fd7':''}">{{item.PostName}}
+                </li>
+              </ol>
+              <ol v-show="index===3" style="margin-bottom: 60px">
+                <li v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex" class="jobName">
+                  {{item.PostName}}
+                  <span v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex" class="salary">{{item.Salary}}</span>
+                </li>
+                <li class="count">招聘人数:<span v-for="(item,index) in listdata" :key="item.index"
+                                             v-show="index===tabsIndex">{{item.Count}}</span>人
+                </li>
+                <li class="count">岗位职责:</li>
+                <li v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex"
+                    v-html="item.PostDuties" class="qualification">{{item.PostDuties }}
+                </li>
+                <li class="count">任职要求:</li>
+                <li v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex"
+                    v-html="item.Qualification" class="qualification">{{item.Qualification}}
+                </li>
+              </ol>
             </li>
           </ul>
         </div>
@@ -97,7 +85,6 @@
 
 <script>
   import bottom from '../components/bottom'
-
   export default {
     components: {bottom},
     name: 'about',
@@ -106,33 +93,31 @@
         lists: [
           '资质荣誉',
           '公司介绍',
-          '加入我们',
           '新闻资讯',
+          '加入我们',
         ],
         imgArray: [
           '',
-          '../static/bil/imgamge/20180626090835.png',
+          '',
           '',
           ''
         ],
         listdata: [],
         newsdata: [],
         certificate: [
-          {className:'first',imgArray: '../../static/bil/imgamge/iso9001.jpg', txt: 'ISO9001认证'},
-          {className:'second',imgArray: '../../static/bil/imgamge/xyzd.jpg', txt: '学业诊断与分析云平台'},
-          {className:'third',imgArray: '../../static/bil/imgamge/zhxy.jpg', txt: '智慧校园云平台'},
-          {className:'fourth',imgArray: '../../static/bil/imgamge/zhzj.jpg', txt: '智慧职教云平台'},
-          {className:'fifth',imgArray: '../../static/bil/imgamge/zb.jpg', txt: '高清直播录播平台'},
+          {className: 'first', imgArray: '../../static/bil/imgamge/iso9001.jpg', txt: 'ISO9001认证'},
+          {className: 'second', imgArray: '../../static/bil/imgamge/xyzd.jpg', txt: '学业诊断与分析云平台'},
+          {className: 'third', imgArray: '../../static/bil/imgamge/zhxy.jpg', txt: '智慧校园云平台'},
+          {className: 'fourth', imgArray: '../../static/bil/imgamge/zhzj.jpg', txt: '智慧职教云平台'},
+          {className: 'fifth', imgArray: '../../static/bil/imgamge/zb.jpg', txt: '高清直播录播平台'},
         ],
-        content: [
-          '',
-          '上海迅发信息技术有限公司是拥有一支技术实力雄厚的硕士博士生团队的高科 技企业，充分利用互联网、物联网、大数据、' +
-          '人工智能等新一代信息技术，专注于 互联网+、大数据+行业应用的研发和产品化。公司在信息系统整体架构、大数据建 模分' +
-          '析与可视化、机器视觉、人工智能等方面，有着独立自主、业内领先的算法和 模型，公司拥有数十个软件著作权，并通过了' +
-          'ISO9001质量管理体系认证。公司与 上海交通大学、复旦大学、同济大学、华东师范大学等国内知名高校建立了深入的 合作' +
-          '研究关系，整合了一支高水平的专家团队和高效率的技术开发团队，致力于通 过持续的技术创新和优质的服务，不断为客户' +
-          '创造价值。',
-        ],
+        content: '上海迅发信息技术有限公司是拥有一支技术实力雄厚的硕士博士生团队的高科 技企业，充分利用互联网、物联网、大数据、' +
+        '人工智能等新一代信息技术，专注于 互联网+、大数据+行业应用的研发和产品化。公司在信息系统整体架构、大数据建 模分' +
+        '析与可视化、机器视觉、人工智能等方面，有着独立自主、业内领先的算法和 模型，公司拥有数十个软件著作权，并通过了' +
+        'ISO9001质量管理体系认证。公司与 上海交通大学、复旦大学、同济大学、华东师范大学等国内知名高校建立了深入的 合作' +
+        '研究关系，整合了一支高水平的专家团队和高效率的技术开发团队，致力于通 过持续的技术创新和优质的服务，不断为客户' +
+        '创造价值。'
+        ,
         checkIndex: 0,
         tabsIndex: 0,
       }
@@ -142,16 +127,19 @@
       $('.left-arrow').click(function () {
         classArr.unshift(classArr.pop());
         changeClass();
+      //  alert("111")
       });
       $('.right-arrow').click(function () {
         classArr.push(classArr.shift());
         changeClass();
+     //   alert("2222")
       });
       $('.certificate-list li').click(function (e) {
         var index = $(this).index();
-        if (classArr[index] == 'first') return;
+        if (classArr[index] === 'first') return;
         classArr = chooseClass(index);
         changeClass();
+      //  alert("33333")
       });
 
       function changeClass() {
@@ -176,7 +164,7 @@
           }
         })
         .then(response => {
-          console.log(response.data.Data)
+         // console.log(response.data.Data)
           this.newsdata = response.data.Data
         })
         .catch(function (error) {
@@ -202,26 +190,6 @@
       select: function (index) {
         this.tabsIndex = index
       },
-      sub: function () {
-        this.$axios
-          .post('/Api/Areas/XfFeedBack/PostFeedBack', this.formData, {
-            headers: {
-              'signature': 'xunfast@123!'
-            }
-          })
-          .then(response => {
-            console.log(response)
-            this.$message({
-              type: 'success',
-              message: '操作成功!'
-            })
-            this.getdataall()
-          })
-          .catch(function (error) {
-            console.log(error)
-          })
-      },
-
     }
   }
 </script>
@@ -240,6 +208,7 @@
     margin-top: 69px;
     position: relative;
   }
+
   .bottom-round {
     width: 100%;
     position: absolute;
@@ -313,17 +282,17 @@
     line-height: .32rem;
   }
 
-  .about-us .certificate-list {
+  .development .certificate-list {
     width: 800px;
     position: relative;
     margin: auto;
   }
 
-  .about-us {
+  .development {
     margin-top: .6rem;
   }
 
-  .about-us .certificate-list > span {
+  .development .certificate-list > span {
     position: absolute;
     width: 14px;
     height: 32px;
@@ -338,68 +307,68 @@
     background-size: 50% 30%;
   }
 
-  .about-us .certificate-list > span:hover {
+  .development .certificate-list > span:hover {
     opacity: 0.68;
     background-color: #2a97f3;
   }
 
-  .about-us .certificate-list .right-arrow {
+  .development .certificate-list .right-arrow {
     left: auto;
     right: 0;
     background: #000000 url("../../static/bil/imgamge/right.png") no-repeat center;
     background-size: 50% 30%;
   }
 
-  .about-us .certificate-list .list {
+  .development .certificate-list .list {
     width: 595px;
     height: 525px;
     margin: 0 auto .7rem;
     position: relative;
   }
 
-  .about-us .certificate-list .list li {
+  .development .certificate-list .list li {
     cursor: pointer;
     width: 344px;
     position: absolute;
     transition: all 0.5s;
   }
 
-  .about-us .certificate-list .list li.first {
+  .development .certificate-list .list li.first {
     left: 150px;
     top: 0;
     transform: scale(1);
     z-index: 5;
   }
 
-  .about-us .certificate-list .list li.second {
+  .development .certificate-list .list li.second {
     left: 300px;
     top: 0;
     transform: scale(0.8);
     z-index: 4;
   }
 
-  .about-us .certificate-list .list li.third {
+  .development .certificate-list .list li.third {
     left: 218px;
     top: -40px;
     transform: scale(0.7);
     z-index: 3;
   }
 
-  .about-us .certificate-list .list li.fourth {
+  .development .certificate-list .list li.fourth {
     left: 82px;
     top: -40px;
     transform: scale(0.7);
     z-index: 3;
   }
 
-  .about-us .certificate-list .list li.fifth {
+  .development .certificate-list .list li.fifth {
     left: 0;
     top: 0;
     transform: scale(0.8);
     z-index: 4;
   }
 
-  #service_content .about-us .certificate-list .list li p {
+  #service_content .development .certificate-list .list li p {
     text-align: center;
     font-size: .16rem;
     color: #000000;
@@ -457,16 +426,20 @@
     padding: 0;
     margin: 0 7%;
   }
+
   .news {
     margin-bottom: 60px;
   }
+
   .news-img {
     overflow: hidden;
     height: 2rem;
   }
+
   #content_us img {
     width: inherit;
   }
+
   .news-content {
     height: 1.8rem;
     overflow: hidden;
@@ -474,6 +447,7 @@
     padding-right: 30px;
     position: relative;
   }
+
   .news-content p:after {
     content: "...";
     position: absolute;
@@ -486,13 +460,13 @@
     color: #333333;
     font-weight: bolder;
   }
+
   #content_us time {
     display: block;
     font-size: .14rem;
     color: #666666;
     margin-bottom: 10px;
   }
-
 
   .about-bg {
     background: url("../../static/bil/imgamge/20180626090835.png") no-repeat;

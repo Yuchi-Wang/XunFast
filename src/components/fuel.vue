@@ -20,7 +20,6 @@
         </div>
         <div class="col-md-7" id="introduce" style="padding-left: 30px">
           <p class="content">{{introduction}}</p>
-          <!--<router-link to="fuelDetailed" class="learn">了解详情</router-link>-->
         </div>
       </div>
     </div>
@@ -157,7 +156,7 @@
   .f_banner {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180626105918.jpg");
+    background: url("../../static/bil/imgamge/20180626113136.jpg");
     background-size: cover;
     background-position: 50% 30%;
     margin-top: 70px;
@@ -349,7 +348,9 @@
 
   /*项目分类开始*/
   .main .project {
-    background: #008fd7;
+    background:url("../../static/bil/imgamge/20180626174348.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
     padding:.7rem 0;
     position: relative;
   }
@@ -366,7 +367,7 @@
   }
 
   .txt {
-    background: #FFF;
+    background: rgba(255, 255, 255, 0.89);
     padding: 30px 30px 0 30px;
     height: 2.5rem;
   }
@@ -432,11 +433,6 @@
     position: relative;
     z-index: 1;
   }
-  #project > div > div:nth-of-type(2){
-   border-left: 1px solid #a8a8a8;
-   border-right: 1px solid #a8a8a8;
-  }
-
   #project > div > div:hover {
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
@@ -540,7 +536,7 @@
       font-size: .4rem;
     }
 
-    .projectlist, .personlist {
+    .projectlist {
       margin-bottom: 30px;
     }
 
