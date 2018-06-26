@@ -1,10 +1,15 @@
 <template>
   <div class="news">
-    <div class="news-bg"></div>
+    <div class="news-bg">
+      <div class="bottom-round"></div>
+    </div>
     <div>
       <h3 class="animated slideInDown">服务承诺</h3>
       <p>公司严格按照ISO9001国际质量体系认证企业的《服务控制》要求，以客户满意为第一宗旨，以互联网远程部署、远程维护、电
         话维护、现场维护等有效的方式，确保系统稳定运行。</p>
+    </div>
+    <div class="container-fluid down">
+      <img src="../../static/bil/imgamge/20180625100148.png" alt="">
       <div class="tel">
         <ul>
           <li>运维技术支持工程师电话：123456789 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp 运维技术支持工程师手机:123456789</li>
@@ -14,9 +19,6 @@
           <li>运维监督投诉电话：123456789</li>
         </ul>
       </div>
-    </div>
-    <div class="container-fluid down">
-      <img src="../../static/bil/imgamge/20180625100148.png" alt="">
     </div>
     <bottom></bottom>
   </div>
@@ -33,10 +35,20 @@ export default {
  .news-bg{
    width: 100%;
    height: 5rem;
-   background:url("../../static/bil/imgamge/20180625095608.jpg") no-repeat;
+   background:url("../../static/bil/imgamge/20180626092332.jpg") no-repeat;
    background-size: cover;
    background-position: 50% 50%;
    margin-top: 70px;
+   position: relative;
+ }
+ .bottom-round {
+   width: 100%;
+   position: absolute;
+   bottom: -30px;
+   height: 60px;
+   background: white;
+   z-index: 99;
+   border-radius: 100%;
  }
   .news h3{
     font-family: "Source Han Serif SC";
@@ -63,7 +75,7 @@ export default {
   }
   .tel {
     background: #f9f9f9;
-    margin: .5rem 0;
+    margin: .7rem 0;
     padding: 30px 0;
     font-weight: bolder;
   }
@@ -73,6 +85,7 @@ export default {
  }
   .down img {
     width: 1000px;
+    margin-top:.7rem;
   }
 
 </style>

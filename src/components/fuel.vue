@@ -19,7 +19,6 @@
           </div>
         </div>
         <div class="col-md-7" id="introduce" style="padding-left: 30px">
-          <h4 class="introduce">案列介绍</h4>
           <p class="content">{{introduction}}</p>
           <!--<router-link to="fuelDetailed" class="learn">了解详情</router-link>-->
         </div>
@@ -158,7 +157,7 @@
   .f_banner {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180625095517.jpg");
+    background: url("../../static/bil/imgamge/20180626105918.jpg");
     background-size: cover;
     background-position: 50% 30%;
     margin-top: 70px;
@@ -208,11 +207,6 @@
     width: 100%;
     height: inherit;
   }
-  .main .introduce {
-    color: #333333;
-    font-size: .2365744026rem;
-    text-align: left;
-  }
 
   #slider > div {
     width: 100%;
@@ -241,18 +235,18 @@
   }
 
   #slider > div:nth-of-type(1) {
-    background: url("../../static/bil/imgamge/20180624190210.jpg");
+    background: url("../../static/bil/imgamge/20180624190232.jpg");
     background-size: cover;
     background-position: 50% 20%;
   }
 
   #slider > div:nth-of-type(2) {
-    background: url("../../static/bil/imgamge/20180624190232.jpg");
+    background: url("../../static/bil/imgamge/20180626091106.jpg");
     background-size: cover;
     background-position: 50% 20%;
   }
   #slider > div:nth-of-type(3) {
-    background: url("../../static/bil/imgamge/20180624190246.jpg");
+    background: url("../../static/bil/imgamge/20180624190210.jpg");
     background-size: cover;
     background-position: 50% 20%;
   }
@@ -325,6 +319,9 @@
     border-bottom: 2px solid #008fd7;
     content: "";
   }
+  .project h4:after {
+    border-bottom: 2px solid white;
+  }
 
   .person .row {
     margin: 0 10%;
@@ -352,7 +349,7 @@
 
   /*项目分类开始*/
   .main .project {
-    background: rgb(125, 198, 235);
+    background: #008fd7;
     padding:.7rem 0;
     position: relative;
   }

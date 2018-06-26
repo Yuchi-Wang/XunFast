@@ -1,14 +1,15 @@
 <template>
   <div class="about">
-    <div class="about_bg"></div>
+    <div class="about_bg">
+      <div class="bottom-round"></div>
+    </div>
     <div>
       <h3 class="animated fadeInDownBig">关于我们</h3>
       <div class="container-fluid select">
         <div class="row">
           <ul class="service_title row" id="service_title">
             <li class="col-3" v-for="(item,index) in lists" :key="item.index" @click="tabs(index)"
-                v-bind:style="{background:index===checkIndex?'#008fd7':'',color:index===checkIndex?'white':''}">{{ item
-              }}
+                v-bind:style="{background:index===checkIndex?'#008fd7':'',color:index===checkIndex?'white':''}">{{ item }}
             </li>
           </ul>
           <ul id="service_content" class="row col-12 clearfix">
@@ -22,35 +23,11 @@
                           <span class="left-arrow"></span>
                           <div class="list">
                             <ul>
-                              <li class="first">
+                              <li v-for="item in certificate" :key="item.certificate" :class="item.className">
                                 <div>
-                                  <img src="../../static/bil/imgamge/iso9001.jpg" alt="">
+                                  <img :src="item.imgArray" alt="">
+                                  <p>{{item.txt}}</p>
                                 </div>
-                                <p>ISO9001认证</p>
-                              </li>
-                              <li class="second">
-                                <div>
-                                  <img src="../../static/bil/imgamge/xyzd.jpg" alt="">
-                                </div>
-                                <p>学业诊断与分析云平台</p>
-                              </li>
-                              <li class="third">
-                                <div>
-                                  <img src="../../static/bil/imgamge/zhxy.jpg" alt="">
-                                </div>
-                                <p>智慧校园云平台</p>
-                              </li>
-                              <li class="fourth">
-                                <div>
-                                  <img src="../../static/bil/imgamge/zhzj.jpg" alt="">
-                                </div>
-                                <p>智慧职教云平台</p>
-                              </li>
-                              <li class="fifth">
-                                <div>
-                                  <img src="../../static/bil/imgamge/zb.jpg" alt="">
-                                </div>
-                                <p>高清直播录播平台</p>
                               </li>
                             </ul>
                           </div>
@@ -92,24 +69,6 @@
                 </li>
               </ol>
               <div v-show="index===3" id="content_us">
-                <!--   <div class="col-md-5 m-p-0">
-                     <ul>
-                       <li v-for="item in contact" :key="item.contact">
-                         <span class="bold" v-html="item.message">{{item.message}}</span>
-                         {{item.connection}}
-                       </li>
-                     </ul>
-                   </div>
-                   <div class="col-md-7 mob-sub">
-                     <p style="margin-top: 0"><span class="info">姓名：</span><input type="text" v-model="formData.Name" maxlength="6" placeholder="姓名"></p>
-                     <p><span class="info">邮箱：</span><input type="text" v-model="formData.Email" placeholder="邮箱"></p>
-                     <p><span class="info">电话：</span><input type="text" v-model="formData.Phone" placeholder="电话"></p>
-                     <div class="textarea">
-                       <span class="info">内容：</span><textarea v-model="formData.FeedContent" placeholder="请输入留言内容....."></textarea>
-                     </div>
-                     <a href="javascript:;" class="submit" @click="sub()">提交留言</a>
-                   </div>-->
-
                 <div v-for="item in newsdata" class="container-fluid news" :key="item.newsdata">
                   <div class="row">
                     <div class="col-md-4">
@@ -152,12 +111,19 @@
         ],
         imgArray: [
           '',
-          '../static/bil/imgamge/gs.jpg',
+          '../static/bil/imgamge/20180626090835.png',
           '',
           ''
         ],
         listdata: [],
         newsdata: [],
+        certificate: [
+          {className:'first',imgArray: '../../static/bil/imgamge/iso9001.jpg', txt: 'ISO9001认证'},
+          {className:'second',imgArray: '../../static/bil/imgamge/xyzd.jpg', txt: '学业诊断与分析云平台'},
+          {className:'third',imgArray: '../../static/bil/imgamge/zhxy.jpg', txt: '智慧校园云平台'},
+          {className:'fourth',imgArray: '../../static/bil/imgamge/zhzj.jpg', txt: '智慧职教云平台'},
+          {className:'fifth',imgArray: '../../static/bil/imgamge/zb.jpg', txt: '高清直播录播平台'},
+        ],
         content: [
           '',
           '上海迅发信息技术有限公司是拥有一支技术实力雄厚的硕士博士生团队的高科 技企业，充分利用互联网、物联网、大数据、' +
@@ -167,21 +133,8 @@
           '研究关系，整合了一支高水平的专家团队和高效率的技术开发团队，致力于通 过持续的技术创新和优质的服务，不断为客户' +
           '创造价值。',
         ],
-        /*  contact: [
-            {message:"联系方式" ,connection:""},
-            {message:"联系电话:" ,connection:"021-6816 0161"},
-            {message:"传 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真:" ,connection:"021-6816 0161"},
-            {message:"联系邮箱:" ,connection:"xunfast@xunfast.com"},
-            {message:"联系地址:" ,connection:"上海浦东新区康桥路666号三幢四楼"}
-          ],*/
         checkIndex: 0,
         tabsIndex: 0,
-        formData: {
-          Name: '',
-          FeedContent: '',
-          Email: '',
-          Phone: ''
-        }
       }
     },
     mounted: function () {
@@ -285,6 +238,16 @@
     background-size: cover;
     background-position: 50% 50%;
     margin-top: 69px;
+    position: relative;
+  }
+  .bottom-round {
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    height: 60px;
+    background: white;
+    z-index: 99;
+    border-radius: 100%;
   }
 
   .about h3 {
@@ -531,72 +494,8 @@
   }
 
 
- /* #content_us input {
-    width: 80%;
-    border: 1px solid #747474;
-    height: 40px;
-    padding-left: 10px;
-    line-height: 40px;
-    border-radius: 6px;
-    font-size: .15rem;
-  }*/
-
-  /*#content_us .info {
-    font-size: 18px;
-  }
-
-  textarea {
-    width: 80%;
-    height: 1rem;
-    resize: none;
-    border: 1px solid #747474;
-    padding: 10px;
-    border-radius: 4px;
-  }
-
-  .textarea {
-    margin-top: .1700712589rem;
-  }
-
-  #content_us ul li {
-    font-size: .16rem;
-    margin-bottom: 15px;
-  }
-
-  .bold {
-    font-weight: bold;
-  }
-  #service_content  .mob-sub p, #service_content  .mob-sub{
-    text-align: right;
-  }
-
-  .submit {
-    display: inline-block;
-    color: #008fd7;
-    border: 1px solid #008fd7;
-    border-radius: 40px;
-    width: 1.8rem;
-    height: .4rem;
-    line-height: .4rem;
-    background: white;
-    text-align: center;
-    margin-top: .25rem;
-    margin-bottom: 30px;
-    margin-left: .5625rem;
-    transition: .3s;
-  }
-
-  .submit:hover {
-    color: white;
-    background: #008fd7
-  }
-
-  #content_us p {
-    margin-top: 10px;
-  }
-*/
   .about-bg {
-    background: url("../../static/bil/imgamge/gs.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180626090835.png") no-repeat;
     width: 100%;
     background-size: cover;
     padding: 0 !important;
@@ -647,24 +546,6 @@
     .jobName, .about div .salary, .count, .count > span {
       font-size: .25rem !important;
     }
-
-    /*  #content_us input {
-        width: 75%;
-        height: 35px;
-        line-height: 35px;
-        font-size: 16px;
-      }
-      textarea {
-        width: 75%;
-        height: 1.5rem;
-      }
-      .submit{
-        width:2.2rem;
-        height: .5rem;
-        line-height: .5rem;
-        margin-left: .8rem;
-      }*/
-
   }
 
   @media (max-width: 767.98px) {
@@ -723,13 +604,6 @@
     #service_content .mob-sub p, #service_content .mob-sub {
       text-align: left;
     }
-
-    .submit {
-      width: 2.5rem;
-      height: .7rem;
-      line-height: .7rem;
-      margin-left: 1.1rem;
-    }
   }
 
   @media (max-width: 575.98px) {
@@ -759,26 +633,6 @@
       font-size: .5rem;
     }
 
-    /* #content_us ul li:nth-of-type(1) {
-       display: none;
-     }
-     #content_us input {
-       width: 65%;
-     }
-     textarea {
-       width: 65%;
-       height:4rem;
-       margin-top: 10px;
-       border-radius: 6px;
-     }
-
-     .submit {
-       width: 3.5rem;
-       height: 1.2rem;
-       line-height: 1.2rem;
-       margin-left: 2rem;
-     }
- */
     #service_content p, #service_content .time-line p, .qualification {
       font-size: .58rem;
       line-height: .8rem;

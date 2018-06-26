@@ -14,7 +14,12 @@
                 <h4>全连接</h4>
                 <p>资金量、管理信息流、物流信息流、服务信息流等各个相关环节需要全面连接，缺少任一节点的连接，都有可能影响全面自动化的实现。</p>
               </div>
-              <div data-index="1" class="product qc-unit-5-24 b_b">
+              <div v-for="item in challenge" :key="item.challenge" class="product qc-unit-5-24 b_b" v-bind:data-index="item.index" >
+                <img :src="item.imgArray" alt="">
+                <h4>{{item.title}}</h4>
+                <p>{{item.txt}}</p>
+              </div>
+            <!--  <div data-index="1" class="product qc-unit-5-24 b_b">
                 <img src="../../static/bil/imgamge/20180622164945.png" alt="" width="" height="">
                 <h4>全控制</h4>
                 <p>智能制造将数据流转作为核心，连接全部制造和相关环节，每个节点的交互设计和计算能力是实现全控制的基础。同时对智能设备(包括工业机器人)进行监测和控制。</p>
@@ -33,7 +38,7 @@
                 <img src="../../static/bil/imgamge/20180622165142.png" alt="" width="" height="">
                 <h4>数据应用</h4>
                 <p>数据将成为智能制造的生命线，数据收集、存储、快速调拨、模型搭建、规则创建及整合、计算和应用，每个环节都与连接、控制和自动化息息相关。</p>
-              </div>
+              </div>-->
             </div>
           </div>
         </div>
@@ -98,60 +103,22 @@
       </div>
     </div>
     <div class="container-fluid threeD" id="threeD">
-      <h3>智能工厂（六化）</h3>
+      <h3>两大主题：智能工厂、智能车间</h3>
       <div class="row">
-        <div class="col-md-4 zd">
-          <h4>自动化</h4>
-          <div>
-            <p>建设了覆盖全厂的DCS、SIS等系统，实现对整个工艺过程的监测与控制</p>
-          </div>
-        </div>
-        <div class="col-md-4 zd">
-          <h4>数字化</h4>
-          <div>
-            <p>
-              借助覆盖全厂的网路平台实现生产数据的实时采集，快速掌握生产运行情况，实现生产环境与信息系统的无缝对接，提升了管理人员
-              对生产现场的感知和监控能力
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4 zd">
-          <h4>模型化</h4>
-          <div>
-            <p>基于工厂模型构建煤化工的各类工艺、业务模型与规则，并与各种生产管理活动相匹配。</p>
-          </div>
-        </div>
-        <div class="col-md-4 zd">
-          <h4>决策科学化</h4>
-          <div>
-            <p>利用大数据技术，对各应用系统的数据进行集中存储和分析，协助公司领导层及时发现问题、分析问题原因、进行风险预警，实现决策的科学化</p>
-          </div>
-        </div>
-        <div class="col-md-4 zd">
-          <h4>可视化</h4>
-          <div>
-            <p>根据设计院提供的设计图纸搭建了三维可视化工厂，并与生产工艺、设备信息、作业票、应急演练等功能进行集成，为生产操作和管
-              理人员提供直接的业务场景展示
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4 zd">
-          <h4>集成化</h4>
-          <div>
-            <p>建设了企业信息集成平台，以MES为核心，向上支撑企业经营管理，向下与生产过程的实时数据高度集成，将各自独立的信息系统连
-              接成为一个完整可靠和有效的整体
-            </p>
-          </div>
+        <div class="col-md-4" v-for="item in certificate" :key="item.certificate"
+             v-bind:style="{ 'background-image': 'url(' + item.imgArray + ')','background-repeat':'no-repeat','background-size':'cover',' background-position':'50% 50%' }">
+        <h4>{{item.title}}</h4>
+          <p>{{item.txt}}</p>
         </div>
       </div>
     </div>
     <!--智能车间-->
     <div class="container-fluid wisdom">
-      <h3 class="wisdom-title">智能车间架构图</h3>
+  <!--    <h3 class="wisdom-title">智能车间架构图</h3>-->
       <img src="../../static/bil/imgamge/20180624175301.jpg" alt="">
     </div>
     <div class="container-fluid" id="solution">
-      <h3 class="solution_title">三项集成</h3>
+      <h3 class="solution_title">三项集成：横向集成、纵向集成、端到端集成</h3>
       <img src="../../static/bil/imgamge/20180624165550.jpg" alt="">
     </div>
     <bottom></bottom>
@@ -171,6 +138,30 @@
           {point: '../../static/bil/imgamge/point.png', txt: '  一个网络：CPS'},
           {point: '../../static/bil/imgamge/point.png', txt: '  两大主题：智能工厂、智能车间'},
           {point: '../../static/bil/imgamge/point.png', txt: ' 三项集成：横向集成、纵向集成、端到端集成'}
+        ],
+        challenge: [
+          { index:'1',title: '全控制',imgArray: '../../static/bil/imgamge/20180622164945.png',
+            txt:'资金量、管理信息流、物流信息流、服务信息流等各个相关环节需要全面连接，缺少任一节点的连接，都有可能影响全面自动化的实现。'},
+          { index:'2',title: '资源整合',imgArray: '../../static/bil/imgamge/20180622165047.png',
+            txt:'智能制造系统化工程需整合供应链、生产、物流、服务平台、营销资源等等，才能最大化的实现智能制造的自动化及产能最大化。'},
+          { index:'3',title: '数据采集',imgArray: '../../static/bil/imgamge/20180622165109.png',
+            txt:'企业内外大小数据的采集是智能制造效率的基础，尤其是外部环境数据、行业数据和用户数据的获取能力。'},
+          { index:'4',title: '数据应用',imgArray: '../../static/bil/imgamge/20180622165142.png',
+            txt:'数据将成为智能制造的生命线，数据收集、存储、快速调拨、模型搭建、规则创建及整合、计算和应用，每个环节都与连接、控制和自动化息息相关。'},
+        ],
+        certificate: [
+          {imgArray: '../../static/bil/imgamge/20180626100442.jpg', title:'自动化',
+            txt: '建设了覆盖全厂的DCS、SIS等系统，实现对整个工艺过程的监测与控制'},
+          {imgArray: '../../static/bil/imgamge/20180626100553.jpg', title:'数字化',
+            txt: '借助覆盖全厂的网路平台实现生产数据的实时采集，快速掌握生产运行情况，实现生产环境与信息系统的无缝对接，提升了管理人员对生产现场的感知和监控能力'},
+          {imgArray: '../../static/bil/imgamge/20180626100617.jpg', title:'模型化',
+            txt: '基于工厂模型构建煤化工的各类工艺、业务模型与规则，并与各种生产管理活动相匹配'},
+          {imgArray: '../../static/bil/imgamge/20180626100641.jpg', title:'决策科学化',
+            txt: '利用大数据技术，对各应用系统的数据进行集中存储和分析，协助公司领导层及时发现问题、分析问题原因、进行风险预警，实现决策的科学化'},
+          {imgArray: '../../static/bil/imgamge/20180626100707.jpg', title:'可视化',
+            txt: '根据设计院提供的设计图纸搭建了三维可视化工厂，并与生产工艺、设备信息、作业票、应急演练等功能进行集成，为生产操作和管理人员提供直接的业务场景展示'},
+          {imgArray: '../../static/bil/imgamge/20180626100925.jpg', title:'集成化',
+            txt: '建设了企业信息集成平台，以MES为核心，向上支撑企业经营管理，向下与生产过程的实时数据高度集成，将各自独立的信息系统连接成为一个完整可靠和有效的整体'},
         ],
         solution: '智能制造技术是传感技术、网络技术、自动化技术、人工智能技术等新一代信息技术与先进自动化技术、传感技术、' +
         '控制技术、数字制造技术结合，通过智能化的感知、人机交互、决策和执行技术，实现产品生命周期各环节以及制造装备（车间、' +
@@ -398,7 +389,7 @@
     line-height: .32rem;
     color: #666666;
     margin-bottom: .2rem;
-    text-align: center;
+    text-align: justify;
   }
 
   /*核心开始*/
@@ -456,16 +447,14 @@
   .threeD {
     text-align: center;
     position: relative;
-    background: url("../../static/bil/imgamge/20180524142826.png") no-repeat;
-    background-size: cover;
     padding: .7rem 0;
+  }
+  .threeD h3 {
+    color: #151515;
   }
 
   .threeD > .row > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .3s;
+      padding: .378348rem .46242rem 0;
   }
 
   .threeD > .row > div h4 {
@@ -473,80 +462,19 @@
     color: white;
     text-shadow: 5px 5px 5px #151515;
     font-weight: bold;
+    margin-bottom: 10px;
   }
 
-  .threeD > .row > div > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 30px;
-    width: inherit;
-    height: inherit;
-    background: white;
-    position: absolute;
-    opacity: 0;
-    transition: .3s;
-  }
-
-  .threeD > .row > div:hover.zd > div {
-    opacity: 1;
-  }
-
-  .threeD > .row > div > div p {
+  .threeD > .row > div  p {
     font-size: .15rem;
-    color: #666666;
+    color: white;
     line-height: .32rem;
     text-align: justify;
   }
-
-  .threeD > .row > div:nth-of-type(1) {
+  .threeD > .row > div {
     width: 100%;
     height: 2.8rem;
-    background: url("../../static/bil/imgamge/20180624171022.jpg") no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
   }
-
-  .threeD > .row > div:nth-of-type(2) {
-    width: 100%;
-    height: 2.8rem;
-    background: url("../../static/bil/imgamge/20180624171530.jpg") no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  .threeD > .row > div:nth-of-type(3) {
-    width: 100%;
-    height: 2.8rem;
-    background: url("../../static/bil/imgamge/20180624171715.jpg") no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  .threeD > .row > div:nth-of-type(4) {
-    width: 100%;
-    height: 2.8rem;
-    background: url("../../static/bil/imgamge/20180624171826.jpg") no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  .threeD > .row > div:nth-of-type(5) {
-    width: 100%;
-    height: 2.8rem;
-    background: url("../../static/bil/imgamge/20180624172154.jpg") no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  .threeD > .row > div:nth-of-type(6) {
-    width: 100%;
-    height: 2.8rem;
-    background: url("../../static/bil/imgamge/20180624172210.jpg") no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
   /* 智能车间架构图 */
   .wisdom {
     padding: .7rem 0;
