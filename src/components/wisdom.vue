@@ -19,26 +19,6 @@
                 <h4>{{item.title}}</h4>
                 <p>{{item.txt}}</p>
               </div>
-            <!--  <div data-index="1" class="product qc-unit-5-24 b_b">
-                <img src="../../static/bil/imgamge/20180622164945.png" alt="" width="" height="">
-                <h4>全控制</h4>
-                <p>智能制造将数据流转作为核心，连接全部制造和相关环节，每个节点的交互设计和计算能力是实现全控制的基础。同时对智能设备(包括工业机器人)进行监测和控制。</p>
-              </div>
-              <div data-index="2" class="product qc-unit-5-24 b_b">
-                <img src="../../static/bil/imgamge/20180622165047.png" alt="" width="" height="">
-                <h4>资源整合</h4>
-                <p>智能制造系统化工程需整合供应链、生产、物流、服务平台、营销资源等等，才能最大化的实现智能制造的自动化及产能最大化。</p>
-              </div>
-              <div data-index="3" class="product qc-unit-5-24 b_b">
-                <img src="../../static/bil/imgamge/20180622165109.png" alt="" width="" height="">
-                <h4>数据采集</h4>
-                <p>企业内外大小数据的采集是智能制造效率的基础，尤其是外部环境数据、行业数据和用户数据的获取能力。</p>
-              </div>
-              <div data-index="4" class="product qc-unit-5-24 b_b">
-                <img src="../../static/bil/imgamge/20180622165142.png" alt="" width="" height="">
-                <h4>数据应用</h4>
-                <p>数据将成为智能制造的生命线，数据收集、存储、快速调拨、模型搭建、规则创建及整合、计算和应用，每个环节都与连接、控制和自动化息息相关。</p>
-              </div>-->
             </div>
           </div>
         </div>
