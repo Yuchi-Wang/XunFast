@@ -5,7 +5,7 @@
     </div>
     <div class="container-fluid solution" id="w_solution">
       <div class="row">
-        <p class="animated slideInDown">迅发科技大数据建模与可视化平台用一站式业务和数据分析平台，整合你的数据资产。平台包括数据准备、数据建模、数据可视化三大块</p>
+        <p class="animated slideInDown">{{souTxt}}</p>
       </div>
     </div>
     <div class="question container-fluid">
@@ -20,7 +20,7 @@
     <div class="container-fluid threeD" id="threeD">
       <div class="row"></div>
       <h3>大数据可视化平台战略规划</h3>
-      <p>迅发科技为您提供大数据战略规划和实施落地全面咨询服务，具体包括大数据整体战略规划以及基于具体应用场景的落地方案，从而实现系统规划、重点突破。</p>
+      <p>{{threeTxt}}</p>
       <img src="../../static/bil/imgamge/20180522163553.png" alt="">
     </div>
     <div class="main container-fluid" id="main">
@@ -74,7 +74,9 @@
             imgArray: '../../static/bil/imgamge/point.png', title: '数据可视化',
             txt: '通过数据采集、数据提取和数据挖掘，将数据进行处理分析，直观的将结果展示到企业决策人的面前。'
           }
-        ]
+        ],
+        souTxt: '迅发科技大数据建模与可视化平台用一站式业务和数据分析平台，整合你的数据资产。平台包括数据准备、数据建模、数据可视化三大块。',
+         threeTxt: '迅发科技为您提供大数据战略规划和实施落地全面咨询服务，具体包括大数据整体战略规划以及基于具体应用场景的落地方案，从而实现系统规划、重点突破。'
       }
     }
   }

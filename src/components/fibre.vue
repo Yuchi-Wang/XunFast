@@ -25,7 +25,7 @@
       </div>
     </div>
     <div class="container-fluid content advance">
-      <h4 id="advance_title">光纤传感技术应用于管线安防的优势</h4>
+      <h4 id="advance_title">{{advanceTitle}}</h4>
       <div class="row">
         <div class="col-md-5 advance-img">
           <img src="../../static/bil/imgamge/20180621164758.png" alt="" width="100%" height="auto">
@@ -97,7 +97,8 @@
         "          检测该后向散射信号，能够获得光纤在任意位置处的温度、形变和振动等多种参量信息。运用大数据建模、深度分析、机器学\n" +
         "          习智能识别入侵破坏行为，构建长距离、高分辨率、快响应时间、高可靠性的实时监测系统，对入侵信号进行实时识别、预警\n" +
         "          与定位，并结合北斗定位技术、三维全景可视化技术，及时应急处理安全隐患，实现中国航油输油管道全天候、实时、无盲区、\n" +
-        "          高可靠性的可视化智慧安防。"
+        "          高可靠性的可视化智慧安防。",
+        advanceTitle:'光纤传感技术应用于管线安防的优势'
       }
     }
   }

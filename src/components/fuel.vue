@@ -156,7 +156,7 @@
   .f_banner {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180626113136.jpg");
+    background: url("../../static/bil/imgamge/20180627094426.jpg");
     background-size: cover;
     background-position: 50% 30%;
     margin-top: 70px;

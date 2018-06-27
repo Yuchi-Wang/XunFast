@@ -12,7 +12,7 @@
               <div data-index="0" class="product qc-unit-5-24 qc-unit-active b_l  b_b" style="height:400px;">
                 <img src="../../static/bil/imgamge/20180622164918.png" alt="" width="" height="">
                 <h4>全连接</h4>
-                <p>资金量、管理信息流、物流信息流、服务信息流等各个相关环节需要全面连接，缺少任一节点的连接，都有可能影响全面自动化的实现。</p>
+                <p>{{challengeTitle}}</p>
               </div>
               <div v-for="item in challenge" :key="item.challenge" class="product qc-unit-5-24 b_b"
                    v-bind:data-index="item.index">
@@ -40,11 +40,7 @@
     <div class="container-fluid core" id="core">
       <h3> 一个网络：CPS</h3>
       <div class="row">
-        <p id="core_txt">
-          CPS是英文CyberPhysical System的缩写，本质就是构建一套（Cyber空间与物理（Physical）空间之间基于数
-          据自动流动的状态感知、实时分析、科学决策、精准执行的闭环赋能体系，解决生产制造、应用服务过程中的复杂性和不确定
-          性问题，提高资源配置效率，实现资源优化。
-        </p>
+        <p id="core_txt">{{core}}</p>
         <div class="col-md-4">
           <div class="core_img">
             <img src="../../static/bil/imgamge/20180524162004.jpg" alt="" width="100%" height="auto">
@@ -159,7 +155,11 @@
         ],
         solution: '智能制造技术是传感技术、网络技术、自动化技术、人工智能技术等新一代信息技术与先进自动化技术、传感技术、' +
         '控制技术、数字制造技术结合，通过智能化的感知、人机交互、决策和执行技术，实现产品生命周期各环节以及制造装备（车间、' +
-        '工厂）智能化。智能实现工厂和企业内部、企业之间和产品全生命周期的实时管理和优化的新型制造系统。'
+        '工厂）智能化。智能实现工厂和企业内部、企业之间和产品全生命周期的实时管理和优化的新型制造系统。',
+        core:'  CPS是英文CyberPhysical System的缩写，本质就是构建一套（Cyber空间与物理（Physical）空间之间基于数据自动流' +
+        '动的状态感知、实时分析、科学决策、精准执行的闭环赋能体系，解决生产制造、应用服务过程中的复杂性和不确定性问题，' +
+        '提高资源配置效率，实现资源优化。',
+        challengeTitle:'资金量、管理信息流、物流信息流、服务信息流等各个相关环节需要全面连接，缺少任一节点的连接，都有可能影响全面自动化的实现。'
       }
     },
     mounted: function () {
@@ -471,7 +471,7 @@
     z-index: 1;
   }
   .threeD > .row > div:hover {
-    transform:rotateZ(360deg);
+    transform:scale(1.05);
     z-index: 999;
   }
   .threeD > .row {

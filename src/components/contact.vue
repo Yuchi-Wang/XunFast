@@ -65,7 +65,7 @@
   .news-bg {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180626092332.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180627094524.jpg") no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     margin-top: 70px;

@@ -17,7 +17,7 @@
           </ul>
         </div>
         <div class="col-md-3 logo">
-          <img src="../static/bil/imgamge/20180612142300.png" alt="logo">
+          <img src="../static/bil/imgamge/20180612142300.png" alt="logo" width="200" height="37.56">
         </div>
         <ul :class="'col-md-9 row nav ' + (isclick ? 'clicknav':'')" style="margin-left:15px" >
           <li class="col-md-2 offset-md-3"><router-link to="/" class="sel">首页</router-link></li>
