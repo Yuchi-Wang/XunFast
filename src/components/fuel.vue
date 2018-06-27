@@ -348,7 +348,7 @@
 
   /*项目分类开始*/
   .main .project {
-    background:url("../../static/bil/imgamge/20180626174348.jpg") no-repeat;
+    background:url("../../static/bil/imgamge/20180627130321.jpg") no-repeat;
     background-position: 50% 50%;
     background-size: cover;
     padding:.7rem 0;

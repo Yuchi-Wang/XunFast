@@ -43,9 +43,7 @@
                       </div>
                     </div>
                     <div class="col-md-8 news-content">
-                      <h4>
-                        <router-link :to="{ path: `/article/${item.Id}` }"> {{item.Title}}</router-link>
-                      </h4>
+                      <h4><router-link :to="{ path: `/article/${item.Id}` }"> {{item.Title}}</router-link></h4>
                       <time>发布日期：{{item.CreateDateStr}}</time>
                       <p v-html="item.InfoContent">{{item.InfoContent}}</p>
                     </div>
@@ -53,26 +51,18 @@
                 </div>
               </div>
               <ol class="jobs" v-show="index===3">
-                <li v-for="(item,index) in listdata" :key="item.index" @click="select(index)"
-                    v-bind:style="{color:index===tabsIndex?'#008fd7':''}">{{item.PostName}}
-                </li>
+                <li v-for="(item,index) in listdata" :key="item.index" @click="select(index)" v-bind:style="{color:index===tabsIndex?'#008fd7':''}">{{item.PostName}}</li>
               </ol>
               <ol v-show="index===3" style="margin-bottom: 60px">
                 <li v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex" class="jobName">
                   {{item.PostName}}
                   <span v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex" class="salary">{{item.Salary}}</span>
                 </li>
-                <li class="count">招聘人数:<span v-for="(item,index) in listdata" :key="item.index"
-                                             v-show="index===tabsIndex">{{item.Count}}</span>人
-                </li>
+                <li class="count">招聘人数:<span v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex">{{item.Count}}</span>人</li>
                 <li class="count">岗位职责:</li>
-                <li v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex"
-                    v-html="item.PostDuties" class="qualification">{{item.PostDuties }}
-                </li>
+                <li v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex" v-html="item.PostDuties" class="qualification">{{item.PostDuties }}</li>
                 <li class="count">任职要求:</li>
-                <li v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex"
-                    v-html="item.Qualification" class="qualification">{{item.Qualification}}
-                </li>
+                <li v-for="(item,index) in listdata" :key="item.index" v-show="index===tabsIndex" v-html="item.Qualification" class="qualification">{{item.Qualification}}</li>
               </ol>
             </li>
           </ul>
@@ -127,19 +117,16 @@
       $('.left-arrow').click(function () {
         classArr.unshift(classArr.pop());
         changeClass();
-      //  alert("111")
       });
       $('.right-arrow').click(function () {
         classArr.push(classArr.shift());
         changeClass();
-     //   alert("2222")
       });
       $('.certificate-list li').click(function (e) {
         var index = $(this).index();
         if (classArr[index] === 'first') return;
         classArr = chooseClass(index);
         changeClass();
-      //  alert("33333")
       });
 
       function changeClass() {
@@ -436,7 +423,7 @@
   }
 
   #content_us img {
-    width: inherit;
+    width: 100%;
   }
 
   .news-content {

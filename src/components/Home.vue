@@ -56,7 +56,7 @@
         <div class="col-md-4">
           <div class="cardlist">
             <div class="imgbox imgbox3"></div>
-            <h4><a href="javascript:;">智慧建筑</a></h4>
+            <h4><router-link to="/building">智慧建筑</router-link></h4>
           </div>
           <div class="imgtxt imgtxt1">
             <p>智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑

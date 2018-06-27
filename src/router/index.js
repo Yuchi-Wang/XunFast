@@ -84,7 +84,21 @@ export default new Router({
       component: (resolve) => {
         require(['../components/three-dimensional'], resolve)
       }
-    }
+    },
+    {
+      path: '/building',
+      name: 'building',
+      component: (resolve) => {
+        require(['../components/building'], resolve)
+      }
+    },
+    {
+      path: '/scada',
+      name: 'scada',
+      component: (resolve) => {
+        require(['../components/scada'], resolve)
+      }
+    },
   ],
   /*路由跳转在最顶端显示*/
   scrollBehavior(to,from,savedPosition) {

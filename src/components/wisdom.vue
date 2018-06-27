@@ -76,7 +76,7 @@
       <h4>智能工厂（六化）</h4>
       <div class="row">
         <div class="col-md-4" v-for="item in certificate" :key="item.certificate"
-             v-bind:style="{ 'background-image': 'url(' + item.imgArray + ')','background-repeat':'no-repeat','background-size':'cover',' background-position':'50% 50%' }">
+             v-bind:style="{ 'background-image': 'url(' + item.imgArray + ')','background-repeat':'no-repeat','background-size':'cover','background-position':'50% 50%' }">
           <h4>{{item.title}}</h4>
           <p>{{item.txt}}</p>
         </div>
@@ -129,27 +129,27 @@
         ],
         certificate: [
           {
-            imgArray: '../../static/bil/imgamge/20180626150929.jpg', title: '自动化',
+            imgArray: '../../static/bil/imgamge/20180627111330.jpg', title: '自动化',
             txt: '建设了覆盖全厂的DCS、SIS等系统，实现对整个工艺过程的监测与控制'
           },
           {
-            imgArray: '../../static/bil/imgamge/20180626151002.jpg', title: '数字化',
+            imgArray: '../../static/bil/imgamge/20180627111401.jpg', title: '数字化',
             txt: '借助覆盖全厂的网路平台实现生产数据的实时采集，快速掌握生产运行情况，实现生产环境与信息系统的无缝对接，提升了管理人员对生产现场的感知和监控能力'
           },
           {
-            imgArray: '../../static/bil/imgamge/20180626150829.jpg', title: '模型化',
+            imgArray: '../../static/bil/imgamge/20180627111230.jpg', title: '模型化',
             txt: '基于工厂模型构建煤化工的各类工艺、业务模型与规则，并与各种生产管理活动相匹配'
           },
           {
-            imgArray: '../../static/bil/imgamge/20180626151027.jpg', title: '决策科学化',
+            imgArray: '../../static/bil/imgamge/20180627111158.jpg', title: '决策科学化',
             txt: '利用大数据技术，对各应用系统的数据进行集中存储和分析，协助公司领导层及时发现问题、分析问题原因、进行风险预警，实现决策的科学化'
           },
           {
-            imgArray: '../../static/bil/imgamge/20180626151100.jpg', title: '可视化',
+            imgArray: '../../static/bil/imgamge/20180627105858.jpg', title: '可视化',
             txt: '根据设计院提供的设计图纸搭建了三维可视化工厂，并与生产工艺、设备信息、作业票、应急演练等功能进行集成，为生产操作和管理人员提供直接的业务场景展示'
           },
           {
-            imgArray: '../../static/bil/imgamge/20180626151135.jpg', title: '集成化',
+            imgArray: '../../static/bil/imgamge/20180627111300.jpg', title: '集成化',
             txt: '建设了企业信息集成平台，以MES为核心，向上支撑企业经营管理，向下与生产过程的实时数据高度集成，将各自独立的信息系统连接成为一个完整可靠和有效的整体'
           },
         ],
@@ -491,6 +491,7 @@
     color: white;
     line-height: .32rem;
     text-align: justify;
+    text-shadow: 5px 5px 5px #151515;
   }
 
   .threeD > .row > div {

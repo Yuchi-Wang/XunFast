@@ -38,6 +38,7 @@
                                                 || $route.path === '/fuel'
                                                 || $route.path === '/system'
                                                 || $route.path === '/wisdom'
+                                                || $route.path === '/building'
             ? 'router-link-exact-active' :'' " href="javascript:;" class="sel sels">解决方案
           </a>
             <ul class="navlists">

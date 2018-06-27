@@ -11,13 +11,17 @@
     <div class="container-fluid down">
       <img src="../../static/bil/imgamge/20180625100148.png" alt="">
       <div class="tel">
-        <ul>
-          <li class="tel-title">联系方式：</li>
-          <li>运维技术支持工程师电话：123456789 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp 运维技术支持工程师手机:123456789</li>
-          <li>运维技术支持工程师邮箱：123456789 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp 运维技术支持微信号:123456789</li>
-          <li>运维技术支持QQ号：123456789 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp 运维负责人电话:123456789</li>
-          <li>运维负责人邮箱：123456789 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp 运维监督投诉电话:123456788</li>
-          <li>运维监督投诉电话：123456789</li>
+        <h4 class="tel-title">联系方式：</h4>
+        <ul class="row">
+          <li class="col-md-4">运维技术支持工程师电话：123456789</li>
+          <li class="col-md-4">运维技术支持工程师手机：123456789</li>
+          <li class="col-md-4">运维技术支持工程师邮箱：123456789</li>
+          <li class="col-md-4">运维技术支持微信号：123456789</li>
+          <li class="col-md-4">运维技术支持QQ号：123456789</li>
+          <li class="col-md-4">运维负责人电话：123456789</li>
+          <li class="col-md-4">运维负责人邮箱：123456789</li>
+          <li class="col-md-4">运维监督投诉电话：123456788</li>
+          <li class="col-md-4">运维监督投诉电话：123456789</li>
         </ul>
       </div>
     </div>
@@ -90,6 +94,11 @@
     margin: .7rem 0;
     text-align: center;
   }
+  .down {
+    text-align: center;
+    padding: 0;
+  }
+
 
   .news h3:after, .download h4:after {
     width: 60px;
@@ -100,7 +109,12 @@
     border-bottom: 2px solid #008fd7;
     content: "";
   }
-
+  .tel-title {
+    text-align: left;
+    margin-left:16%;
+    color: #333333;
+    font-weight: bolder;
+  }
   .news p, .tel {
     font-size: .15rem;
     text-align: center;
@@ -114,17 +128,12 @@
     padding: 30px 0;
   }
 
- .tel-title {
-   text-align: left;
-   margin-left: 27%;
-   color: #333333;
- }
+  .tel .row {
+    text-align: left;
+    margin: 0 20% 0 23%;
+  }
   .tel ul li {
     font-weight: bolder;
-  }
-
-  .down {
-    text-align: center;
   }
 
   .down img {
