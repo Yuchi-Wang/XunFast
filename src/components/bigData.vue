@@ -88,25 +88,10 @@
     height: 5rem;
     background: url("../../static/bil/imgamge/20180620175631.jpg") no-repeat;
     background-size: cover;
-    padding-top: 2rem;
-    text-align: center;
-    z-index: 9999;
     position: relative;
     margin-top: 70px;
     background-position: 50% 50%;
   }
-
-  .question h3, .threeD h3, .main h3 {
-    color: #FFF;
-    font-size: .28rem;
-    margin-bottom: .6rem;
-    font-weight: 100;
-  }
-
-  .threeD h3 {
-    color: #151515;
-  }
-
   .bottom-round {
     width: 100%;
     position: absolute;
@@ -127,6 +112,16 @@
     position: relative;
     z-index: 999;
   }
+  .question h3, .threeD h3, .main h3 {
+    color: #FFF;
+    font-size: .28rem;
+    margin-bottom: .6rem;
+    font-weight: 100;
+  }
+
+  .threeD h3 {
+    color: #151515;
+  }
 
   .question h3:after, .threeD h3:after, .main > h3:after {
     width: 60px;
@@ -140,7 +135,6 @@
 
   .question .row {
     margin: 0 10%;
-
   }
 
   .question .row > div {

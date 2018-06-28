@@ -151,7 +151,7 @@
           }
         })
         .then(response => {
-         // console.log(response.data.Data)
+         console.log(response.data.Data)
           this.newsdata = response.data.Data
         })
         .catch(function (error) {

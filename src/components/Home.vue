@@ -563,7 +563,7 @@
     color: whitesmoke;
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1199.98px) {
     .slider {
       height: 8rem;
     }

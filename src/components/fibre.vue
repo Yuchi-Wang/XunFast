@@ -113,6 +113,7 @@
     margin-bottom: .7rem;
     position: relative;
     margin-top: 70px;
+    background-position: 50% 50%;
   }
   .bottom-round {
     width: 100%;
@@ -233,7 +234,6 @@
   @media (max-width: 1199.98px) {
     .bg {
       height: 8rem;
-      background-position: 50% 50%;
     }
 
     .content h4, .sou h4 {
@@ -243,17 +243,14 @@
     .content h4:after, .sou h4:after {
       top: .7rem;
     }
-
     .content p, .sou p {
       font-size: .25rem;
       font-weight: 100;
       line-height: .35rem;
     }
-
     .introduction > div {
       height: 4rem;
     }
-
     .nowadays h5 {
       font-size: .3rem;
     }
@@ -270,18 +267,13 @@
     .content h4:after, .sou h4:after {
       top: .9rem;
     }
-
-
-
     .content p, .sou p {
       font-size: .35rem;
       line-height: .6rem;
     }
-
     .introduction > div {
       height: 5rem;
     }
-
     .nowadays h5 {
       font-size: .4rem;
     }
@@ -298,7 +290,6 @@
     .content h4:after, .sou h4:after {
       top: 1.5rem;
     }
-
     .content p, .sou p {
       font-size: .58rem;
       line-height: .8rem;
@@ -307,7 +298,6 @@
     .introduction > div {
       height: 5.5rem;
     }
-
     .advance-img {
       margin-bottom: 20px;
     }

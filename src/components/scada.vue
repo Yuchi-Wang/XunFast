@@ -106,7 +106,7 @@
             imgArray: '../../static/bil/imgamge/20180627174459.jpg', title: '数据采集难',
             txt: '目前实验的仪器设备类型众多，主要分类为有数据接口及无数据接口两类。而有接口的仪器设备数据采集只能依靠厂家配套的软件才能采集，且很难达到数据集成的目的'
           },
-          {imgArray: '../../static/bil/imgamge/20180627174623.jpg', title: '', txt: ''},
+          {imgArray: '../../static/bil/imgamge/20180628160109.jpg', title: '现状与难点', txt: ''},
           {
             imgArray: '../../static/bil/imgamge/20180627174719.jpg', title: '人工记录',
             txt: '争对现在的仪器设备的数据，大多数都是采用人工记录的方式。这种方式不仅效率低而且容易出现错误'
@@ -280,6 +280,9 @@
     text-shadow: 5px 5px 5px #151515;
     font-weight: bold;
     margin-bottom: 10px;
+  }
+  .difficult > .row > div:nth-of-type(2) h4 {
+      margin-top: .82rem;
   }
 
   .difficult > .row > div p {

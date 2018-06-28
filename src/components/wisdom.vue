@@ -75,7 +75,7 @@
       <h3>两大主题：智能工厂、智能车间</h3>
       <h4>智能工厂（六化）</h4>
       <div class="row">
-        <div class="col-md-4" v-for="item in certificate" :key="item.certificate"
+        <div class="col-md-6 col-xl-4" v-for="item in certificate" :key="item.certificate"
              v-bind:style="{ 'background-image': 'url(' + item.imgArray + ')','background-repeat':'no-repeat','background-size':'cover','background-position':'50% 50%' }">
           <h4>{{item.title}}</h4>
           <p>{{item.txt}}</p>
@@ -571,19 +571,22 @@
     }
 
     .core_txt h4 {
-      font-size: .28rem;
+      font-size: .26rem;
       margin: .3rem 0;
     }
 
-    .solution p, .core p, .mod-inner p {
+    .solution p, .core p, .mod-inner p,.threeD > .row > div p {
       font-size: .25rem;
       line-height: .35rem;
     }
 
     .solution .row {
-      margin: 0 10%;
+      margin: 0 5%;
     }
 
+    .core_txt {
+      padding: 0 15px;
+    }
     .core_txt > div {
       height: 3.2rem;
     }
@@ -591,27 +594,27 @@
     .solution ul li {
       font-size: .2rem;
     }
-
-    .core_img {
-      height: 3.2rem;
-      overflow: hidden;
+    .threeD > .row {
+      margin: 0 5%;
     }
-
-    .core_img img {
-      height: 100%;
-    }
-
     .threeD img {
       width: 500px;
       height: auto;
     }
 
-    .mod-inner h4 {
+    .mod-inner h4,.threeD > .row > div h4 {
       font-size: .28rem;
     }
 
     .content h3 {
       margin: 0.4rem auto 1rem;
+    }
+    .threeD > h4, .wisdom h4 {
+      font-size: .26rem;
+      margin-left: 5%;
+    }
+    .threeD > .row > div {
+      height: 3.2rem;
     }
 
     .content {
@@ -627,11 +630,9 @@
     .bg {
       height: 9rem;
     }
-
     .content h3 {
-      margin-top: .5rem;
+      margin-top: .6rem;
     }
-
     .solution h3, .core h3, .threeD h3, .content h3, .wisdom h3, #solution h3 {
       font-size: .56rem;
       margin-bottom: 1rem;
@@ -652,9 +653,12 @@
     .new .product {
       padding: 0 60px;
     }
-
-    .core_txt h4 {
-      font-size: .6rem;
+    .core_txt {
+      height: 5rem;
+      margin-bottom: 30px;
+    }
+    .core_txt h4,.mod-inner h4, .threeD > .row > div h4 {
+      font-size: .52rem;
     }
 
     .mod-inner img {
@@ -669,7 +673,7 @@
       margin: .5rem auto;
     }
 
-    .solution p, .core p, .mod-inner p {
+    .solution p, .core p, .mod-inner p,.threeD > .row > div p {
       font-size: .35rem;
       line-height: .6rem;
       text-align: justify;
@@ -682,9 +686,11 @@
     .core_txt p {
       text-align: center;
     }
+    .threeD > h4, .wisdom h4 {
+      font-size: .4rem;
+    }
 
-    .threeD > .row > div:nth-of-type(1), .threeD > .row > div:nth-of-type(2), .threeD > .row > div:nth-of-type(3),
-    .threeD > .row > div:nth-of-type(4), .threeD > .row > div:nth-of-type(5), .threeD > .row > div:nth-of-type(6) {
+    .threeD > .row > div {
       height: 6rem;
     }
 
@@ -718,11 +724,14 @@
     }
 
     .content {
-      height: 39rem;
+      height: 1830px;
     }
   }
 
   @media (max-width: 575.98px) {
+    .content h3{
+      margin-top: 1rem;
+    }
     .bg {
       height: 12rem;
     }
@@ -739,12 +748,14 @@
       font-size: .6rem;
     }
 
-    .solution p, .core p, .mod-inner p {
+    .solution p, .core p, .mod-inner p,.threeD > .row > div p {
       font-size: .58rem;
       line-height: .8rem;
     }
-
-    .core_txt > div {
+    .core_txt {
+      height: 6rem;
+    }
+    .core_txt > div,.threeD > .row > div {
       height: 8rem;
     }
 
@@ -756,12 +767,10 @@
       margin-top: 1.2rem;
       margin-bottom: 50px;
     }
-
-    .content {
-      height: 78rem;
+    .threeD > h4, .wisdom h4 {
+      font-size: .6rem;
     }
-
-    .threeD > .row > div h4 {
+    .threeD > .row > div h4,.threeD > .row > div h4 {
       font-size: .6rem;
     }
 
