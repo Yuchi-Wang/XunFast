@@ -36,9 +36,7 @@
             <h4><router-link to="/wisdom">智能制造</router-link></h4>
           </div>
           <div class="imgtxt imgtxt2">
-            <p>
-              迅发科技智能制造解决方案是基于信息物理系统实现智能工厂，以动态配置的生产方式实现“柔性生产”，帮助企业实现生产力的飞速发展。
-            </p>
+            <p>{{wisdomTxt}}</p>
           </div>
         </div>
         <div class="col-md-4">
@@ -47,20 +45,16 @@
             <h4><router-link to="/fuel">互联网+航油安全</router-link></h4>
           </div>
           <div class="imgtxt  imgtxt3">
-            <p>
-              迅发科技互联网+航油安全解决方案运用数据采集、智能判断等新一代信息技术，将标准信息化，对关键点数据的控制，对主观经
-              验判断的痕迹和记录进行控制，确保质量在生命周期中可看、可查、可控、可追溯，从而保证油品质量安全。
-            </p>
+            <p>{{fuelTxt}}</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="cardlist">
             <div class="imgbox imgbox3"></div>
-            <h4><router-link to="/building">智慧建筑</router-link></h4>
+            <h4><router-link to="/building">人工智能+智慧建筑</router-link></h4>
           </div>
           <div class="imgtxt imgtxt1">
-            <p>智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑
-              智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑智慧建筑</p>
+            <p>{{buildingTxt}}</p>
           </div>
         </div>
       </div>
@@ -85,7 +79,6 @@
 </template>
 <script>
   import bottom from '../components/bottom'
-
   export default {
     components: {bottom},
     name: 'Home',
@@ -96,8 +89,8 @@
         production: [
           {imgArray: '../../static/bil/imgamge/20180626114012.png', title: '设备数据智能采集系统', url: '/scada'},
           {imgArray: '../../static/bil/imgamge/20180626113943.png', title: '实验室信息管理与应用分析平台', url: '/lab'},
+          {imgArray: '../../static/bil/imgamge/20180613102436.png', title: '设备全生命周期智慧管理系统', url: '/equipment'},
           {imgArray: '../../static/bil/imgamge/20180613102454.png', title: '数字三维实景可视化平台', url: '/three-dimensional'},
-          {imgArray: '../../static/bil/imgamge/20180613102436.png', title: '大数据建模与可视化', url: '/bigData'},
         ],
         introduction: '  上海迅发信息技术有限公司是拥有一支技术实力雄厚的硕士博士生团队的高科技企业，充分利用互联网、物联网、大数据、\n' +
         '            人工智能等新一代信息技术，专注于互联网+、大数据+行业应用的研发和产品化。公司在信息系统整体架构、大数\n' +
@@ -105,6 +98,15 @@
         '            权，并通过ISO9001质量管理体系认证。公司与上海交通大学、复旦大学、同济大学、华东师范大学等国内知名高校建\n' +
         '            立了深入的合作关系，整合了一直高水平的专家团队和高效率的技术开发团队，致力于通过持续的技术创新和优质的服\n' +
         '            务，不断为客户创造价值。',
+        wisdomTxt:'智能制造是将物联网、大数据、云计算等新一代信息技术与先进自动化技术、传感技术、控制技术、数字制造技术结合，' +
+                  '实现工厂和企业内部、企业之间和产品全生命周期的实时管理和优化的新型制造系统。智能制造的特征在于实时感知、' +
+                  '优化决策、动态执行等三个方面。 主要包括一个网络、两大主题、三项集成',
+        fuelTxt:'上海迅发信息技术有限公司与中国航空油料责任有限公司华东公司、上海交通大学先进产业技术研究院共同成立互联' +
+                '网+航油安全服务协同创新中心，运用互联网、大数据、人工智能、物联网等新一代信息技术，构建互联网+航油安全' +
+                '服务智慧平台，实现航油安全智能化、管理智能化、物流智能化、渠道智能化。',
+        buildingTxt:'随着我国城市化进程的加快，建筑市场近年来增长迅速。同时，智能建筑和建筑节能的发展对建筑行业提出了更高的' +
+                 '要求。运用大数据、人工智能技术，通对大量智慧建筑行业知识和经验进行机器学习和算法模型设计，促进人工智能' +
+                 '与智慧建筑的深度融合，实现设计环节、施工管理、运营维护等智慧建筑全生命周期的数字化、智能化。',
         banner: [
           '',
           '',
@@ -277,12 +279,12 @@
   }
 
   #slider > div:nth-of-type(2) {
-    background: url("../../static/bil/imgamge/20180614135941.jpg");
+    background: url("../../static/bil/imgamge/20180629135045.jpg");
     background-size: cover;
     background-position: 50% 50%;
   }
   #slider > div:nth-of-type(3) {
-    background: url("../../static/bil/imgamge/20180627101728.jpg");
+    background: url("../../static/bil/imgamge/20180629135126.jpg");
     background-size: cover;
     background-position: 50% 50%;
   }

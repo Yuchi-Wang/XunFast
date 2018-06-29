@@ -27,6 +27,7 @@
                                                || $route.path === '/health'
                                                || $route.path === '/fibre'
                                                || $route.path === '/scada'
+                                               || $route.path === '/equipment'
             ? 'router-link-exact-active' :'' " href="javascript:;" class="sel sels">公司产品</a>
             <ul class="navlists">
               <li v-for="item in navlist" :key="item.navlist">
@@ -75,7 +76,7 @@
         navlist: [
           {urlArray: '/scada', title: '设备数据智能采集系统'},
           {urlArray: '/lab', title: '实验室信息管理与应用分析平台'},
-          {urlArray: '/equipment', title: '智慧设备生命周期管理系统'},
+          {urlArray: '/equipment', title: '设备全生命周期智慧管理系统'},
           {urlArray: '/three-dimensional', title: '数字三维实景可视化平台'},
           {urlArray: '/bigData', title: '大数据建模与可视化'},
           {urlArray: '/encoding', title: '信息编码标准与主数据管理工具平台'},
