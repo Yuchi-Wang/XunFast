@@ -107,14 +107,15 @@
         '            务，不断为客户创造价值。',
         banner: [
           '',
-          ''
+          '',
+          '',
         ],
       }
     },
     methods: {
       autoPlay() {
         this.mark++;
-        if (this.mark === 2) {
+        if (this.mark === 3) {
           this.mark = 0
         }
       },
@@ -280,7 +281,14 @@
     background-size: cover;
     background-position: 50% 50%;
   }
-
+  #slider > div:nth-of-type(3) {
+    background: url("../../static/bil/imgamge/20180627101728.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  #slider > div:nth-of-type(3)>div {
+    display: none;
+  }
   .image-enter-active {
     opacity: 1;
     transition: opacity .8s linear;

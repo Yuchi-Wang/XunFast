@@ -38,7 +38,7 @@
     </div>
     <div class="container-fluid threeD" id="three_D">
       <h3>整体系统架构图</h3>
-      <img src="../../static/bil/imgamge/20180620134742.png" alt="">
+      <img src="../../static/bil/imgamge/20180629091657.png" alt="">
     </div>
     <bottom></bottom>
   </div>

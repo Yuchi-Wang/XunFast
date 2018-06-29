@@ -85,11 +85,11 @@
     <!--智能车间-->
     <div class="container-fluid wisdom">
       <h4>智能车间</h4>
-      <img src="../../static/bil/imgamge/20180624175301.jpg" alt="">
+      <img src="../../static/bil/imgamge/20180629092631.png" alt="">
     </div>
     <div class="container-fluid" id="solution">
       <h3 class="solution_title">三项集成：横向集成、纵向集成、端到端集成</h3>
-      <img src="../../static/bil/imgamge/20180624165550.jpg" alt="">
+      <img src="../../static/bil/imgamge/20180629091519.png" alt="">
     </div>
     <bottom></bottom>
   </div>

@@ -9,7 +9,7 @@
         话维护、现场维护等有效的方式，确保系统稳定运行。</p>
     </div>
     <div class="container-fluid down">
-      <img src="../../static/bil/imgamge/20180625100148.png" alt="">
+      <img src="../../static/bil/imgamge/20180629092814.png" alt="">
       <div class="tel">
         <h4 class="tel-title">联系方式：</h4>
         <ul class="row">
@@ -69,7 +69,7 @@
   .news-bg {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180627094524.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180629091154.jpg") no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     margin-top: 70px;

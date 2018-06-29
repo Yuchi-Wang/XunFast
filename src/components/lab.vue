@@ -26,7 +26,7 @@
     </div>
     <div class="advantage">
       <h3>系统功能</h3>
-      <img src="../../static/bil/imgamge/20180628142848.jpg" alt="">
+      <img src="../../static/bil/imgamge/20180629094514.png" alt="">
     </div>
     <bottom></bottom>
   </div>

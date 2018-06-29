@@ -99,6 +99,13 @@ export default new Router({
         require(['../components/scada'], resolve)
       }
     },
+    {
+      path: '/equipment',
+      name: 'equipment',
+      component: (resolve) => {
+        require(['../components/equipment'], resolve)
+      }
+    }
   ],
   /*路由跳转在最顶端显示*/
   scrollBehavior(to,from,savedPosition) {

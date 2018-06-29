@@ -75,11 +75,11 @@
         navlist: [
           {urlArray: '/scada', title: '设备数据智能采集系统'},
           {urlArray: '/lab', title: '实验室信息管理与应用分析平台'},
+          {urlArray: '/equipment', title: '智慧设备生命周期管理系统'},
           {urlArray: '/three-dimensional', title: '数字三维实景可视化平台'},
           {urlArray: '/bigData', title: '大数据建模与可视化'},
           {urlArray: '/encoding', title: '信息编码标准与主数据管理工具平台'},
           {urlArray: '/fibre', title: '基于光纤传感的智慧安防平台'},
-         /* {urlArray: '/health', title: '设备动态监测与智能预警'},*/
           {urlArray: '/party', title: '智慧党建'},
           {urlArray: '/education', title: '智慧职教'},
           {urlArray: '/lock', title: '智能门锁'},
@@ -189,11 +189,17 @@
     margin-left:0;
     text-align: left;
   }
-  .navList ul li:nth-of-type(4),.navList ul li:nth-of-type(9){
-    width: 16%;
+  .navList ul li:nth-of-type(1){
+    width: 18%;
   }
-  .navList ul li:nth-of-type(5){
-    width: 24%;
+  .navList ul li:nth-of-type(2){
+    width: 22%;
+  }
+  .navList ul li:nth-of-type(6) {
+    width: 25%;
+  }
+  .navList ul li:nth-of-type(8), .navList ul li:nth-of-type(9), .navList ul li:nth-of-type(10) {
+    width: 11%;
   }
   .navList ul li .router-link-active,#navLists ul li .router-link-active{
     background: none;

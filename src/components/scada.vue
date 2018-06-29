@@ -144,19 +144,19 @@
         ],
         production: [
           {
-            imgArray: '../../static/bil/imgamge/20180622155509.png', title: '有接口有协议',
+            imgArray: '../../static/bil/imgamge/20180628161830.png', title: '有接口有协议',
             txt: '在设备中有接口有协议的仪器设备基本上没有。争对有接口有协议的仪器设备进行设备数据采集相对其它类型的要容易很多。'
           },
           {
-            imgArray: '../../static/bil/imgamge/20180622155427.png', title: '有接口无协议',
+            imgArray: '../../static/bil/imgamge/20180628161937.png', title: '有接口无协议',
             txt: '70%的仪器设备是有接口无协议的，要实现自动采集和分析还需要向厂商单独购买软件才能实现。其次还无法完成自动信息化集成效果。'
           },
           {
-            imgArray: '../../static/bil/imgamge/20180625152209.png', title: '无接口无协议',
+            imgArray: '../../static/bil/imgamge/20180628162751.png', title: '无接口无协议',
             txt: '此类仪器设备属于较老的仪器，而争对这类仪器仪表在实施数据自动化采集相对比第二种简单很多。'
           },
           {
-            imgArray: '../../static/bil/imgamge/20180622155509.png', title: '非电子仪器',
+            imgArray: '../../static/bil/imgamge/20180628162811.png', title: '非电子仪器',
             txt: '非电子仪器仪表基本上依靠人工操作主观判读为主。在可行范围内对这类仪器可采用加装高精密传感设备来实现。'
           },
         ],
@@ -214,7 +214,7 @@
 <style scoped>
   /* banner */
   .scada-banner {
-    background: url("../../static/bil/imgamge/20180627182930.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180628175058.jpg") no-repeat;
     height: 5rem;
     width: 100%;
     background-size: cover;
@@ -373,6 +373,9 @@
   .maintxt img {
     width: 40px;
   }
+  .main>.row {
+    margin: 0 10% 0 15%;
+  }
 
   .main .row, .none .row {
     margin-top: 60px;
@@ -415,11 +418,11 @@
   }
 
   .none_bg {
-    background: url("../../static/bil/imgamge/20180625152209.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180628162751.png") no-repeat;
     width: 100%;
     height: inherit;
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 50% 0;
   }
 
   .advance_bg {
