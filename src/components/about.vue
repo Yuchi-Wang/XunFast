@@ -14,7 +14,7 @@
           </ul>
           <ul id="service_content" class="row col-12 clearfix">
             <li v-for="(item,index) in imgArray" :key="item.index" v-show="index===checkIndex" class="col-sm-12">
-              <div v-show="index===1" class="container-fluid m-p-0" style="margin-bottom: 60px;padding-bottom: .7rem">
+              <div v-show="index===0" class="container-fluid m-p-0" style="margin-bottom: 60px;padding-bottom: .7rem">
                 <div class="row m-p-0">
                   <div class="col-md-6 m-p-0" style="padding-right: 50px">
                     <p>{{content}}</p>
@@ -22,7 +22,7 @@
                   <div class="col-md-6 about-bg"></div>
                 </div>
               </div>
-              <div v-show="index===0" class="development">
+              <div v-show="index===1" class="development">
                 <div class="certificate-list">
                   <ul class="list">
                     <li v-for="item in certificate" :key="item.certificate" :class="item.className">
@@ -81,10 +81,10 @@
     data: function () {
       return {
         lists: [
-          '资质荣誉',
           '公司介绍',
+          '资质荣誉',
           '新闻资讯',
-          '加入我们',
+          '加入我们'
         ],
         imgArray: [
           '',

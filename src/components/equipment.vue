@@ -188,50 +188,50 @@
             ],
             production: [
               {
-                imgArray: '../../static/bil/imgamge/20180628161830.png', title: '设备数字化台帐',
+                imgArray: '../../static/bil/imgamge/20180630102804.jpg', title: '设备数字化台帐',
                 txt: '在本系统建立初期应当实现设备数字化强台帐，供应商提供的设备规格参数、设备铭牌、维修保养资料、特殊设' +
                      '备维保计划等资料录入管理系统形成设备数字化台帐。'
               },
               {
-                imgArray: '../../static/bil/imgamge/20180628161937.png', title: '运行数据监控',
+                imgArray: '../../static/bil/imgamge/20180630102838.jpg', title: '运行数据监控',
                 txt: '在形成数字化台帐后，利用先进的物联网技术实现对设备实时运行数据、设备健康状况、突发状况进行监控以及' +
                 '记录数据，并根据数字化台帐进行分析比对作出相应的预警动作。'
               },
               {
-                imgArray: '../../static/bil/imgamge/20180628162751.png', title: '维保经验库',
+                imgArray: '../../static/bil/imgamge/20180630102856.jpg', title: '维保经验库',
                 txt: '根据设备运行数据、健康状况数据、设备规格参数、以往维保记录等数据形成智慧维保经验库。系统会利用人工' +
                 '智能神经网络工具有争对性地对每一个设备故障、维保、运行等方面进行自主学习形成维保经验库。当设备的健康情况' +
                 '不达标时，系统自动给用户提出维修、保养以及关键性的建议。'
               },
               {
-                imgArray: '../../static/bil/imgamge/20180628162811.png', title: '大数据分析',
+                imgArray: '../../static/bil/imgamge/20180630102913.jpg', title: '大数据分析',
                 txt: '系统最终会形成设备管理的大数据，用户可根据自主需要利用大数据和AI系统实现对设备进行智慧分析，系统给' +
                 '出关键的管理决策建议，以达到企业设备管理成本最小化、性价比最高化以及利用率最优化的目的。'
               },
             ],
             point: [
               {
-                title: '智能维保计划', imgArray: '../../static/bil/imgamge/20180622164945.png',
+                title: '智能维保计划', imgArray: '../../static/bil/imgamge/20180630103210.png',
                 txt: '结合互联网+物联网技术进行实时采集设备数据形成维保经验大数据。再通过神经网络和算法模块给用户提出综合性的维保建议。'
               },
               {
-                title: '智能预警', imgArray: '../../static/bil/imgamge/20180622165047.png',
+                title: '智能预警', imgArray: '../../static/bil/imgamge/20180630102956.png',
                 txt: '本系统通过物联网技术进行对设备实时采集数据，实现设备维保预警提示功能'
               },
               {
-               title: '设备管理最优化', imgArray: '../../static/bil/imgamge/20180622165109.png',
+               title: '设备管理最优化', imgArray: '../../static/bil/imgamge/20180630103246.png',
                 txt: '通过神经网络算法给用户最合理，最优化的调试和使用建议'
               },
               {
-                title: '智慧查询分析', imgArray: '../../static/bil/imgamge/20180622165142.png',
+                title: '智慧查询分析', imgArray: '../../static/bil/imgamge/20180630103122.png',
                 txt: '系统分析汇总功能从维保大数据库中提取数据进行智能、综合性地分析。 '
               },
               {
-                title: '数据共享', imgArray: '../../static/bil/imgamge/20180622165142.png',
+                title: '数据共享', imgArray: '../../static/bil/imgamge/20180630103328.png',
                 txt: '基于互联网技术实现多网点间的数据共享以及方便集团公司统一管理设备、维保以及达到节能减排目的。 '
               },
               {
-                title: '设备三维全景', imgArray: '../../static/bil/imgamge/20180622165142.png',
+                title: '设备三维全景', imgArray: '../../static/bil/imgamge/20180630103045.png',
                 txt: '通过设备三维全景进行拆解，让工作人员进一步了解设备组成原理，提高工作人员维修技能。'
               }
             ],
