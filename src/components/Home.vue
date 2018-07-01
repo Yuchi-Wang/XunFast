@@ -354,7 +354,7 @@
   }
 
   .product > div > div:nth-of-type(3) > div {
-    background: url("../../static/bil/imgamge/20180613151524.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180630202559.jpg") no-repeat;
     background-size: cover;
     background-position: 50% 50%;
   }

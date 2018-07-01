@@ -211,27 +211,27 @@
             ],
             point: [
               {
-                title: '智能维保计划', imgArray: '../../static/bil/imgamge/20180630103210.png',
+                title: '智能维保计划', imgArray: '../../static/bil/imgamge/20180630204709.png',
                 txt: '结合互联网+物联网技术进行实时采集设备数据形成维保经验大数据。再通过神经网络和算法模块给用户提出综合性的维保建议。'
               },
               {
-                title: '智能预警', imgArray: '../../static/bil/imgamge/20180630102956.png',
+                title: '智能预警', imgArray: '../../static/bil/imgamge/20180630203031.png',
                 txt: '本系统通过物联网技术进行对设备实时采集数据，实现设备维保预警提示功能'
               },
               {
-               title: '设备管理最优化', imgArray: '../../static/bil/imgamge/20180630103246.png',
+               title: '设备管理最优化', imgArray: '../../static/bil/imgamge/20180630204812.png',
                 txt: '通过神经网络算法给用户最合理，最优化的调试和使用建议'
               },
               {
-                title: '智慧查询分析', imgArray: '../../static/bil/imgamge/20180630103122.png',
+                title: '智慧查询分析', imgArray: '../../static/bil/imgamge/20180630204842.png',
                 txt: '系统分析汇总功能从维保大数据库中提取数据进行智能、综合性地分析。 '
               },
               {
-                title: '数据共享', imgArray: '../../static/bil/imgamge/20180630103328.png',
+                title: '数据共享', imgArray: '../../static/bil/imgamge/20180630204910.png',
                 txt: '基于互联网技术实现多网点间的数据共享以及方便集团公司统一管理设备、维保以及达到节能减排目的。 '
               },
               {
-                title: '设备三维全景', imgArray: '../../static/bil/imgamge/20180630103045.png',
+                title: '设备三维全景', imgArray: '../../static/bil/imgamge/20180630204932.png',
                 txt: '通过设备三维全景进行拆解，让工作人员进一步了解设备组成原理，提高工作人员维修技能。'
               }
             ],

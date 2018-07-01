@@ -5,14 +5,14 @@
         <div class="navList" id="production_list">
           <ul>
             <li v-for="item in navlist" :key="item.navlist">
-              <router-link :to="item.url">{{item.title}}</router-link>
+              <router-link :to="item.urlArray">{{item.title}}</router-link>
             </li>
           </ul>
         </div>
         <div id="navLists">
           <ul>
             <li v-for="item in navlists" :key="item.navlists">
-              <router-link :to="item.url">{{item.title}}</router-link>
+              <router-link :to="item.urlArray">{{item.title}}</router-link>
             </li>
           </ul>
         </div>
@@ -74,22 +74,22 @@
         isactive:false,
         isclick:false,
         navlist: [
-          {url: '/scada', title: '设备数据智能采集系统'},
-          {url: '/lab', title: '实验室信息管理与应用分析平台'},
-          {url: '/equipment', title: '设备全生命周期智慧管理系统'},
-          {url: '/three-dimensional', title: '数字三维实景可视化平台'},
-          {url: '/bigData', title: '大数据建模与可视化'},
-          {url: '', title: '信息编码标准与主数据管理工具平台'},
-          {url: '/fibre', title: '基于光纤传感的智慧安防平台'},
-          {url: '', title: '智慧党建'},
-          {url: '', title: '智慧职教'},
-          {url: '', title: '智能门锁'},
-          {url: '', title: '学业诊断与考试分析系统'}
+          {urlArray: '/scada', title: '设备数据智能采集系统'},
+          {urlArray: '/lab', title: '实验室信息管理与应用分析平台'},
+          {urlArray: '/equipment', title: '设备全生命周期智慧管理系统'},
+          {urlArray: '/three-dimensional', title: '数字三维实景可视化平台'},
+          {urlArray: '/bigData', title: '大数据建模与可视化'},
+          {urlArray: '', title: '信息编码标准与主数据管理工具平台'},
+          {urlArray: '/fibre', title: '基于光纤传感的智慧安防平台'},
+          {urlArray: '', title: '智慧党建'},
+          {urlArray: '', title: '智慧职教'},
+          {urlArray: '', title: '智能门锁'},
+          {urlArray: '', title: '学业诊断与考试分析系统'}
         ],
         navlists: [
-          {url: '/wisdom', title: '智能制造'},
-          {url: '/fuel', title: '互联网+航油安全'},
-          {url: '', title: '智慧建筑'}
+          {urlArray: '/wisdom', title: '智能制造'},
+          {urlArray: '/fuel', title: '互联网+航油安全'},
+          {urlArray: '', title: '智慧建筑'}
         ]
       }
     },
@@ -206,12 +206,13 @@
     background: none;
     color: #008fd7;
   }
+
   .navList ul li:nth-of-type(6)>a, .navList ul li:nth-of-type(8)>a, .navList ul li:nth-of-type(9)>a,
-  .navList ul li:nth-of-type(10)>a, .navList ul li:nth-of-type(11)>a,#navLists ul li:nth-of-type(3)>a,
+  .navList ul li:nth-of-type(10)>a, .navList ul li:nth-of-type(11)>a,
+ #navLists ul li:nth-of-type(3)>a,
   .router-link-active {
     color: black;
   }
-
 
 
   .navList ul li a:hover,#navLists ul li a:hover{

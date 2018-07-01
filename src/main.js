@@ -13,9 +13,9 @@ import '../static/bil/js/index'
 /* eslint-disable no-new */
 
 Vue.prototype.$axios = axios
-axios.defaults.baseURL = 'http://192.168.1.224:8088/'
+axios.defaults.baseURL = 'http://47.96.234.246:80/'
 
-Vue.prototype.imgurl = 'http://192.168.1.224:8088/'
+Vue.prototype.imgurl = 'http://47.96.234.246:80/'
 Vue.use(VueResource)
 Vue.config.productionTip = false
 
