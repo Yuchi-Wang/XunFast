@@ -13,15 +13,14 @@
       <div class="tel">
         <h4 class="tel-title">联系方式：</h4>
         <ul class="row">
-          <li class="col-md-4">运维技术支持工程师电话：123456789</li>
-          <li class="col-md-4">运维技术支持工程师手机：123456789</li>
-          <li class="col-md-4">运维技术支持工程师邮箱：123456789</li>
-          <li class="col-md-4">运维技术支持微信号：123456789</li>
-          <li class="col-md-4">运维技术支持QQ号：123456789</li>
-          <li class="col-md-4">运维负责人电话：123456789</li>
-          <li class="col-md-4">运维负责人邮箱：123456789</li>
-          <li class="col-md-4">运维监督投诉电话：123456788</li>
-          <li class="col-md-4">运维监督投诉电话：123456789</li>
+          <li class="col-md-4">运维技术支持工程师电话：021-6816 0161</li>
+          <li class="col-md-4">运维技术支持工程师手机：15821312137</li>
+          <li class="col-md-4">运维技术支持工程师邮箱：make@xunfast.com.cn</li>
+          <li class="col-md-4">运维技术支持微信号：15821312137</li>
+          <li class="col-md-4">运维技术支持QQ号：313775583</li>
+          <li class="col-md-4">运维负责人电话：18160196096</li>
+          <li class="col-md-4">运维负责人邮箱：Alex.Huang@xunfast.com.cn</li>
+          <li class="col-md-4">运维监督投诉电话：15221678631</li>
         </ul>
       </div>
     </div>
@@ -69,7 +68,7 @@
   .news-bg {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180629091154.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180701145325.jpg") no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     margin-top: 70px;
@@ -111,7 +110,7 @@
   }
   .tel-title {
     text-align: left;
-    margin-left:16%;
+    margin-left:14%;
     color: #333333;
     font-weight: bolder;
   }
@@ -130,7 +129,7 @@
 
   .tel .row {
     text-align: left;
-    margin: 0 20% 0 23%;
+    margin: 0 12% 0 14%;
   }
   .tel ul li {
     font-weight: bolder;

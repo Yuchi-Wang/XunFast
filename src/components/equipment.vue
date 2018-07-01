@@ -98,13 +98,13 @@
             difficultTitle:'传统设备管理模式存在的问题',
             certificate: [
               {
-                imgArray: '../../static/bil/imgamge/20180627174459.jpg', title: '设备管理信息零散，缺乏长期，完整的信息管理',
+                imgArray: '../../static/bil/imgamge/20180701194553.jpg', title: '设备管理信息零散，缺乏长期，完整的信息管理',
                 txt: '传统的管理模式信息记录在纸质介质和分散在不同的Excel，Word文档中，各个分公司的信息提交后，对信息进行' +
                 '整理和分析工作量大，信息的准确性，一致性无法保证'
               },
               {imgArray: '', title: '传统设备管理模式存在的问题', txt: ''},
               {
-                imgArray: '../../static/bil/imgamge/20180629112349.png', title: '缺少科学手段对制度执行情况进行有效的监管、评估',
+                imgArray: '../../static/bil/imgamge/20180701194332.jpg', title: '缺少科学手段对制度执行情况进行有效的监管、评估',
                 txt: '设备管理工作的改进由于缺少历史数据的支持，更多的依靠个人经验判断，无法进行科学的评估和建议'
               },
               {
@@ -114,13 +114,13 @@
                 '保养人员的工作量也是传统管理模式中经常不能处理的问题。'
               },
               {
-                imgArray: '../../static/bil/imgamge/20180629112600.png', title: '信息缺乏综合分析，利用率低',
+                imgArray: '../../static/bil/imgamge/20180701180954.jpg', title: '信息缺乏综合分析，利用率低',
                 txt: '设备的历史变更记录，历史维修记录，历史文档等各种动态信息缺乏有效的管理手段，在日常管理中，尽管对这' +
                 '些信息进行了登记，但是由于缺乏管理平台，这类动态信息的后期利用率低，未能充分发挥信息对设备管理工作改进的' +
                 '指导作用。'
               },
               {
-                imgArray: '../../static/bil/imgamge/20180629112515.png', title: '设备实时健康数据难以收集',
+                imgArray: '../../static/bil/imgamge/20180701181330.jpg', title: '设备实时健康数据难以收集',
                 txt: '传统的管理方式缺乏科学的、有预见性的、有数据可分析的预警。而是以设备即坏即修原则，在日常使用率较高' +
                 '的设备可能存在替代难度大的情况。在此情况下正常生产就难以保障。'
               },
@@ -248,7 +248,7 @@
 
 <style scoped>
   .banner {
-    background: url("../../static/bil/imgamge/20180629141236.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180701152001.jpg") no-repeat;
     height: 5rem;
     width: 100%;
     background-size: cover;

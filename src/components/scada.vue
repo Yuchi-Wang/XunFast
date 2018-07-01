@@ -47,7 +47,7 @@
       <div class="row">
         <p>{{proOneTxt}}</p>
       </div>
-      <img src="../../static/bil/imgamge/20180627181151.png" alt="">
+      <img src="../../static/bil/imgamge/20180701175757.jpg" alt="">
     </div>
     <!--分类二-->
     <div class="main container-fluid">
@@ -103,20 +103,20 @@
         difficultTitle: '仪器设备数据采集的现状与难点',
         certificate: [
           {
-            imgArray: '../../static/bil/imgamge/20180627174459.jpg', title: '数据采集难',
+            imgArray: '../../static/bil/imgamge/20180701193044.jpg', title: '数据采集难',
             txt: '目前实验的仪器设备类型众多，主要分类为有数据接口及无数据接口两类。而有接口的仪器设备数据采集只能依靠厂家配套的软件才能采集，且很难达到数据集成的目的'
           },
-          {imgArray: '../../static/bil/imgamge/20180628160109.jpg', title: '现状与难点', txt: ''},
+          {imgArray: '../../static/bil/imgamge/20180701183134.jpg', title: '现状与难点', txt: ''},
           {
             imgArray: '../../static/bil/imgamge/20180627174719.jpg', title: '人工记录',
             txt: '争对现在的仪器设备的数据，大多数都是采用人工记录的方式。这种方式不仅效率低而且容易出现错误'
           },
           {
-            imgArray: '../../static/bil/imgamge/20180627174922.jpg', title: '效率低',
+            imgArray: '../../static/bil/imgamge/20180701181509.jpg', title: '效率低',
             txt: '仪器设备在没有智能化前它如同一把手动镙丝刀，它并不能像自动工具那样能快速有效地工作'
           },
           {
-            imgArray: '../../static/bil/imgamge/20180627174649.jpg', title: '数据差异',
+            imgArray: '../../static/bil/imgamge/20180701183207.jpg', title: '数据差异',
             txt: '有些仪器设备在工作过程中数据随时在更新变化，在操作人员主观判断上存在数据的差异性，无法精准地抓取有效有数据'
           },
           {
@@ -124,7 +124,7 @@
             txt: '传统的仪器设备数据依靠主观判断、人工记录，纸制报告。而对于有数字化系统的企业而言在没有实现智能采集前还需要将这些数据人工录入至系统中，这就造成了典型的时间人力的浪费'
           },
         ],
-        goalTxt: '通过实时、自动监控与获取实验室设备当前的状态信息瞬间把这些数据保存到数据库中，立即与标准值或规则做对比，' +
+        goalTxt: '通过实时、自动监控与获取企业设备当前的状态信息瞬间把这些数据保存到数据库中，立即与标准值或规则做对比，' +
         '然后把设备的状态、异常、测量值等信息通过软件，报表、EXCEL等方式展示给相关人员，从而实现了自动采集、即时监控、随' +
         '时预警、自动汇总的管理效果。数据采集是实现自动化设备、信息化系统与管理层之间的信息纽带，建立和完善自动数据采集机' +
         '制已成为企业信息化建设的重点。',
@@ -144,19 +144,19 @@
         ],
         production: [
           {
-            imgArray: '../../static/bil/imgamge/20180628161830.png', title: '有接口有协议',
+            imgArray: '../../static/bil/imgamge/20180701185459.jpg', title: '有接口有协议',
             txt: '在设备中有接口有协议的仪器设备基本上没有。争对有接口有协议的仪器设备进行设备数据采集相对其它类型的要容易很多。'
           },
           {
-            imgArray: '../../static/bil/imgamge/20180628161937.png', title: '有接口无协议',
+            imgArray: '../../static/bil/imgamge/20180701185523.jpg', title: '有接口无协议',
             txt: '70%的仪器设备是有接口无协议的，要实现自动采集和分析还需要向厂商单独购买软件才能实现。其次还无法完成自动信息化集成效果。'
           },
           {
-            imgArray: '../../static/bil/imgamge/20180628162751.png', title: '无接口无协议',
+            imgArray: '../../static/bil/imgamge/20180701185616.jpg', title: '无接口无协议',
             txt: '此类仪器设备属于较老的仪器，而争对这类仪器仪表在实施数据自动化采集相对比第二种简单很多。'
           },
           {
-            imgArray: '../../static/bil/imgamge/20180628162811.png', title: '非电子仪器',
+            imgArray: '../../static/bil/imgamge/20180701185554.jpg', title: '非电子仪器',
             txt: '非电子仪器仪表基本上依靠人工操作主观判读为主。在可行范围内对这类仪器可采用加装高精密传感设备来实现。'
           },
         ],
@@ -214,7 +214,7 @@
 <style scoped>
   /* banner */
   .scada-banner {
-    background: url("../../static/bil/imgamge/20180628175058.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180701145034.jpg") no-repeat;
     height: 5rem;
     width: 100%;
     background-size: cover;
@@ -418,15 +418,15 @@
   }
 
   .none_bg {
-    background: url("../../static/bil/imgamge/20180628162751.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180701185616.jpg") no-repeat;
     width: 100%;
-    height: inherit;
+    height: 4.5rem;
     background-size: cover;
-    background-position: 50% 0;
+    background-position: 50% 50%;
   }
 
   .advance_bg {
-    background: url("../../static/bil/imgamge/20180627192345.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180701192701.jpg") no-repeat;
     width: 100%;
     height: inherit;
     background-size: contain;

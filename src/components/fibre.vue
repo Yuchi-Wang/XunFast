@@ -108,7 +108,7 @@
   .bg {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180619145036.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180701145706.jpg") no-repeat;
     background-size: cover;
     margin-bottom: .7rem;
     position: relative;

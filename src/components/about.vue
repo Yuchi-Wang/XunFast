@@ -190,7 +190,7 @@
   .about_bg {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180629135921.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180701145449.jpg") no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     margin-top: 69px;
@@ -456,7 +456,7 @@
   }
 
   .about-bg {
-    background: url("../../static/bil/imgamge/20180626090835.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180701184612.jpg") no-repeat;
     width: 100%;
     background-size: cover;
     padding: 0 !important;

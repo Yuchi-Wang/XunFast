@@ -156,7 +156,7 @@
   .f_banner {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180627094426.jpg");
+    background: url("../../static/bil/imgamge/20180701150207.jpg");
     background-size: cover;
     background-position: 50% 30%;
     margin-top: 70px;
@@ -240,12 +240,12 @@
   }
 
   #slider > div:nth-of-type(2) {
-    background: url("../../static/bil/imgamge/20180626091106.jpg");
+    background: url("../../static/bil/imgamge/20180701184339.jpg");
     background-size: cover;
     background-position: 50% 20%;
   }
   #slider > div:nth-of-type(3) {
-    background: url("../../static/bil/imgamge/20180624190210.jpg");
+    background: url("../../static/bil/imgamge/20180701184431.jpg");
     background-size: cover;
     background-position: 50% 20%;
   }

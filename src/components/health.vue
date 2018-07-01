@@ -89,7 +89,7 @@
 
 <style scoped>
   .bg {
-    background: url("../../static/bil/imgamge/20180620175533.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180701150042.jpg") no-repeat;
     height:5rem;
     width: 100%;
     background-size: cover;
@@ -197,7 +197,7 @@
   }
   .main{
     width: 100%;
-    background:url("../../static/bil/imgamge/20180522133716.png") no-repeat;
+    background:url("../../static/bil/imgamge/20180701185107.jpg") no-repeat;
     padding: .7rem 0;
     text-align: center;
     position: relative;

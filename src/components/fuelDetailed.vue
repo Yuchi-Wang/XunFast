@@ -82,7 +82,7 @@ export default {
 .background{
   width:100%;
   height: 4rem;
-  background: url("../../static/bil/imgamge/500285629.png")  no-repeat;
+  background: url("../../static/bil/imgamge/20180701184840.jpg")  no-repeat;
   background-size: cover;
   text-align: center;
   margin-top: 70px;

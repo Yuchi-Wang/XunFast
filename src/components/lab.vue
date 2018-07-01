@@ -26,7 +26,7 @@
     </div>
     <div class="advantage">
       <h3>系统功能</h3>
-      <img src="../../static/bil/imgamge/20180629105526.png" alt="">
+      <img src="../../static/bil/imgamge/lims.gif" alt="">
     </div>
     <bottom></bottom>
   </div>
@@ -53,7 +53,7 @@
     text-align: center;
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180628155836.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180701151358.jpg") no-repeat;
     background-size: cover;
     margin-top: 70px;
     position: relative;

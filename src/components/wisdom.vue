@@ -85,11 +85,11 @@
     <!--智能车间-->
     <div class="container-fluid wisdom">
       <h4>智能车间</h4>
-      <img src="../../static/bil/imgamge/20180629092631.png" alt="">
+      <img src="../../static/bil/imgamge/smart-car.gif" alt="">
     </div>
     <div class="container-fluid" id="solution">
       <h3 class="solution_title">三项集成：横向集成、纵向集成、端到端集成</h3>
-      <img src="../../static/bil/imgamge/20180629091519.png" alt="">
+      <img src="../../static/bil/imgamge/san.gif" alt="">
     </div>
     <bottom></bottom>
   </div>
@@ -129,7 +129,7 @@
         ],
         certificate: [
           {
-            imgArray: '../../static/bil/imgamge/20180627111330.jpg', title: '自动化',
+            imgArray: '../../static/bil/imgamge/20180701180456.jpg', title: '自动化',
             txt: '建设了覆盖全厂的DCS、SIS等系统，实现对整个工艺过程的监测与控制'
           },
           {
@@ -173,7 +173,7 @@
 
 <style scoped>
   .bg {
-    background: url("../../static/bil/imgamge/20180621095757.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180701145919.jpg") no-repeat;
     height: 5rem;
     width: 100%;
     background-size: cover;

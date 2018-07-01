@@ -63,9 +63,9 @@
       <div class="row">
         <h4>关于我们</h4>
         <div class="col-md-12  a_img row" id="aimg">
-          <div class="aimg1 col-md-6"><img src="../../static/bil/imgamge/20180612160849.png" alt="" style="width: 100%">
+          <div class="aimg1 col-md-6"><img src="../../static/bil/imgamge/20180701182835.jpg" alt="" style="width: 100%">
           </div>
-          <div class="aimg2 col-md-6"><img src="../../static/bil/imgamge/20180622154348.png" alt="" style="width: 100%">
+          <div class="aimg2 col-md-6"><img src="../../static/bil/imgamge/20180701181036.jpg" alt="" style="width: 100%">
           </div>
         </div>
         <div class="col-md-12 abouttxt">
@@ -273,18 +273,18 @@
   }
 
   #slider > div:nth-of-type(1) {
-    background: url("../../static/bil/imgamge/20180619084726.jpg");
+    background: url("../../static/bil/imgamge/20180701144828.jpg");
     background-size: cover;
     background-position: 50% 50%;
   }
 
   #slider > div:nth-of-type(2) {
-    background: url("../../static/bil/imgamge/20180629135045.jpg");
+    background: url("../../static/bil/imgamge/20180701145237.jpg");
     background-size: cover;
     background-position: 50% 50%;
   }
   #slider > div:nth-of-type(3) {
-    background: url("../../static/bil/imgamge/20180629135126.jpg");
+    background: url("../../static/bil/imgamge/20180701192303.jpg");
     background-size: cover;
     background-position: 50% 50%;
   }
@@ -348,7 +348,7 @@
   }
 
   .product > div > div:nth-of-type(2) > div {
-    background: url("../../static/bil/imgamge/20180626113428.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180701175948.jpg") no-repeat;
     background-size: cover;
     background-position: 50% 50%;
   }
@@ -360,7 +360,7 @@
   }
 
   .product > div > div:nth-of-type(4) > div {
-    background: url("../../static/bil/imgamge/20180613102014.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180701182510.jpg") no-repeat;
     background-size: cover;
     background-position: 50% 50%;
   }
@@ -451,7 +451,7 @@
 
   .imgbox {
     width: 100%;
-    background: url("../../static/bil/imgamge/20180622155509.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180701181620.jpg") no-repeat;
     height: 3rem;
     background-size: cover;
     transition: .3s;
@@ -463,14 +463,14 @@
   }
 
   .imgbox1 {
-    background: url("../../static/bil/imgamge/20180622155427.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180701181703.jpg") no-repeat;
     height: 3rem;
     background-size: cover;
     background-position: 50% 50%;
   }
 
   .imgbox2 {
-    background: url("../../static/bil/imgamge/20180625152209.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180701181754.jpg") no-repeat;
     height: 3rem;
     background-size: cover;
     background-position: 50% 50%;

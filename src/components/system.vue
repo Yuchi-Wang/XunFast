@@ -95,7 +95,7 @@
     padding-top: .8rem;
     width: 100%;
     height: 9rem;
-    background: url("../../static/bil/imgamge/20180507143224.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180701184711.jpg") no-repeat;
     background-size: cover;
     margin-top: 70px;
   }
