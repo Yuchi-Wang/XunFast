@@ -9,7 +9,7 @@
         话维护、现场维护等有效的方式，确保系统稳定运行。</p>
     </div>
     <div class="container-fluid down">
-      <img src="../../static/bil/imgamge/20180629092814.png" alt="">
+      <img src="../../static/bil/imgamge/20180702131057.jpg" alt="">
       <div class="tel">
         <h4 class="tel-title">联系方式：</h4>
         <ul class="row">

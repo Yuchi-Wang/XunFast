@@ -21,7 +21,7 @@
       <div class="row"></div>
       <h3>大数据可视化平台战略规划</h3>
       <p>{{threeTxt}}</p>
-      <img src="../../static/bil/imgamge/20180522163553.png" alt="">
+      <img src="../../static/bil/imgamge/20180702174821.jpg" alt="">
     </div>
     <div class="main container-fluid" id="main">
       <h3>平台特性</h3>
@@ -105,7 +105,7 @@
   /*question*/
   .question {
     width: 100%;
-    background: url("../../static/bil/imgamge/20180524142826.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180702170521.jpg") no-repeat;
     background-size: cover;
     padding: .5rem 0;
     text-align: center;

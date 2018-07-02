@@ -5,7 +5,6 @@
       </div>
       <!-- 难点 -->
       <div class="container-fluid difficult">
-      <!--  <h3 class="animated slideInDown">{{difficultTitle}}</h3>-->
         <div class="row">
           <div class="col-md-4" v-for="item in certificate" :key="item.certificate"
                v-bind:style="{ 'background-image': 'url(' + item.imgArray + ')','background-repeat':'no-repeat','background-size':'cover','background-position':'50% 50%' }">
@@ -53,7 +52,7 @@
       <!--架构图-->
       <div class="technology">
         <h3>技术架构图</h3>
-        <img src="../../static/bil/imgamge/20180629154645.png" alt="">
+        <img src="../../static/bil/imgamge/20180702174912.jpg" alt="">
       </div>
       <!--实施阶段-->
       <div class="container-fluid instrument" id="solution">
@@ -95,7 +94,6 @@
         name: "equipment",
       data() {
           return {
-            difficultTitle:'传统设备管理模式存在的问题',
             certificate: [
               {
                 imgArray: '../../static/bil/imgamge/20180701194553.jpg', title: '设备管理信息零散，缺乏长期，完整的信息管理',
@@ -108,7 +106,7 @@
                 txt: '设备管理工作的改进由于缺少历史数据的支持，更多的依靠个人经验判断，无法进行科学的评估和建议'
               },
               {
-                imgArray: '../../static/bil/imgamge/20180629112443.png', title: '设备维修保养计划管理难度较大',
+                imgArray: '../../static/bil/imgamge/20180702131439.jpg', title: '设备维修保养计划管理难度较大',
                 txt: '每个分公司均管理着大量的设备，每个设备的不同部件均有定期的检修和保养工作，由于信息量较大，计划的整' +
                 '理和安排消耗了相关人员大量时间，并且可能存在计划执行延误。同时，如何达到最优的设备使用效率，合理安排维修' +
                 '保养人员的工作量也是传统管理模式中经常不能处理的问题。'
@@ -188,7 +186,7 @@
             ],
             production: [
               {
-                imgArray: '../../static/bil/imgamge/20180630102804.jpg', title: '设备数字化台帐',
+                imgArray: '../../static/bil/imgamge/20180702165913.jpg', title: '设备数字化台帐',
                 txt: '在本系统建立初期应当实现设备数字化强台帐，供应商提供的设备规格参数、设备铭牌、维修保养资料、特殊设' +
                      '备维保计划等资料录入管理系统形成设备数字化台帐。'
               },
@@ -198,13 +196,13 @@
                 '记录数据，并根据数字化台帐进行分析比对作出相应的预警动作。'
               },
               {
-                imgArray: '../../static/bil/imgamge/20180630102856.jpg', title: '维保经验库',
+                imgArray: '../../static/bil/imgamge/20180702154946.jpg', title: '维保经验库',
                 txt: '根据设备运行数据、健康状况数据、设备规格参数、以往维保记录等数据形成智慧维保经验库。系统会利用人工' +
                 '智能神经网络工具有争对性地对每一个设备故障、维保、运行等方面进行自主学习形成维保经验库。当设备的健康情况' +
                 '不达标时，系统自动给用户提出维修、保养以及关键性的建议。'
               },
               {
-                imgArray: '../../static/bil/imgamge/20180630102913.jpg', title: '大数据分析',
+                imgArray: '../../static/bil/imgamge/20180525115147.jpg', title: '大数据分析',
                 txt: '系统最终会形成设备管理的大数据，用户可根据自主需要利用大数据和AI系统实现对设备进行智慧分析，系统给' +
                 '出关键的管理决策建议，以达到企业设备管理成本最小化、性价比最高化以及利用率最优化的目的。'
               },
@@ -274,7 +272,7 @@
     padding: .7rem 0;
   }
 
-  .difficult h3,.content h3,.main h3,.technology h3,.instrument h3,.point h3{
+   .content h3,.main h3,.technology h3,.instrument h3,.point h3{
     display: block;
     width: 100%;
     font-size: .28rem;
@@ -283,7 +281,7 @@
     position: relative;
   }
 
-  .difficult h3:after,.content h3:after,.main h3:after ,.technology h3:after,.instrument h3:after,.point h3:after{
+  .content h3:after,.main h3:after ,.technology h3:after,.instrument h3:after,.point h3:after{
     width: 60px;
     position: absolute;
     left: 50%;

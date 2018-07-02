@@ -10,8 +10,7 @@
         </div>
       </transition-group>
       <div id="slider-btn">
-        <span v-for="(item, index) in banner" v-on:mouseover="change(index)" :key="item.index"
-              v-bind:style="{background:index===mark?'#FFF':'',}"></span>
+        <span v-for="(item, index) in banner" v-on:mouseover="change(index)" :key="item.index" v-bind:style="{background:index===mark?'#FFF':'',}"></span>
       </div>
       <div class="bottom-round"></div>
     </div>
@@ -19,7 +18,7 @@
       <h3 class="animated slideInDown">公司产品</h3>
       <div class="row">
         <div class="col-md-3 col-sm-6 production" v-for="item in production" :key="item.production">
-          <div>
+          <div v-bind:style="{ 'background-image': 'url(' + item.bg + ')','background-repeat':'no-repeat','background-size':'cover','background-position':'50% 50%' }">
             <img :src="item.imgArray" alt="" width="135" height="135">
             <p>{{item.title}}</p>
             <router-link :to="item.url">深入了解</router-link>
@@ -87,17 +86,21 @@
         timer: null,
         mark: 0,
         production: [
-          {imgArray: '../../static/bil/imgamge/20180626114012.png', title: '设备数据智能采集系统', url: '/scada'},
-          {imgArray: '../../static/bil/imgamge/20180626113943.png', title: '实验室信息管理与应用分析平台', url: '/lab'},
-          {imgArray: '../../static/bil/imgamge/20180613102436.png', title: '设备全生命周期智慧管理系统', url: '/equipment'},
-          {imgArray: '../../static/bil/imgamge/20180613102454.png', title: '数字三维实景可视化平台', url: '/three-dimensional'},
+          {imgArray: '../../static/bil/imgamge/20180626114012.png', title: '设备数据智能采集系统', url: '/scada',
+            bg:'../../static/bil/imgamge/20180626113254.jpg'},
+          {imgArray: '../../static/bil/imgamge/20180626113943.png', title: '实验室信息管理与应用分析平台', url: '/lab',
+            bg:'../../static/bil/imgamge/20180701175948.jpg'},
+          {imgArray: '../../static/bil/imgamge/20180613102436.png', title: '设备全生命周期智慧管理系统', url: '/equipment',
+            bg:'../../static/bil/imgamge/20180630202559.jpg'},
+          {imgArray: '../../static/bil/imgamge/20180613102454.png', title: '数字三维实景可视化平台', url: '/three-dimensional',
+            bg:'../../static/bil/imgamge/20180701182510.jpg'},
         ],
-        introduction: '  上海迅发信息技术有限公司是拥有一支技术实力雄厚的硕士博士生团队的高科技企业，充分利用互联网、物联网、大数据、\n' +
-        '            人工智能等新一代信息技术，专注于互联网+、大数据+行业应用的研发和产品化。公司在信息系统整体架构、大数\n' +
-        '            据建模分析与可视化、机器视觉、人工智能等方面，有着独立自主、业内领先的算法和模型，公司拥有数十个软件著作\n' +
-        '            权，并通过ISO9001质量管理体系认证。公司与上海交通大学、复旦大学、同济大学、华东师范大学等国内知名高校建\n' +
-        '            立了深入的合作关系，整合了一直高水平的专家团队和高效率的技术开发团队，致力于通过持续的技术创新和优质的服\n' +
-        '            务，不断为客户创造价值。',
+        introduction: '上海迅发信息技术有限公司是拥有一支技术实力雄厚的硕士博士生团队的高科技企业，充分利用互联网、物联网、大数据、' +
+                      '人工智能等新一代信息技术，专注于互联网+、大数据+行业应用的研发和产品化。公司在信息系统整体架构、大数'+
+                      '据建模分析与可视化、机器视觉、人工智能等方面，有着独立自主、业内领先的算法和模型，公司拥有数十个软件著作'+
+                      '权，并通过ISO9001质量管理体系认证。公司与上海交通大学、复旦大学、同济大学、华东师范大学等国内知名高校建' +
+                      '立了深入的合作关系，整合了一直高水平的专家团队和高效率的技术开发团队，致力于通过持续的技术创新和优质的服'+
+                      '务，不断为客户创造价值。',
         wisdomTxt:'智能制造是将物联网、大数据、云计算等新一代信息技术与先进自动化技术、传感技术、控制技术、数字制造技术结合，' +
                   '实现工厂和企业内部、企业之间和产品全生命周期的实时管理和优化的新型制造系统。智能制造的特征在于实时感知、' +
                   '优化决策、动态执行等三个方面。 主要包括一个网络、两大主题、三项集成',
@@ -150,6 +153,7 @@
     width: 100%;
     height: inherit;
   }
+  /* 动画 */
   .bg > div {
     position: absolute;
     top: 0;
@@ -253,6 +257,7 @@
     z-index: 99;
   }
 
+  /* banner */
   #slider-btn {
     position: absolute;
     left: 50%;
@@ -273,24 +278,25 @@
   }
 
   #slider > div:nth-of-type(1) {
-    background: url("../../static/bil/imgamge/20180701144828.jpg");
+    background: url("../../static/bil/imgamge/20180702170110.jpg");
     background-size: cover;
     background-position: 50% 50%;
   }
 
   #slider > div:nth-of-type(2) {
-    background: url("../../static/bil/imgamge/20180701145237.jpg");
+    background: url("../../static/bil/imgamge/20180702170159.jpg");
     background-size: cover;
     background-position: 50% 50%;
   }
   #slider > div:nth-of-type(3) {
-    background: url("../../static/bil/imgamge/20180701192303.jpg");
+    background: url("../../static/bil/imgamge/20180702162620.jpg");
     background-size: cover;
     background-position: 50% 50%;
   }
   #slider > div:nth-of-type(3)>div {
     display: none;
   }
+  /* 轮播动画*/
   .image-enter-active {
     opacity: 1;
     transition: opacity .8s linear;
@@ -321,10 +327,10 @@
   /* banner结束 */
 
   /* 产品 */
-  .product {
+  .product, .solution,.about {
     width: 100%;
     background: white;
-    padding: 30px 0 .7rem;
+    padding: .7rem 0;
     text-align: center;
     position: relative;
   }
@@ -341,30 +347,6 @@
     transform: translateY(-10px);
   }
 
-  .product > div > div:nth-of-type(1) > div {
-    background: url("../../static/bil/imgamge/20180626113254.jpg") no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  .product > div > div:nth-of-type(2) > div {
-    background: url("../../static/bil/imgamge/20180701175948.jpg") no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  .product > div > div:nth-of-type(3) > div {
-    background: url("../../static/bil/imgamge/20180630202559.jpg") no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  .product > div > div:nth-of-type(4) > div {
-    background: url("../../static/bil/imgamge/20180701182510.jpg") no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
   .product a {
     transition: .3s;
   }
@@ -375,7 +357,7 @@
     border: 1px solid white;
   }
 
-  .product > .row {
+  .product > .row, .about > .row {
     margin: 0 10%;
   }
 
@@ -422,10 +404,7 @@
 
   /* 解决方案 */
   .solution {
-    width: 100%;
     background: #f9f9f9;
-    padding: .7rem 0;
-    position: relative;
   }
 
   .solution > .row {
@@ -489,7 +468,7 @@
     color: #333333;
   }
 
-  .imgtxt p {
+  .imgtxt p,.about p {
     font-size: .15rem;
     text-align: justify;
     line-height: .25rem;
@@ -499,14 +478,7 @@
 
   /*关于我们*/
   .about {
-    background: white;
-    width: 100%;
-    padding: .7rem 0;
     text-align: right;
-  }
-
-  .about > .row {
-    margin: 0 10%;
   }
 
   .about h4 {
@@ -515,12 +487,8 @@
   }
 
   .about p {
-    font-size: .15rem;
-    text-align: justify;
-    line-height: .32rem;
     letter-spacing: 1px;
     margin-top: 20px;
-    color:#666666;
   }
 
   .abouttxt {

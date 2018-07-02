@@ -49,9 +49,9 @@
             </ul>
           </li>
           <li class="col-md-2">
-            <router-link :class="$route.path.substr(0,8) == '/article'? 'router-link-exact-active' :'' " to="/contact" class="sel">服务支持</router-link>
+            <router-link to="/contact" class="sel">服务支持</router-link>
           </li>
-          <li class="col-md-2"><router-link to="/about" class="sel"> 关于我们</router-link></li>
+          <li class="col-md-2"> <router-link :class="$route.path.substr(0,8) === '/article'? 'router-link-exact-active' :'' " to="/about" class="sel"> 关于我们</router-link></li>
         </ul>
         <ul>
           <li class="mob-button" @click="isclick = !isclick">

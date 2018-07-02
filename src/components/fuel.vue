@@ -156,7 +156,7 @@
   .f_banner {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180701150207.jpg");
+    background: url("../../static/bil/imgamge/20180702171902.jpg");
     background-size: cover;
     background-position: 50% 30%;
     margin-top: 70px;
@@ -234,7 +234,7 @@
   }
 
   #slider > div:nth-of-type(1) {
-    background: url("../../static/bil/imgamge/20180624190232.jpg");
+    background: url("../../static/bil/imgamge/20180702172141.jpg");
     background-size: cover;
     background-position: 50% 20%;
   }
@@ -245,7 +245,7 @@
     background-position: 50% 20%;
   }
   #slider > div:nth-of-type(3) {
-    background: url("../../static/bil/imgamge/20180701184431.jpg");
+    background: url("../../static/bil/imgamge/20180702172050.jpg");
     background-size: cover;
     background-position: 50% 20%;
   }
@@ -348,7 +348,7 @@
 
   /*项目分类开始*/
   .main .project {
-    background:url("../../static/bil/imgamge/20180627130321.jpg") no-repeat;
+    background:url("../../static/bil/imgamge/20180702172400.jpg") no-repeat;
     background-position: 50% 50%;
     background-size: cover;
     padding:.7rem 0;

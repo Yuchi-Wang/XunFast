@@ -120,7 +120,7 @@
   /*question*/
   .question {
     width: 100%;
-    background: url("../../static/bil/imgamge/20180524142826.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180702170521.jpg") no-repeat;
     background-size: cover;
     padding: .5rem 0;
     text-align: center;

@@ -22,7 +22,7 @@
       <div class="row">
         <p>{{advantage}}</p>
       </div>
-      <img src="../../static/bil/imgamge/20180525105548.png" alt="">
+      <img src="../../static/bil/imgamge/20180702174544.jpg" alt="">
     </div>
     <div class="main container-fluid" id="main">
       <h3>平台特性</h3>
@@ -86,7 +86,7 @@
 
 <style scoped>
   .bg {
-    background: url("../../static/bil/imgamge/20180701145549.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180702171701.jpg") no-repeat;
     height: 5rem;
     width: 100%;
     background-size: cover;
@@ -117,7 +117,7 @@
   /*question*/
   .question {
     width: 100%;
-    background: url("../../static/bil/imgamge/20180524142826.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180702170521.jpg") no-repeat;
     background-size: cover;
     padding: .5rem 0;
     text-align: center;
@@ -220,7 +220,7 @@
     margin: auto;
   }
   .main_bg{
-    background:url("../../static/bil/imgamge/20180528141802.png") no-repeat;
+    background:url("../../static/bil/imgamge/20180702173915.jpg") no-repeat;
     width: 100%;
     height: inherit;
     background-size: cover;

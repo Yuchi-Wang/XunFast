@@ -62,7 +62,7 @@
         </div>
         <div class="col-md-4">
           <div class="core_img">
-            <img src="../../static/bil/imgamge/20180524163159.png" alt="" width="100%" height="auto">
+            <img src="../../static/bil/imgamge/20180702171553.jpg" alt="" width="100%" height="auto">
           </div>
           <div class="core_txt">
               <h4>实时分析</h4>
@@ -392,7 +392,7 @@
     position: relative;
     text-align: center;
     padding: .7rem 0;
-    background: url("../../static/bil/imgamge/20180524142826.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180702170521.jpg") no-repeat;
     background-size: cover;
   }
   .core .row>div {

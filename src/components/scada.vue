@@ -103,7 +103,7 @@
         difficultTitle: '仪器设备数据采集的现状与难点',
         certificate: [
           {
-            imgArray: '../../static/bil/imgamge/20180701193044.jpg', title: '数据采集难',
+            imgArray: '../../static/bil/imgamge/20180701194553.jpg', title: '数据采集难',
             txt: '目前实验的仪器设备类型众多，主要分类为有数据接口及无数据接口两类。而有接口的仪器设备数据采集只能依靠厂家配套的软件才能采集，且很难达到数据集成的目的'
           },
           {imgArray: '../../static/bil/imgamge/20180701183134.jpg', title: '现状与难点', txt: ''},
@@ -214,7 +214,7 @@
 <style scoped>
   /* banner */
   .scada-banner {
-    background: url("../../static/bil/imgamge/20180701145034.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180702175636.jpg") no-repeat;
     height: 5rem;
     width: 100%;
     background-size: cover;

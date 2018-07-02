@@ -28,7 +28,7 @@
       <h4 id="advance_title">{{advanceTitle}}</h4>
       <div class="row">
         <div class="col-md-5 advance-img">
-          <img src="../../static/bil/imgamge/20180621164758.png" alt="" width="100%" height="auto">
+          <img src="../../static/bil/imgamge/20180702172928.jpg" alt="" width="100%" height="auto">
         </div>
         <div class="col-md-6">
           <p v-for="item in advance" :key="item.advance">{{item}}</p>
@@ -108,7 +108,7 @@
   .bg {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180701145706.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180702171753.jpg") no-repeat;
     background-size: cover;
     margin-bottom: .7rem;
     position: relative;
@@ -159,7 +159,7 @@
     margin-top: .7rem;
     padding:.7rem 0;
     width: 100%;
-    background: url("../../static/bil/imgamge/500629994.png") center no-repeat;
+    background: url("../../static/bil/imgamge/20180702174708.jpg") center no-repeat;
     background-size: cover;
   }
 

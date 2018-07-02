@@ -18,11 +18,11 @@
     </div>
     <div class="advantage">
       <h3>系统优势</h3>
-      <img src="../../static/bil/imgamge/20180628135608.jpg" alt="">
+      <img src="../../static/bil/imgamge/20180702170746.jpg" alt="">
     </div>
     <div class="characteristic">
       <h3>技术特点</h3>
-      <img src="../../static/bil/imgamge/20180628152610.png" alt="">
+      <img src="../../static/bil/imgamge/20180702175538.jpg" alt="">
     </div>
     <div class="advantage">
       <h3>系统功能</h3>
@@ -53,7 +53,7 @@
     text-align: center;
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180701151358.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180702171959.jpg") no-repeat;
     background-size: cover;
     margin-top: 70px;
     position: relative;
@@ -110,7 +110,7 @@
   }
   .solution-bg {
     width: 100%;
-    background: url("../../static/bil/imgamge/20180628143954.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180624183016.png") no-repeat;
     background-size: cover;
     height: 2rem;
   }

@@ -53,19 +53,21 @@ export default {
 }
   .news h3{
     display: inline-block;
+    color: #151515;
     width: 100%;
     font-size: .28rem;
     margin:.8rem auto 0;
   }
     .news .author{
-        margin:.22rem auto;
-      color: #747474;
-      font-size: .22rem;
+        margin:.13rem auto .22rem;
+      color: #333333;
+      font-size: .18rem;
     }
   .InfoContent{
+    font-size: .15rem;
     text-align: justify;
-    font-size: .2rem;
-    font-weight: 200;
+    line-height: .25rem;
+    color: #666666;
   }
 button{
   width: 1rem;

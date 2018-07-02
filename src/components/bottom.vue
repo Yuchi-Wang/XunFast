@@ -55,7 +55,7 @@
   }
 
   footer {
-    background: url("../../static/bil/imgamge/footer_bg.png");
+    background: url("../../static/bil/imgamge/20180702130650.jpg");
     width: 100%;
     background-size: cover;
     color: #8a8a8a;
