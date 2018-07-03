@@ -50,7 +50,7 @@
         <div class="col-md-4">
           <div class="cardlist">
             <div class="imgbox imgbox3"></div>
-            <h4><router-link to="/building">人工智能+智慧建筑</router-link></h4>
+            <h4><a href="javascript:;">人工智能+智慧建筑</a></h4>
           </div>
           <div class="imgtxt imgtxt1">
             <p>{{buildingTxt}}</p>
@@ -278,18 +278,18 @@
   }
 
   #slider > div:nth-of-type(1) {
-    background: url("../../static/bil/imgamge/20180702170110.jpg");
+    background: url("../../static/bil/imgamge/20180703135626.jpg");
     background-size: cover;
     background-position: 50% 50%;
   }
 
   #slider > div:nth-of-type(2) {
-    background: url("../../static/bil/imgamge/20180702170159.jpg");
+    background: url("../../static/bil/imgamge/20180703135650.jpg");
     background-size: cover;
     background-position: 50% 50%;
   }
   #slider > div:nth-of-type(3) {
-    background: url("../../static/bil/imgamge/20180702162620.jpg");
+    background: url("../../static/bil/imgamge/20180703135712.jpg");
     background-size: cover;
     background-position: 50% 50%;
   }

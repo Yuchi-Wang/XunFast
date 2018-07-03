@@ -13,37 +13,31 @@
       <div class="tel">
         <h4 class="tel-title">联系方式：</h4>
         <ul class="row">
-          <li class="col-md-4">运维技术支持工程师电话：021-6816 0161</li>
-          <li class="col-md-4">运维技术支持工程师手机：15821312137</li>
-          <li class="col-md-4">运维技术支持工程师邮箱：make@xunfast.com.cn</li>
-          <li class="col-md-4">运维技术支持微信号：15821312137</li>
-          <li class="col-md-4">运维技术支持QQ号：313775583</li>
-          <li class="col-md-4">运维负责人电话：18160196096</li>
-          <li class="col-md-4">运维负责人邮箱：Alex.Huang@xunfast.com.cn</li>
-          <li class="col-md-4">运维监督投诉电话：15221678631</li>
+          <li class="col-md-4">运维技术支持工程师电话：021-6816 0161（马工）</li>
+          <li class="col-md-4">运维技术支持工程师手机：15821312137 （马工）</li>
+          <li class="col-md-4">运维技术支持工程师邮箱：make@xunfast.com.cn（马工）</li>
+          <li class="col-md-4">运维技术支持微信号：15821312137（马工）</li>
+          <li class="col-md-4">运维技术支持QQ号：313775583（马工）</li>
+          <li class="col-md-4">运维负责人电话：18160196096（黄）</li>
+          <li class="col-md-4">运维负责人邮箱：Alex.Huang@xunfast.com.cn（黄）</li>
+          <li class="col-md-4">运维监督投诉电话：15221678631（李）</li>
         </ul>
       </div>
     </div>
     <div class="container-fluid download">
       <h4>服务下载</h4>
       <div class="row">
-        <div class="col-md-3">
-          <p>航空油品计量检定系统</p>
+        <div class="col-md-4">
+          <p style="text-align: center">油品标准密度换算</p>
         </div>
-        <div class="col-md-5 clearfix">
-          <div class="left">
+        <div class="col-md-2">
             <img src="../../static/bil/imgamge/20180626133453.png" alt="">
-          </div>
-          <div class="left product-name">
-            <p>油品标准密度换算</p>
-            <span>2018-06-24</span>
-          </div>
+        </div>
+        <div class="col-md-3">
+          <router-link to="/down">使用说明</router-link>
         </div>
         <div class="col-md-2">
-          <router-link to="/system">使用说明</router-link>
-        </div>
-        <div class="col-md-2">
-          <a href="javascript:;" class="downloaded" @click="down()">下载</a>
+          <a href="http://apk.xunfast.com/Densimeter.Convert.apk" class="downloaded">下载</a>
         </div>
       </div>
     </div>
@@ -56,11 +50,6 @@
   export default {
     components: {bottom},
     name: 'contact',
-    methods: {
-      down() {
-        alert("还在创建中!")
-      }
-    }
   }
 </script>
 
@@ -68,7 +57,7 @@
   .news-bg {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180701145325.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180703125214.jpg") no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     margin-top: 70px;
@@ -110,7 +99,7 @@
   }
   .tel-title {
     text-align: left;
-    margin-left:14%;
+    margin-left:11%;
     color: #333333;
     font-weight: bolder;
   }
@@ -129,7 +118,7 @@
 
   .tel .row {
     text-align: left;
-    margin: 0 12% 0 14%;
+    margin:0 10% 0 11%;
   }
   .tel ul li {
     font-weight: bolder;
@@ -169,12 +158,6 @@
 
   }
 
-  .download .row > div .product-name {
-    height: .8rem;
-    text-align: center;
-    margin-left: 1.3333333rem;
-  }
-
   .download .row > div img {
     width: .32rem;
     margin-top: .2rem;
@@ -185,10 +168,6 @@
     padding-top: .1rem;
   }
 
-  .download .row > div .product-name span {
-    color: #999999;
-    font-size: .13rem;
-  }
 
   .download .row > div a {
     color: #008fd7;

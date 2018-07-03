@@ -86,7 +86,7 @@
   .banner {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180701150137.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180703144814.jpg") no-repeat;
     background-size: cover;
     position: relative;
     margin-top: 70px;

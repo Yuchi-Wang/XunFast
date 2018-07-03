@@ -104,8 +104,30 @@ export default new Router({
       name: 'equipment',
       component: (resolve) => {
         require(['../components/equipment'], resolve)
-      }
+      },
+    },
+    {
+      path: '/in-lab',
+      name: 'in-lab',
+      component: (resolve) => {
+        require(['../components/in-lab'], resolve)
+      },
+    },
+    {
+      path: '/app',
+      name: 'app',
+      component: (resolve) => {
+        require(['../components/app'], resolve)
+      },
+    },
+    {
+      path: '/down',
+      name: 'down',
+      component: (resolve) => {
+        require(['../components/down'], resolve)
+      },
     }
+
   ],
   /*路由跳转在最顶端显示*/
   scrollBehavior(to,from,savedPosition) {

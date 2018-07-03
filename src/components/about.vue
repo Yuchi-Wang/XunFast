@@ -22,17 +22,13 @@
                   <div class="col-md-6 about-bg"></div>
                 </div>
               </div>
-              <div v-show="index===1" class="development">
-                <div class="certificate-list">
-                  <ul class="list">
-                    <li v-for="item in certificate" :key="item.certificate" :class="item.className">
+              <div v-show="index===1" class="development container-fluid">
+                <ul class="list row">
+                    <li v-for="item in certificate" :key="item.certificate" class="col-md-3">
                       <img :src="item.imgArray" alt="">
                         <p>{{item.txt}}</p>
                     </li>
                   </ul>
-                  <span class="left-arrow"></span>
-                  <span class="right-arrow"></span>
-                </div>
               </div>
               <div v-show="index===2" id="content_us">
                 <div v-for="item in newsdata" class="container-fluid news" :key="item.newsdata">
@@ -46,6 +42,22 @@
                       <h4><router-link :to="{ path: `/article/${item.Id}` }"> {{item.Title}}</router-link></h4>
                       <time>发布日期：{{item.CreateDateStr}}</time>
                       <p v-html="item.InfoContent">{{item.InfoContent}}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid news" v-for="item in news" :key="item.news">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="news-img">
+                        <img :src="item.imgArray">
+                      </div>
+                    </div>
+                    <div class="col-md-8 news-content">
+                      <h4>
+                        <a v-bind:href="item.urlArray">{{item.urlArrayTitle}}</a>
+                      </h4>
+                      <time>{{item.time}}</time>
+                      <p>{{item.txt}}</p>
                     </div>
                   </div>
                 </div>
@@ -95,52 +107,49 @@
         listdata: [],
         newsdata: [],
         certificate: [
-          {className: 'first', imgArray: '../../static/bil/imgamge/iso9001.jpg', txt: 'ISO9001认证'},
-          {className: 'second', imgArray: '../../static/bil/imgamge/xyzd.jpg', txt: '学业诊断与分析云平台'},
-          {className: 'third', imgArray: '../../static/bil/imgamge/zhxy.jpg', txt: '智慧校园云平台'},
-          {className: 'fourth', imgArray: '../../static/bil/imgamge/zhzj.jpg', txt: '智慧职教云平台'},
-          {className: 'fifth', imgArray: '../../static/bil/imgamge/zb.jpg', txt: '高清直播录播平台'},
+          {  imgArray: '../../static/bil/imgamge/iso9001.jpg', txt: 'ISO9001认证'},
+          {  imgArray: '../../static/bil/imgamge/xyzd.jpg', txt: '学业诊断与分析云平台'},
+          {  imgArray: '../../static/bil/imgamge/zhxy.jpg', txt: '智慧校园云平台'},
+          {  imgArray: '../../static/bil/imgamge/zhzj.jpg', txt: '智慧职教云平台'},
+          {  imgArray: '../../static/bil/imgamge/zb.jpg', txt: '高清直播录播平台'},
+          {  imgArray: '../../static/bil/imgamge/20180703171235.jpg', txt: '教育数字化平台'},
+          {  imgArray: '../../static/bil/imgamge/20180703171541.jpg', txt: '网上组卷系统'},
+          {  imgArray: '../../static/bil/imgamge/20180703171636.jpg', txt: '油品试验管理系统'},
+          {  imgArray: '../../static/bil/imgamge/20180703171742.jpg', txt: '网上阅卷管理系统'},
+          {  imgArray: '../../static/bil/imgamge/20180703171844.jpg', txt: '微教育系统'},
+          {  imgArray: '../../static/bil/imgamge/20180703171931.jpg', txt: '客户信息管理系统'},
+          {  imgArray: '../../static/bil/imgamge/20180703172009.jpg', txt: '实验室资产管理系统'},
+          {  imgArray: '../../static/bil/imgamge/20180703172042.jpg', txt: '系统日志管理系统'},
+          {  imgArray: '../../static/bil/imgamge/20180703172254.jpg', txt: '密度检定系统'},
+          {  imgArray: '../../static/bil/imgamge/20180703172341.jpg', txt: '流量计检定系统'},
+          {  imgArray: '../../static/bil/imgamge/20180703172450.jpg', txt: '温度计检定系统'},
+        ],
+         news: [
+           { imgArray: '../../static/bil/imgamge/20180701181754.jpg',
+             urlArray: 'http://www.shanghai.gov.cn/nw2/nw2314/nw2315/nw31406/u21aw1279368.html',time:'发布日期：2017年12月29日',
+             urlArrayTitle: ' 为确保我国航空油品安全，大数据、光纤传感等技术显威力',
+             txt: ' 航空油品的质量监控非常严格，新一代信息技术、光纤光栅传感技术等高新技术正在使航油质量监控体系变得更精' +
+            '准、高效。近日，中国航空油料有限责任公司华东公司、上海交通大学先进产业技术研究院、上海迅发信息技术有限公司' +
+            '三方签署战略合作框架协议，将开展“互联网航油安全服务”协同创新。据悉，在自主开发了中国航空成品油质量检测与' +
+            '计量检定信息智慧管理平台的基础上，三方将于明年重点协同研究航油全生命周期质量监控平台、浦东国际机场与虹桥机' +
+            '场间输油管道的智慧巡检、喷气燃料检验实验室能力验证服务平台'},
+           { imgArray: '../../static/bil/imgamge/20180703134822.jpg',
+             urlArray: 'http://digitalpaper.stdaily.com/http_www.kjrb.com/kjrb/html/2017-12/28/content_384969.htm?div=-1',time:'发布日期：2017年12月28日',
+             urlArrayTitle: '新一代信息技术助力航油安全服务',
+             txt: '12月26日，中国航空油料有限责任公司华东公司、上海交通大学先进产业技术研究院、上海迅发信息技术有限公司三' +
+             '方签署战略合作框架协议，将共同致力互联网与航油安全服务的深度融合，为航油安全保驾护航。据了解，此次三方合作' +
+             '将运用互联网、大数据、人工智能、物联网等新一代信息技术，构建互联网+航油安全服务智慧平台，实现华东公司安全智' +
+             '能化、管理智能化、物流智能化、渠道智能化以及服务智能化的信息化建设目标。'},
         ],
         content: '上海迅发信息技术有限公司是拥有一支技术实力雄厚的硕士博士生团队的高科技企业，充分利用互联网、物联网、大数据、' +
         '人工智能等新一代信息技术，专注于互联网+、大数据+行业应用的研发和产品化。公司在信息系统整体架构、大数据建模分' +
-        '析与可视化、机器视觉、人工智能等方面，有着独立自主、业内领先的算法和 模型，公司拥有数十个软件著作权，并通过了' +
+        '析与可视化、机器视觉、人工智能等方面，有着独立自主、业内领先的算法和模型，公司拥有数十个软件著作权，并通过了' +
         'ISO9001质量管理体系认证。公司与上海交通大学、复旦大学、同济大学、华东师范大学等国内知名高校建立了深入的 合作' +
         '研究关系，整合了一支高水平的专家团队和高效率的技术开发团队，致力于通过持续的技术创新和优质的服务，不断为客户' +
         '创造价值。'
         ,
         checkIndex: 0,
         tabsIndex: 0,
-      }
-    },
-    mounted: function () {
-      var classArr = ['first', 'second', 'third', 'fourth', 'fifth'];
-      $('.left-arrow').click(function () {
-        classArr.unshift(classArr.pop());
-        changeClass();
-      });
-      $('.right-arrow').click(function () {
-        classArr.push(classArr.shift());
-        changeClass();
-      });
-      $('.certificate-list li').click(function (e) {
-        var index = $(this).index();
-        if (classArr[index] === 'first') return;
-        classArr = chooseClass(index);
-        changeClass();
-      });
-
-      function changeClass() {
-        classArr.forEach(function (item, i) {
-          $('.certificate-list li').eq(i).get(0).className = item;
-        })
-      }
-
-      function chooseClass(n) {
-        var classList = ['first', 'second', 'third', 'fourth', 'fifth'], arr = [];
-        for (var i = 0; i < 5; i++) {
-          arr[(n + i) % 5] = classList[i];
-        }
-        return arr;
       }
     },
     beforeCreate() {
@@ -151,7 +160,7 @@
           }
         })
         .then(response => {
-        console.log(response.data.Data)
+       // console.log(response.data.Data)
           this.newsdata = response.data.Data
         })
         .catch(function (error) {
@@ -168,7 +177,7 @@
             }
           })
           .then(response => {
-            console.log(response.data.Data)
+           // console.log(response.data.Data)
             this.listdata = response.data.Data
           })
           .catch(function (error) {
@@ -190,7 +199,7 @@
   .about_bg {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180702175735.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180703124957.jpg") no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     margin-top: 69px;
@@ -269,97 +278,36 @@
     line-height: .32rem;
   }
 
-  .development .certificate-list {
-    width: 800px;
-    position: relative;
-    margin: auto;
-  }
-
   .development {
-    margin-top: .6rem;
+    margin-bottom: .7rem;
   }
 
-  .development .certificate-list > span {
-    position: absolute;
-    width: 14px;
-    height: 32px;
-    opacity: 0.25;
-    top: 50%;
-    margin-top: -16px;
-    left: 0;
-    transition: all 0.4s;
-    cursor: pointer;
-    z-index: 2;
-    background: #000000 url("../../static/bil/imgamge/left.png") no-repeat center;
-    background-size: 50% 30%;
+  .development>.row {
+    margin: 0 12%;
   }
 
-  .development .certificate-list > span:hover {
-    opacity: 0.68;
-    background-color: #2a97f3;
-  }
-
-  .development .certificate-list .right-arrow {
-    left: auto;
-    right: 0;
-    background: #000000 url("../../static/bil/imgamge/right.png") no-repeat center;
-    background-size: 50% 30%;
-  }
-
-  .development .certificate-list .list {
-    width: 595px;
-    height: 525px;
-    margin: 0 auto .7rem;
-    position: relative;
-  }
-
-  .development .certificate-list .list li {
-    cursor: pointer;
-    width: 344px;
-    position: absolute;
-    transition: all 0.5s;
-  }
-
-  .development .certificate-list .list li.first {
-    left: 150px;
-    top: 0;
-    transform: scale(1);
-    z-index: 5;
-  }
-
-  .development .certificate-list .list li.second {
-    left: 300px;
-    top: 0;
-    transform: scale(0.8);
-    z-index: 4;
-  }
-
-  .development .certificate-list .list li.third {
-    left: 218px;
-    top: -40px;
-    transform: scale(0.7);
-    z-index: 3;
-  }
-
-  .development .certificate-list .list li.fourth {
-    left: 82px;
-    top: -40px;
-    transform: scale(0.7);
-    z-index: 3;
-  }
-
-  .development .certificate-list .list li.fifth {
-    left: 0;
-    top: 0;
-    transform: scale(0.8);
-    z-index: 4;
-  }
-
-  #service_content .development .certificate-list .list li p {
+  #service_content .development  .list li {
     text-align: center;
-    font-size: .16rem;
-    color: #000000;
-    letter-spacing: 3.36px;
+    transition: .6s;
+    margin-bottom: 20px;
+    padding: 0 15px;
+  }
+
+  #service_content .development  .list li img {
+    width: 100%;
+    max-width: 344px;
+  }
+
+
+  #service_content .development  .list li:hover {
+    transform: scale(1.08);
+  }
+
+  #service_content .development  .list li p {
+    text-align: center;
+    font-size: .15rem;
+    letter-spacing: 3px;
+    color: #666666;
   }
 
   .jobs {
@@ -428,6 +376,7 @@
   }
 
   .news-content {
+    margin-top: .1rem;
     height: 1.8rem;
     overflow: hidden;
     padding-left: 60px;

@@ -56,7 +56,7 @@
       </div>
       <!--实施阶段-->
       <div class="container-fluid instrument" id="solution">
-        <h3>实施阶段</h3>
+        <h3>核心功能</h3>
         <div class="row">
           <div class="col-md-3 col-sm-6 production" v-for="item in production" :key="item.production">
             <div style="background:#f9f9f9">
@@ -246,7 +246,7 @@
 
 <style scoped>
   .banner {
-    background: url("../../static/bil/imgamge/20180701152001.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180703144351.jpg") no-repeat;
     height: 5rem;
     width: 100%;
     background-size: cover;
@@ -318,6 +318,7 @@
     background: #262626;
   }
   .difficult > .row > div:nth-of-type(2) h4 {
+    text-align: center;
     margin-top: .82rem;
   }
 
@@ -495,7 +496,7 @@
     margin: auto;
   }
   .main_bg{
-    background:url("../../static/bil/imgamge/20180528141802.png") no-repeat;
+    background:url("../../static/bil/imgamge/20180702180953.jpg") no-repeat;
     width: 100%;
     height: inherit;
     background-size: cover;
@@ -537,7 +538,7 @@
     padding: 0 30px;
   }
   .point .row>div h4 {
-    font-size: .25rem;
+    font-size: .18rem;
     color: #333333;
     font-weight: bold;
     margin-bottom: 10px;

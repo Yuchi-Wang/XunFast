@@ -41,20 +41,22 @@
           <div class="txt">
             <h5>中国航空油质量检测实验室信息管理平台</h5>
             <p>
-              为了高效地管理实验室油品检测业务，确保航油质量安全，中国航空油料责任有限公司华东公司质量计量检测中心与上海迅发信息技
-              术有限公司，严格按照优良实验室规范...
+              为了高效地管理实验室油品检测业务，确保航油质量安全，中国航空油料责任有限公司华东公司质量计量检测中心与上海
+              迅发信息技术有限公司，严格按照优良实验室规范(Good Laboratory Practice，GLP)和ISO/IEC17025标准，遵循MHT 60
+              20-2012...
             </p>
-            <router-link to="system" class="detail">了解详情</router-link>
+            <router-link to="/in-lab" class="detail">了解详情</router-link>
           </div>
         </div>
         <div class="col-md-4 projectlist">
           <div class="txt">
             <h5>中国航油计量检定信息智慧管理平台</h5>
             <p>
-              计量检定作为测量设备量值传递的主要形式，是保证量值准确一致的重要措施，具有准确度判定要求严格、数据处理工作量大等特点。
-              一直以来，中国航油计量检定/校准...
+              计量检定作为测量设备量值传递的主要形式，是保证量值准确一致的重要措施，具有准确度判定要求严格、数据处理工作
+              量大等特点。一直以来，中国航油计量检定/校准工作的数据处理以及合格性判定工作依赖于人工计算处理和数据复核，
+              这导致工作...
             </p>
-            <router-link to="lab" class="detail">了解详情</router-link>
+            <router-link to="/system" class="detail">了解详情</router-link>
           </div>
           <div class="project-img project-img1"></div>
         </div>
@@ -64,10 +66,10 @@
           <div class="txt">
             <h5>密度换算APP</h5>
             <p>
-              中国航油华东公司原来在做密度检测时，需要根据修正后实测温度 ， 修正后实测密度计算出密度15  密度20，原始的方式是根据人
-              工根据经验进行计算，结合Excel计算...
+              中国航油华东公司原来在做密度检测时，需要根据修正后实测温度 ， 修正后实测密度计算出密度15  密度20，原始的方
+              式是根据人工根据经验进行计算，结合Excel计算的方式，对于没有经验...
             </p>
-            <a href="javascript:;" class="detail">了解详情</a>
+            <router-link to="/app" class="detail">了解详情</router-link>
           </div>
         </div>
       </div>
@@ -180,7 +182,6 @@
   }
 
   .main .safe {
-    font-family: "Source Han Serif SC";
     font-size: .28rem;
     color: #151515;
     margin: .8rem auto .6rem;
@@ -369,7 +370,7 @@
   .txt {
     background: rgba(255, 255, 255, 0.89);
     padding: 30px 30px 0 30px;
-    height: 2.5rem;
+    height:3rem;
   }
 
   .txt h5 {
@@ -422,7 +423,7 @@
 
   .project-img2 {
     width: 100%;
-    height: 2.5rem;
+    height:2.5rem;
     background: url("../../static/bil/imgamge/20180624184253.jpg") no-repeat;
     background-size: cover;
     background-position: 50% 50%;

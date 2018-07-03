@@ -40,6 +40,8 @@
                                                 || $route.path === '/system'
                                                 || $route.path === '/wisdom'
                                                 || $route.path === '/building'
+                                                || $route.path === '/in-lab'
+                                                || $route.path === '/app'
             ? 'router-link-exact-active' :'' " href="javascript:;" class="sel sels">解决方案
           </a>
             <ul class="navlists">
@@ -49,7 +51,7 @@
             </ul>
           </li>
           <li class="col-md-2">
-            <router-link to="/contact" class="sel">服务支持</router-link>
+            <router-link :class="$route.path === '/down' ? 'router-link-exact-active' :''" to="/contact" class="sel">服务支持</router-link>
           </li>
           <li class="col-md-2"> <router-link :class="$route.path.substr(0,8) === '/article'? 'router-link-exact-active' :'' " to="/about" class="sel"> 关于我们</router-link></li>
         </ul>
@@ -77,8 +79,8 @@
           {urlArray: '/scada', title: '设备数据智能采集系统'},
           {urlArray: '/lab', title: '实验室信息管理与应用分析平台'},
           {urlArray: '/equipment', title: '设备全生命周期智慧管理系统'},
-          {urlArray: '/three-dimensional', title: '数字三维实景可视化平台'},
           {urlArray: '/bigData', title: '大数据建模与可视化'},
+          {urlArray: '', title: '数字三维实景可视化平台'},
           {urlArray: '', title: '信息编码标准与主数据管理工具平台'},
           {urlArray: '/fibre', title: '基于光纤传感的智慧安防平台'},
           {urlArray: '', title: '智慧党建'},
@@ -190,7 +192,7 @@
     margin-left:0;
     text-align: left;
   }
-  .navList ul li:nth-of-type(1){
+  .navList ul li:nth-of-type(1), .navList ul li:nth-of-type(4){
     width: 18%;
   }
   .navList ul li:nth-of-type(2){
@@ -207,8 +209,8 @@
     color: #008fd7;
   }
 
-  .navList ul li:nth-of-type(6)>a, .navList ul li:nth-of-type(8)>a, .navList ul li:nth-of-type(9)>a,
-  .navList ul li:nth-of-type(10)>a, .navList ul li:nth-of-type(11)>a,
+  .navList ul li:nth-of-type(5)>a, .navList ul li:nth-of-type(6)>a, .navList ul li:nth-of-type(8)>a,
+  .navList ul li:nth-of-type(9)>a, .navList ul li:nth-of-type(10)>a, .navList ul li:nth-of-type(11)>a,
  #navLists ul li:nth-of-type(3)>a,
   .router-link-active {
     color: black;

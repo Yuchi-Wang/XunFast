@@ -214,7 +214,7 @@
 <style scoped>
   /* banner */
   .scada-banner {
-    background: url("../../static/bil/imgamge/20180702175636.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180703144835.jpg") no-repeat;
     height: 5rem;
     width: 100%;
     background-size: cover;

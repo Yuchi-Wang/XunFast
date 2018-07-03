@@ -173,7 +173,7 @@
 
 <style scoped>
   .bg {
-    background: url("../../static/bil/imgamge/20180701145919.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180703144510.jpg") no-repeat;
     height: 5rem;
     width: 100%;
     background-size: cover;
