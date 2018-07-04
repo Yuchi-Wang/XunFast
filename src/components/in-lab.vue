@@ -13,19 +13,19 @@
     </div>
     <div class="disadvantage">
       <h3>行业现状与痛点</h3>
-      <img src="../../static/bil/imgamge/20180703183341.jpg" alt="">
+      <img src="../../static/bil/imgamge/20180704172228.png" alt="">
     </div>
     <div class="advantage">
       <h3>系统优势</h3>
-      <img src="../../static/bil/imgamge/20180702170746.jpg" alt="">
+      <img src="../../static/bil/imgamge/20180704164522.png" alt="">
     </div>
     <div class="characteristic">
       <h3>技术特点</h3>
-      <img src="../../static/bil/imgamge/20180702175538.jpg" alt="">
+      <img src="../../static/bil/imgamge/20180704171028.jpg" alt="">
     </div>
     <div class="advantage">
       <h3>系统功能</h3>
-      <img src="../../static/bil/imgamge/20180703123633.jpg" alt="">
+      <img src="../../static/bil/imgamge/20180704164231.png" alt="">
     </div>
     <bottom></bottom>
   </div>
@@ -38,10 +38,10 @@
     name: 'in-lab',
     data() {
       return {
-        content: ' 为了高效地管理实验室油品检测业务，确保航油质量安全，中国航空油料责任有限公司华东公司质量计量检测中心与' +
+        content: ' 为了高效地管理实验室样品检测业务，确保航油质量安全，中国航空油料责任有限公司华东公司质量计量检测中心与' +
         '上海迅发信息技术有限公司，严格按照优良实验室规范(Good Laboratory Practice，GLP)和ISO/IEC17025标准，遵循MHT 6020-2012 ' +
         '《民用航空燃料质量控制和操作程序》和MHT 6044-2008《小型机场民用航空燃料质量控制和操作程序》等业务规范要求，运用互' +
-        '联网、大数据、物联网、移动互联等新一代信息技术，完全自主开发的一套中国航空成品油品质量检测信息智慧管理平台。',
+        '联网、大数据、物联网、移动互联等新一代信息技术，完全自主开发的一套中国航空成品样品质量检测信息智慧管理平台。',
       }
     }
   }

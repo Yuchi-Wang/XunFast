@@ -5,7 +5,7 @@
     </div>
     <div class="disadvantage">
       <h3>行业现状与痛点</h3>
-      <img src="../../static/bil/imgamge/20180628132656.jpg" alt="">
+      <img src="../../static/bil/imgamge/20180704172228.png" alt="">
     </div>
     <div class="container-fluid solution">
       <h3>解决方案</h3>
@@ -18,15 +18,15 @@
     </div>
     <div class="advantage">
       <h3>系统优势</h3>
-      <img src="../../static/bil/imgamge/20180702170746.jpg" alt="">
+      <img src="../../static/bil/imgamge/20180704164522.png" alt="">
     </div>
     <div class="characteristic">
       <h3>技术特点</h3>
-      <img src="../../static/bil/imgamge/20180702175538.jpg" alt="">
+      <img src="../../static/bil/imgamge/20180704171028.jpg" alt="">
     </div>
     <div class="advantage">
       <h3>系统功能</h3>
-      <img src="../../static/bil/imgamge/lims.gif" alt="">
+      <img src="../../static/bil/imgamge/20180704161834.png" alt="">
     </div>
     <bottom></bottom>
   </div>

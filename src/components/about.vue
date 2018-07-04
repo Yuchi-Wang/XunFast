@@ -112,17 +112,13 @@
           {  imgArray: '../../static/bil/imgamge/zhxy.jpg', txt: '智慧校园云平台'},
           {  imgArray: '../../static/bil/imgamge/zhzj.jpg', txt: '智慧职教云平台'},
           {  imgArray: '../../static/bil/imgamge/zb.jpg', txt: '高清直播录播平台'},
-          {  imgArray: '../../static/bil/imgamge/20180703171235.jpg', txt: '教育数字化平台'},
-          {  imgArray: '../../static/bil/imgamge/20180703171541.jpg', txt: '网上组卷系统'},
-          {  imgArray: '../../static/bil/imgamge/20180703171636.jpg', txt: '油品试验管理系统'},
-          {  imgArray: '../../static/bil/imgamge/20180703171742.jpg', txt: '网上阅卷管理系统'},
-          {  imgArray: '../../static/bil/imgamge/20180703171844.jpg', txt: '微教育系统'},
+          {  imgArray: '../../static/bil/imgamge/20180704151150.jpg', txt: '设备全生命周期智慧管理系统'},
+          {  imgArray: '../../static/bil/imgamge/20180704151339.jpg', txt: '大数据建模与可视化'},
+          {  imgArray: '../../static/bil/imgamge/20180704151413.jpg', txt: '数字三维实景可视化平台'},
+          {  imgArray: '../../static/bil/imgamge/20180704151500.jpg', txt: '设备数据智能采集系统'},
           {  imgArray: '../../static/bil/imgamge/20180703171931.jpg', txt: '客户信息管理系统'},
           {  imgArray: '../../static/bil/imgamge/20180703172009.jpg', txt: '实验室资产管理系统'},
-          {  imgArray: '../../static/bil/imgamge/20180703172042.jpg', txt: '系统日志管理系统'},
-          {  imgArray: '../../static/bil/imgamge/20180703172254.jpg', txt: '密度检定系统'},
-          {  imgArray: '../../static/bil/imgamge/20180703172341.jpg', txt: '流量计检定系统'},
-          {  imgArray: '../../static/bil/imgamge/20180703172450.jpg', txt: '温度计检定系统'},
+          {  imgArray: '../../static/bil/imgamge/20180703172042.jpg', txt: '系统日志管理系统'}
         ],
          news: [
            { imgArray: '../../static/bil/imgamge/20180701181754.jpg',
@@ -306,7 +302,7 @@
   #service_content .development  .list li p {
     text-align: center;
     font-size: .15rem;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     color: #666666;
   }
 

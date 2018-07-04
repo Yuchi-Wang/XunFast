@@ -29,25 +29,6 @@
 </script>
 
 <style scoped>
-  .f_banner {
-    width: 100%;
-    height: 5rem;
-    background: url("../../static/bil/imgamge/20180702171902.jpg");
-    background-size: cover;
-    background-position: 50% 30%;
-    margin-top: 70px;
-    position: relative;
-  }
-  .bottom-round {
-    width: 100%;
-    position: absolute;
-    bottom:-30px;
-    height: 60px;
-    background: white;
-    z-index: 99;
-    border-radius: 100%;
-  }
-
   .app>div {
     margin: 0 18%;
     padding: .7rem .68rem  0;
@@ -61,7 +42,7 @@
     text-align: center;
     font-size: .28rem;
     color: white;
-    margin:0 auto .7rem;
+    margin:.7rem auto;
     position: relative;
   }
   .app h3:after {

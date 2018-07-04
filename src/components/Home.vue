@@ -7,6 +7,10 @@
           <div><div></div></div>
           <div><div></div></div>
           <div><div></div></div>
+          <h3>{{item.title}}</h3>
+          <h2>{{item.txt}}</h2>
+          <h4>{{item.technology}}</h4>
+          <h5>{{item.english}}</h5>
         </div>
       </transition-group>
       <div id="slider-btn">
@@ -97,23 +101,31 @@
         ],
         introduction: '上海迅发信息技术有限公司是拥有一支技术实力雄厚的硕士博士生团队的高科技企业，充分利用互联网、物联网、大数据、' +
                       '人工智能等新一代信息技术，专注于互联网+、大数据+行业应用的研发和产品化。公司在信息系统整体架构、大数'+
-                      '据建模分析与可视化、机器视觉、人工智能等方面，有着独立自主、业内领先的算法和模型，公司拥有数十个软件著作'+
+                      '据建模分析与可视化、机器视觉、人工智能等方面，有着独立自主、业内领先的算法和模型。公司拥有数十个软件著作'+
                       '权，并通过ISO9001质量管理体系认证。公司与上海交通大学、复旦大学、同济大学、华东师范大学等国内知名高校建' +
                       '立了深入的合作关系，整合了一直高水平的专家团队和高效率的技术开发团队，致力于通过持续的技术创新和优质的服'+
                       '务，不断为客户创造价值。',
         wisdomTxt:'智能制造是将物联网、大数据、云计算等新一代信息技术与先进自动化技术、传感技术、控制技术、数字制造技术结合，' +
                   '实现工厂和企业内部、企业之间和产品全生命周期的实时管理和优化的新型制造系统。智能制造的特征在于实时感知、' +
                   '优化决策、动态执行等三个方面。 主要包括一个网络、两大主题、三项集成',
-        fuelTxt:'上海迅发信息技术有限公司与中国航空油料责任有限公司华东公司、上海交通大学先进产业技术研究院共同成立互联' +
+        fuelTxt:'上海迅发信息技术有限公司与中国航空油料有限责任公司华东公司、上海交通大学先进产业技术研究院共同成立互联' +
                 '网+航油安全服务协同创新中心，运用互联网、大数据、人工智能、物联网等新一代信息技术，构建互联网+航油安全' +
-                '服务智慧平台，实现航油安全智能化、管理智能化、物流智能化、渠道智能化。',
+                '服务智慧平台，实现航油安全智能化、管理智能化、物流智能化、渠道智能化',
         buildingTxt:'随着我国城市化进程的加快，建筑市场近年来增长迅速。同时，智能建筑和建筑节能的发展对建筑行业提出了更高的' +
                  '要求。运用大数据、人工智能技术，通对大量智慧建筑行业知识和经验进行机器学习和算法模型设计，促进人工智能' +
-                 '与智慧建筑的深度融合，实现设计环节、施工管理、运营维护等智慧建筑全生命周期的数字化、智能化。',
+                 '与智慧建筑的深度融合，实现设计环节、施工管理、运营维护等智慧建筑全生命周期的数字化、智能化',
         banner: [
-          '',
-          '',
-          '',
+           { title: '—— ⚙ 新技术·新起点·新高度 ⚙ ——', txt: '智能制造整体解决方案供应商',
+             english:'INTELLIGENT MANUFACTURING OVERALL SOLUTLONS PROVIDER',
+             technology:'互联网、大数据、人工智能、物联网等新一代信息技术'},
+           { title: '互联网、大数据、人工智能、物联网等新一代信息技术', txt: '新一代信息技术助力航油安全服务',
+             technology:'新技术·新起点·新高度',
+            english:'A NEW GENERATION OF INFORMATION TECHNOLOGY BOOST THE SAFE OF JET FUEL SERVICE'},
+          { title: '》 人工智能 + 智慧建筑产业深度融合 《', txt: '人工智能 + 智慧建筑',
+            technology:'',
+            english:'ARTIFICIAL INTELLIGENCE AND SMART BUILDING'},
+
+
         ],
       }
     },
@@ -278,18 +290,18 @@
   }
 
   #slider > div:nth-of-type(1) {
-    background: url("../../static/bil/imgamge/20180703135626.jpg");
+    background: url("../../static/bil/imgamge/20180704104829.jpg");
     background-size: cover;
     background-position: 50% 50%;
   }
 
   #slider > div:nth-of-type(2) {
-    background: url("../../static/bil/imgamge/20180703135650.jpg");
+    background: url("../../static/bil/imgamge/20180704140017.jpg");
     background-size: cover;
     background-position: 50% 50%;
   }
   #slider > div:nth-of-type(3) {
-    background: url("../../static/bil/imgamge/20180703135712.jpg");
+    background: url("../../static/bil/imgamge/20180704143304.jpg");
     background-size: cover;
     background-position: 50% 50%;
   }
@@ -323,6 +335,56 @@
     background: white;
     z-index: 99;
     border-radius: 100%;
+  }
+  .bg{
+    text-align: center;
+  }
+  .bg h3{
+    width: 100%;
+    color: #fff;
+    font-size:.4rem;
+    text-align: center;
+    margin-top:1.45rem;
+  }
+  .bg h2 {
+    width: 100%;
+    color: #fff;
+    font-size:.8rem;
+    text-align: center;
+    margin-top:.35rem;
+    letter-spacing: 10px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px #0f111e;
+  }
+  #slider > div:nth-of-type(2) h3 {
+    font-size: .25rem;
+  }
+  #slider > div:nth-of-type(2) h2 {
+    font-size:.75rem;
+  }
+  #slider > div:nth-of-type(2) h4 {
+    display: inline-block;
+    padding: 2px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    letter-spacing: 10px;
+  }
+  .bg h4 {
+    color: #fff;
+    font-size:.35rem;
+    text-align: center;
+    margin-top:.2rem;
+    font-weight: 500;
+    text-shadow: 5px 5px 5px #2e3352;
+  }
+  .bg h5 {
+    width: 100%;
+    color: #fff;
+    font-size:.18rem;
+    text-align: center;
+    margin-top:.12rem;
+    font-weight: 500;
+
   }
   /* banner结束 */
 

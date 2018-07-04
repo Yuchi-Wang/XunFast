@@ -13,23 +13,23 @@
     </div>
     <div class="disadvantage">
       <h3 class="safe animated fadeInLeft">行业现状与痛点</h3>
-      <img src="../../static/bil/imgamge/20180703183929.jpg" alt="">
+      <img src="../../static/bil/imgamge/20180704174038.png" alt="">
     </div>
     <div class="solution six">
       <h3>六个方面</h3>
-      <img src="../../static/bil/imgamge/20180703115834.jpg" alt="">
+      <img src="../../static/bil/imgamge/20180704173036.png" alt="">
     </div>
     <div class="disadvantage function">
       <h3>系统基础应用功能</h3>
-      <img src="../../static/bil/imgamge/20180703122133.jpg" alt="">
+      <img src="../../static/bil/imgamge/20180704170520.png" alt="">
     </div>
     <div class="solution six">
       <h3>系统核心功能</h3>
-      <img src="../../static/bil/imgamge/20180703120652.jpg" alt="">
+      <img src="../../static/bil/imgamge/20180704170417.png" alt="">
     </div>
-    <div class="disadvantage">
+    <div class="disadvantage form">
       <h3>系统优势</h3>
-      <img src="../../static/bil/imgamge/20180703120811.jpg" alt="">
+      <img src="../../static/bil/imgamge/20180704170332.png" alt="">
     </div>
     <bottom></bottom>
   </div>
@@ -105,7 +105,7 @@
   color: #151515;
   position: relative;
 }
-.six h3,.first h3 {
+.first h3 {
   margin-bottom: .2rem;
 }
 
@@ -118,10 +118,12 @@
   border-bottom: 2px solid #008fd7;
   content: "";
 }
-.disadvantage img {
+
+.solution img,.disadvantage img,.six img {
   width: 800px;
 }
-.six img,.solution img{
+
+.function img,.form img {
   width: 1000px;
 }
 .solution .row {

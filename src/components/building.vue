@@ -14,7 +14,7 @@
 
 <style scoped>
   .building-banner {
-    background: url("../../static/bil/imgamge/20180703135712.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180704143304.jpg") no-repeat;
     height: 5rem;
     width: 100%;
     background-size: cover;
