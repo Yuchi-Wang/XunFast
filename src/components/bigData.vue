@@ -1,6 +1,17 @@
 <template>
   <div>
     <div class="banner">
+      <div class="out-border">
+        <div class="middle-border">
+          <div class="inner-border">
+            <h4>数据准备 ○ ○ ○ ○  数据建模 ○ ○ ○ ○ 数据可视化
+            <span>< < < </span>
+            </h4>
+            <h3>新一代大数据可视化与3D建模</h3>
+            <h5><span>> > > > ></span>互联网、大数据、人工智能、物联网等新一代信息技术</h5>
+          </div>
+        </div>
+      </div>
       <div class="bottom-round"></div>
     </div>
     <div class="container-fluid solution" id="w_solution">
@@ -86,11 +97,49 @@
   .banner {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180703144814.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180705113117.jpg") no-repeat;
     background-size: cover;
     position: relative;
     margin-top: 70px;
     background-position: 50% 50%;
+    padding-top:.75rem;
+  }
+  .out-border {
+    width: 56%;
+    height: 3.5rem;
+    margin: auto;
+    border: 1px solid #478cb1;
+    padding: 15px;
+  }
+  .middle-border {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #478cb1;
+    padding: 40px;
+  }
+  .inner-border {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #478cb1;
+    color: #FFF;
+    padding-top: .5rem;
+  }
+  .inner-border h4 {
+    font-size: .25rem;
+    text-align: center;
+  }
+  .inner-border h3 {
+    text-align: center;
+    font-size: .5rem;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px #0f111e;
+  }
+  .inner-border h5 {
+    text-align: center;
+    font-size: .23rem;
+  }
+  .inner-border span {
+    font-weight: bold;
   }
   .bottom-round {
     width: 100%;

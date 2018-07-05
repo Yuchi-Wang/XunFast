@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="system_banner">
+      <h2>实验室信息管理与应用分析平台</h2>
       <div class="bottom-round"></div>
     </div>
     <div class="disadvantage">
@@ -22,7 +23,7 @@
     </div>
     <div class="characteristic">
       <h3>技术特点</h3>
-      <img src="../../static/bil/imgamge/20180704171028.jpg" alt="">
+      <img src="../../static/bil/imgamge/20180705101007.png" alt="">
     </div>
     <div class="advantage">
       <h3>系统功能</h3>
@@ -39,10 +40,9 @@
     name: 'lab',
     data() {
       return {
-        content: ' 为了高效地管理实验室油品检测业务，确保航油质量安全，中国航空油料责任有限公司华东公司质量计量检测中心与上海迅发信' +
-        '息技术有限公司，严格按照优良实验室规范(Good Laboratory Practice，GLP)和ISO/IEC17025标准，遵循MHT 6020-2012 《民用航空' +
-        '燃料质量控制和操作程序》和MHT 6044-2008《小型机场民用航空燃料质量控制和操作程序》等业务规范要求，运用互联网、大数据、物联' +
-        '网、移动互联等新一代信息技术，完全自主开发的一套中国航空成品油品质量检测信息智慧管理平台。',
+        content: '迅发实验室信息管理平台遵循ISO90001、ISO/IEC 17025、GLP(Good laboratory practice)、GALP(Good Automated Laboratory Practices)' +
+        '等标准化管理规范，采用模块化的设计框架，围绕人、机、物、料、法、环、质等重点环节，运用新一代信息技术、物联网技术，组成一个开放的分布式体系，' +
+        '实现检测数据智能采集、实验方法智能配置、分析报告自动生成、实验质量可追溯、人员量化考核，是连接实验室、生产部门、质量管理部门的信息智慧管理平台。',
       }
     }
   }
@@ -53,10 +53,23 @@
     text-align: center;
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180703144435.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180705104101.jpg") no-repeat;
     background-size: cover;
     margin-top: 70px;
     position: relative;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+  }
+  .system_banner h2 {
+    display: inline-block;
+    color: #fff;
+    font-size:.6rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px #0e2734;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
   }
   .bottom-round {
     width: 100%;
@@ -110,7 +123,7 @@
   }
   .solution-bg {
     width: 100%;
-    background: url("../../static/bil/imgamge/20180624183016.png") no-repeat;
+    background: url("../../static/bil/imgamge/20180705091256.png") no-repeat;
     background-size: cover;
     height: 2rem;
   }

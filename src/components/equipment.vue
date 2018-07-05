@@ -1,6 +1,7 @@
 <template>
     <div>
       <div class="banner">
+        <h2>设备全生命周期智慧管理系统</h2>
         <div class="bottom-round"></div>
       </div>
       <!-- 难点 -->
@@ -245,13 +246,26 @@
 
 <style scoped>
   .banner {
-    background: url("../../static/bil/imgamge/20180703144351.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180705104830.jpg") no-repeat;
     height: 5rem;
     width: 100%;
     background-size: cover;
     background-position: 50% 50%;
     position: relative;
     margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner h2 {
+    display: inline-block;
+    color: #fff;
+    font-size:.6rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px #0e2734;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
   }
 
   .bottom-round {

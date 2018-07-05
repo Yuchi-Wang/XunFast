@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="scada-banner">
+      <h2>仪器设备数据智能采集系统</h2>
       <div class="bottom-round"></div>
     </div>
     <!-- 难点 -->
@@ -215,13 +216,24 @@
 <style scoped>
   /* banner */
   .scada-banner {
-    background: url("../../static/bil/imgamge/20180703144835.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180705103038.jpg") no-repeat;
     height: 5rem;
     width: 100%;
     background-size: cover;
     background-position: 50% 50%;
     position: relative;
     margin-top: 70px;
+    display: flex;
+    align-items: center;
+  }
+  .scada-banner h2 {
+    width: 100%;
+    color: #fff;
+    font-size:.6rem;
+    margin-left: 13%;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px #0e2734;
   }
 
   .bottom-round {

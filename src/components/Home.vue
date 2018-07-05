@@ -357,6 +357,7 @@
     text-shadow: 5px 5px 5px #0f111e;
   }
   #slider > div:nth-of-type(2) h3 {
+    margin-top: 1.55rem;
     font-size: .25rem;
   }
   #slider > div:nth-of-type(2) h2 {
