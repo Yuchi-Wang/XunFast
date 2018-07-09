@@ -338,19 +338,17 @@
   }
   .bg{
     text-align: center;
+    color: #fff;
   }
   .bg h3{
     width: 100%;
-    color: #fff;
     font-size:.4rem;
     text-align: center;
     margin-top:1.45rem;
   }
   .bg h2 {
     width: 100%;
-    color: #fff;
     font-size:.8rem;
-    text-align: center;
     margin-top:.35rem;
     letter-spacing: 10px;
     font-weight: bold;
@@ -371,18 +369,14 @@
     letter-spacing: 10px;
   }
   .bg h4 {
-    color: #fff;
     font-size:.35rem;
-    text-align: center;
     margin-top:.2rem;
     font-weight: 500;
     text-shadow: 5px 5px 5px #2e3352;
   }
   .bg h5 {
     width: 100%;
-    color: #fff;
     font-size:.18rem;
-    text-align: center;
     margin-top:.12rem;
     font-weight: 500;
 
@@ -608,7 +602,34 @@
     .slider {
       height: 8rem;
     }
-
+    .bg > div {
+      margin-left: -3.5rem;
+      width: 7rem;
+      height: 7rem;
+    }
+    .bg h3 {
+      font-size: .58rem;
+      margin-top: 2rem;
+    }
+    .bg h4{
+      font-size: .4rem;
+      margin-top: .2rem;
+    }
+    .bg h2 {
+      font-size: 1rem;
+      margin-top: .35rem;
+    }
+    .bg h5 {
+      font-size: .22rem;
+      margin-top: .12rem;
+    }
+    #slider > div:nth-of-type(2) h3 {
+      margin-top: 2rem;
+      font-size: .4rem;
+    }
+    #slider > div:nth-of-type(2) h2 {
+      font-size: .8rem;
+    }
     .solution h3, .product h3, .about h4 {
       font-size: .38rem;
     }
@@ -736,7 +757,37 @@
     .slider {
       height: 15rem;
     }
-
+    .bg {
+      padding: 0 15px;
+    }
+    .bg > div {
+      margin-left: -6rem;
+      width: 12rem;
+      height:12rem;
+    }
+    .bg h2 {
+      font-size: 1.5rem;
+    }
+    .bg h3 {
+      font-size: .8rem;
+      margin-top: 3rem;
+    }
+    .bg h4 {
+      font-size: .6rem;
+    }
+    .bg h4 {
+      font-size: .6rem;
+    }
+    #slider > div:nth-of-type(2) h3 {
+      margin-top: 3rem;
+      font-size: .58rem;
+    }
+    #slider > div:nth-of-type(2) h2 {
+      font-size: 1.2rem;
+    }
+    .solution h3, .product h3, .about h4 {
+      font-size: .38rem;
+    }
     .solution h3, .product h3 {
       font-size: .8rem;
       margin-bottom: 1rem;

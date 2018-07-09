@@ -122,7 +122,7 @@
     height: 100%;
     border: 2px solid #478cb1;
     color: #FFF;
-    padding-top: .5rem;
+    padding-top: .4rem;
   }
   .inner-border h4 {
     font-size: .25rem;
@@ -132,6 +132,7 @@
     text-align: center;
     font-size: .5rem;
     font-weight: bold;
+    margin: .1rem 0;
     text-shadow: 5px 5px 5px #0f111e;
   }
   .inner-border h5 {

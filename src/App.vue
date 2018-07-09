@@ -35,7 +35,7 @@
               </li>
             </ul>
           </li>
-          <li :class="'col-md-2 navlist ' + (isactive ? 'activenav':'')" @click="isactive = !isactive" id="solve"><a :class=" $route.path == '/fuelDetailed'
+          <li :class="'col-md-2 navlist ' + (isactive ? 'activenav':'')" @click="isactive = !isactive" id="solve"><a :class=" $route.path === '/fuelDetailed'
                                                 || $route.path === '/fuel'
                                                 || $route.path === '/system'
                                                 || $route.path === '/wisdom'

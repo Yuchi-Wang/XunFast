@@ -1,6 +1,7 @@
 <template>
   <div class="about">
     <div class="about_bg">
+      <h2>不断为客户创造更多价值</h2>
       <div class="bottom-round"></div>
     </div>
     <div>
@@ -195,11 +196,19 @@
   .about_bg {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180703124957.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180706120556.jpg") no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     margin-top: 69px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about_bg h2 {
+    font-size: .5rem;
+    color: #FFF;
+    text-shadow: 5px 5px 5px #0f111e;
   }
 
   .bottom-round {

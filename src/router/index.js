@@ -109,7 +109,7 @@ export default new Router({
     {
       path: '/in-lab',
       name: 'in-lab',
-      component: (resolve) => {
+      component: (resolve) => {ZZZZZZZ
         require(['../components/in-lab'], resolve)
       },
     },

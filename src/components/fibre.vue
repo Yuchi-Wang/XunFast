@@ -1,6 +1,13 @@
 <template>
   <div>
     <div class="bg">
+      <div class="out-line">
+        <div class="first-line"></div>
+        <div class="second-line"></div>
+        <h2>新一代光纤传感技术与智慧安防深度融合</h2>
+        <h5><span>> > > > ></span>互联网、大数据、人工智能、物联网等新一代信息技术</h5>
+        <h4>光纤传感  ○ ○ ○ ○ 精准定位 ○ ○ ○ ○ 防爆无电</h4>
+      </div>
       <div class="bottom-round"></div>
     </div>
     <div class="content container-fluid">
@@ -108,12 +115,71 @@
   .bg {
     width: 100%;
     height: 5rem;
-    background: url("../../static/bil/imgamge/20180703144650.jpg") no-repeat;
+    background: url("../../static/bil/imgamge/20180706093658.jpg") no-repeat;
     background-size: cover;
     margin-bottom: .7rem;
     position: relative;
     margin-top: 70px;
     background-position: 50% 50%;
+    padding-top:1.25rem;
+    text-align: center;
+  }
+  .bg .out-line {
+    width: 68%;
+    height: 2.5rem;
+    border: 1px solid transparent;
+    margin: auto;
+    position: relative;
+  }
+  .bg .first-line {
+    width: 40%;
+    height: 1px;
+    background: #FFF;
+    position: absolute;
+    right: 0;
+  }
+  .bg .second-line {
+    width:100%;
+    height: 3px;
+    background: #FFF;
+    margin-top: 15px;
+  }
+  .bg h2 {
+    width: 100%;
+    color: #FFF;
+    font-size: .5rem;
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px #0f111e;
+  }
+  .bg h5 {
+    font-size: .28rem;
+    color: #FFF;
+    text-shadow: 5px 5px 5px #0f111e;
+    margin-top: .1rem;
+  }
+  .bg h4 {
+    display: inline-block;
+    font-size: .32rem;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 5px 5px 5px #0f111e;
+    margin-top: .1rem;
+    font-weight: bolder;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #FFF;
+    position: relative;
+  }
+  .bg h4:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    background: white;
+    width: 40%;
+    height: 1px;
+    left: 0;
+  }
+  .bg span {
+     font-weight: bold;
   }
   .bottom-round {
     width: 100%;
