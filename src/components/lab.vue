@@ -35,6 +35,7 @@
 
 <script>
   import bottom from '../components/bottom'
+
   export default {
     components: {bottom},
     name: 'lab',
@@ -59,18 +60,20 @@
     position: relative;
     display: flex;
     align-items: center;
-   justify-content: center;
+    justify-content: center;
   }
+
   .system_banner h2 {
     display: inline-block;
     color: #fff;
-    font-size:.6rem;
+    font-size: .6rem;
     letter-spacing: 1px;
     font-weight: bold;
     text-shadow: 5px 5px 5px #0e2734;
     padding-bottom: 5px;
     border-bottom: 2px solid #fff;
   }
+
   .bottom-round {
     width: 100%;
     position: absolute;
@@ -80,14 +83,17 @@
     z-index: 99;
     border-radius: 100%;
   }
+
   .disadvantage, .solution, .advantage, .characteristic {
     padding: .7rem 0;
     background: white;
     text-align: center;
   }
+
   .solution, .characteristic {
     background: #f9f9f9;
   }
+
   .disadvantage h3, .solution h3, .advantage h3, .characteristic h3 {
     display: block;
     width: 100%;
@@ -96,6 +102,7 @@
     color: #151515;
     position: relative;
   }
+
   .disadvantage h3:after, .solution h3:after, .advantage h3:after, .characteristic h3:after {
     width: 60px;
     position: absolute;
@@ -105,15 +112,19 @@
     border-bottom: 2px solid #008fd7;
     content: "";
   }
+
   .disadvantage img, .advantage img, .characteristic img {
     width: 1100px;
   }
+
   .solution .row {
     margin: 0 15%;
   }
+
   .solution-txt {
     padding-left: 60px;
   }
+
   .solution p {
     font-size: .15rem;
     text-align: justify;
@@ -121,6 +132,7 @@
     color: #666666;
     margin-top: .2rem;
   }
+
   .solution-bg {
     width: 100%;
     background: url("../../static/bil/imgamge/20180705091256.png") no-repeat;
@@ -128,5 +140,80 @@
     height: 2rem;
   }
 
-
+  @media (max-width: 1199.98px) {
+    .system_banner {
+      height: 8rem;
+    }
+    .system_banner h2 {
+      font-size: .8rem;
+    }
+    .disadvantage h3, .solution h3, .advantage h3, .characteristic h3 {
+      font-size: .38rem;
+    }
+    .disadvantage h3:after, .solution h3:after, .advantage h3:after, .characteristic h3:after {
+      top: .6rem;
+    }
+    .disadvantage img, .advantage img, .characteristic img {
+      width: 95%;
+    }
+    .solution-bg {
+      height: 2.5rem;
+    }
+    .solution .row {
+      margin: 0 5%;
+    }
+    .solution-txt {
+      padding-left: 30px;
+    }
+    .solution p {
+      font-size: .25rem;
+      line-height: .35rem;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .system_banner {
+      height: 9rem;
+    }
+    .system_banner h2 {
+      font-size: 1rem;
+    }
+    .disadvantage h3, .solution h3, .advantage h3, .characteristic h3 {
+      font-size: .56rem;
+    }
+    .disadvantage h3:after, .solution h3:after, .advantage h3:after, .characteristic h3:after {
+      top: 1rem;
+    }
+    .solution-bg {
+      height: 5rem;
+      margin-bottom: 10px;
+    }
+    .solution p {
+      font-size: .35rem;
+      line-height: .6rem;
+    }
+  }
+  @media (max-width: 575.98px) {
+    .system_banner {
+      height: 15rem;
+      padding: 0 15px;
+    }
+    .bottom-round {
+     display: none;
+    }
+    .system_banner h2 {
+      font-size: 1.2rem;
+      border-bottom: none;
+    }
+    .disadvantage h3, .solution h3, .advantage h3, .characteristic h3 {
+      font-size: .8rem;
+      margin-bottom: 1rem;
+    }
+    .disadvantage h3:after, .solution h3:after, .advantage h3:after, .characteristic h3:after {
+      top: 1.5rem;
+    }
+    .solution p {
+      font-size: .58rem;
+      line-height: .8rem;
+    }
+  }
 </style>

@@ -35,7 +35,7 @@
       <img src="../../static/bil/imgamge/20180702174821.jpg" alt="">
     </div>
     <div class="main container-fluid" id="main">
-      <h3>平台特性</h3>
+      <h3>平台特性</h3>`
       <div class="row">
         <div class="col-md-6 main_bg"></div>
         <div class="col-sm-12 col-md-6 maintxt">

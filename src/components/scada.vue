@@ -8,7 +8,7 @@
     <div class="container-fluid difficult">
       <h3 class="animated slideInDown">{{difficultTitle}}</h3>
       <div class="row">
-        <div class="col-md-4" v-for="item in certificate" :key="item.certificate"
+        <div class="col-md-6 col-lg-4" v-for="item in certificate" :key="item.certificate"
              v-bind:style="{ 'background-image': 'url(' + item.imgArray + ')','background-repeat':'no-repeat','background-size':'cover','background-position':'50% 50%' }">
           <h4>{{item.title}}</h4>
           <p>{{item.txt}}</p>
@@ -20,7 +20,7 @@
       <h3>实施仪器设备智能采集的目标</h3>
       <p>{{goalTxt}}</p>
       <div class="row">
-        <div class="col-md-4 col-sm-6" v-for="item in disadvantage" :key="item.disadvantage">
+        <div class="col-md-4 col-sm-12" v-for="item in disadvantage" :key="item.disadvantage">
           <img :src="item.imgArray" alt="" width="135" height="135">
           <p>{{item.txt}}</p>
         </div>
@@ -126,9 +126,9 @@
             txt: '传统的仪器设备数据依靠主观判断、人工记录，纸制报告。而对于有数字化系统的企业而言在没有实现智能采集前还需要将这些数据人工录入至系统中，这就造成了典型的时间人力的浪费'
           },
         ],
-        goalTxt: '通过实时、自动监控与获取企业设备当前的状态信息瞬间把这些数据保存到数据库中，立即与标准值或规则做对比，'+
-        '然后把设备的状态、异常、测量值等信息通过软件，报表、EXCEL等方式展示给相关人员，从而实现了自动采集、即时监控、随'+
-        '时预警、自动汇总的管理效果。数据采集是实现自动化设备、信息化系统与管理层之间的信息纽带，建立和完善自动数据采集机'+
+        goalTxt: '通过实时、自动监控与获取企业设备当前的状态信息瞬间把这些数据保存到数据库中，立即与标准值或规则做对比，' +
+        '然后把设备的状态、异常、测量值等信息通过软件，报表、EXCEL等方式展示给相关人员，从而实现了自动采集、即时监控、随' +
+        '时预警、自动汇总的管理效果。数据采集是实现自动化设备、信息化系统与管理层之间的信息纽带，建立和完善自动数据采集机' +
         '制已成为企业信息化建设的重点。',
         disadvantage: [
           {
@@ -226,10 +226,11 @@
     display: flex;
     align-items: center;
   }
+
   .scada-banner h2 {
     width: 100%;
     color: #fff;
-    font-size:.6rem;
+    font-size: .6rem;
     margin-left: 13%;
     letter-spacing: 1px;
     font-weight: bold;
@@ -294,8 +295,9 @@
     font-weight: bold;
     margin-bottom: 10px;
   }
+
   .difficult > .row > div:nth-of-type(2) h4 {
-      margin-top: .82rem;
+    margin-top: .82rem;
   }
 
   .difficult > .row > div p {
@@ -362,7 +364,7 @@
     padding: 40px 35px 0;
   }
 
-  .instrument p, .pro-one p, .advance p,.main .del, .none .del, .main > .row > p, .none > .row > p {
+  .instrument p, .pro-one p, .advance p, .main .del, .none .del, .main > .row > p, .none > .row > p {
     font-size: .15rem;
     text-align: justify;
     line-height: .25rem;
@@ -386,7 +388,8 @@
   .maintxt img {
     width: 40px;
   }
-  .main>.row {
+
+  .main > .row {
     margin: 0 10% 0 15%;
   }
 
@@ -447,6 +450,7 @@
     background-size: contain;
     background-position: 50% 50%;
   }
+
   .advance h4 {
     width: 100%;
     text-align: left;
@@ -456,4 +460,136 @@
     padding-left: 15px;
     border-left: 4px solid #008fd7;
   }
+
+  @media (max-width: 1199.98px) {
+    .scada-banner {
+      height: 8rem;
+    }
+    .scada-banner h2 {
+      font-size: .8rem;
+    }
+    .difficult h3, .goal h3, .instrument h3, .pro-one h3, .main h3, .none h3, .advance h3 {
+      font-size: .38rem;
+    }
+    .difficult h3:after, .goal h3:after, .instrument h3:after, .pro-one h3:after, .main h3:after, .none h3:after, .advance h3:after {
+      top: .6rem;
+    }
+    .difficult > .row > div h4 {
+      font-size: .3rem;
+    }
+    .difficult > .row > div:nth-of-type(2) h4 {
+      margin-top:1.3rem;
+    }
+    .difficult > .row > div p,.goal p,.instrument p, .pro-one p, .advance p,
+    .main .del, .none .del, .main > .row > p, .none > .row > p{
+      font-size: .25rem;
+      line-height: .35rem;
+    }
+    .main p, .none p {
+      font-weight: 500;
+      font-size: .28rem;
+    }
+    .difficult > .row > div {
+      height: 4rem;
+    }
+    .goal .row > div img {
+      width: 100px;
+      height: 100px;
+    }
+    .instrument h4,.advance h4 {
+      font-size: .25rem;
+    }
+    .instrument .bg {
+      height: 3.5rem;
+    }
+    .pro-one img {
+      width: 738px;
+    }
+    .instrument .txt {
+      padding: 20px 15px 0;
+    }
+  }
+  @media (max-width: 797.98px) {
+    .scada-banner {
+      height: 9rem;
+    }
+    .scada-banner h2 {
+      font-size: 1rem;
+    }
+    .difficult h3, .goal h3, .instrument h3, .pro-one h3, .main h3, .none h3, .advance h3 {
+      font-size: .56rem;
+    }
+    .difficult h3:after, .goal h3:after, .instrument h3:after, .pro-one h3:after, .main h3:after, .none h3:after, .advance h3:after {
+      top:1rem;
+    }
+    .difficult > .row > div {
+      height: 6rem;
+      padding: .8rem 1rem 0;
+    }
+    .difficult > .row > div h4,.instrument h4,.advance h4,.main p, .none p  {
+      font-size: .4rem;
+    }
+    .difficult > .row > div p, .goal p, .instrument p, .pro-one p, .advance p, .main .del, .none .del, .main > .row > p, .none > .row > p {
+      font-size: .35rem;
+      line-height: .6rem;
+    }
+    .goal .row > div img {
+      margin-top: 30px;
+    }
+    .instrument .bg, .advance_bg  {
+      height: 7.5rem;
+    }
+    .instrument .txt {
+      padding: 20px 15px;
+    }
+    .pro-one img {
+      width: 90%;
+    }
+    .main_bg {
+      height: 6rem;
+    }
+    .main .maintxt {
+      padding-left:0;
+    }
+    .none_bg {
+       height: 12rem;
+     }
+  }
+  @media (max-width: 575.98px) {
+    .scada-banner {
+      height: 15rem;
+    }
+    .scada-banner h2 {
+      font-size: 1.2rem;
+      margin: 0;
+      text-align: center;
+    }
+    .bottom-round {
+     display: none;
+    }
+    .difficult h3, .goal h3, .instrument h3, .pro-one h3, .main h3, .none h3, .advance h3 {
+      font-size: .8rem;
+      margin-bottom: 1rem;
+    }
+    .difficult h3:after, .goal h3:after, .instrument h3:after, .pro-one h3:after, .main h3:after, .none h3:after, .advance h3:after {
+      top: 1.5rem;
+    }
+    .difficult > .row > div h4, .instrument h4, .advance h4, .main p, .none p {
+      font-size: .6rem;
+    }
+    .difficult > .row > div p, .goal p, .instrument p, .pro-one p, .advance p, .main .del, .none .del, .main > .row > p, .none > .row > p {
+      font-size: .58rem;
+      line-height: .8rem;
+    }
+    .difficult > .row > div {
+      height: 8rem;
+    }
+    .difficult > .row > div:nth-of-type(2)  {
+     display: none;
+    }
+    .instrument .bg, .advance_bg {
+      height: 11rem;
+    }
+  }
+
 </style>

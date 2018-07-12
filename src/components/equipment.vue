@@ -7,7 +7,7 @@
       <!-- 难点 -->
       <div class="container-fluid difficult">
         <div class="row">
-          <div class="col-md-4" v-for="item in certificate" :key="item.certificate"
+          <div class="col-md-6 col-lg-4" v-for="item in certificate" :key="item.certificate"
                v-bind:style="{ 'background-image': 'url(' + item.imgArray + ')','background-repeat':'no-repeat','background-size':'cover','background-position':'50% 50%' }">
             <h4>{{item.title}}</h4>
             <p>{{item.txt}}</p>
@@ -559,5 +559,151 @@
   .point img {
     width: 80px;
     margin-bottom: 10px;
+  }
+  @media (max-width: 1199.98px) {
+    .banner {
+      height: 8rem;
+    }
+    .banner h2 {
+      font-size:.8rem;
+    }
+    .difficult > .row > div h4 {
+      font-size: .3rem;
+    }
+    .difficult > .row > div p,.content > .row >p, .mod-inner p,.main .del,.instrument p, .pro-one p, .advance p, .point p{
+      font-size: .25rem;
+      line-height: .35rem;
+      text-align: justify;
+    }
+    .instrument h4,.point .row>div h4 {
+      font-size: .25rem;
+    }
+    .difficult > .row > div {
+      height: 6rem;
+    }
+    .content h3, .main h3, .technology h3, .instrument h3, .point h3 {
+      font-size: .38rem;
+    }
+    .content h3:after, .main h3:after, .technology h3:after, .instrument h3:after, .point h3:after {
+      top: .6rem;
+    }
+    .mod-inner h4 {
+      font-size: .28rem;
+      position: relative;
+    }
+    .mod-inner p {
+      margin-top: .1rem;
+    }
+    .new .product {
+      padding: 0 15px;
+    }
+    .product.qc-unit-active h4:after {
+        display: none;
+    }
+    .main p {
+      font-size: .28rem;
+    }
+    .technology img {
+      width: 95%;
+    }
+    .instrument .txt {
+      padding: 20px 15px 0;
+    }
+    .instrument .bg {
+      height: 3.5rem;
+    }
+    }
+  @media (max-width: 767.98px) {
+    .banner {
+      height: 9rem;
+    }
+    .banner h2 {
+      font-size:1rem;
+    }
+    .difficult > .row > div h4, .mod-inner h4, .main p, .instrument h4,.point .row>div h4 {
+      font-size: .4rem;
+    }
+    .difficult > .row > div p,.content > .row >p, .mod-inner p,.main .del,.instrument p, .pro-one p, .advance p, .point p{
+      font-size: .35rem;
+      line-height: .6rem;
+    }
+    .qc-unit-5-24 {
+      width: 100%;
+    }
+    .content {
+      height: 1900px;
+    }
+    .content > .row >p {
+      margin-bottom: 40px;
+    }
+    .mod-inner img {
+      width: 1.2rem !important;
+    }
+    .difficult > .row > div {
+      height: 6rem;
+      padding: .8rem 1rem 0;
+    }
+    .new .product {
+      padding: 0 60px;
+    }
+    .content h3, .main h3, .technology h3, .instrument h3, .point h3 {
+      font-size: .56rem;
+    }
+    .content h3:after, .main h3:after, .technology h3:after, .instrument h3:after, .point h3:after {
+      top: 1rem;
+    }
+    .mod-inner p {
+      margin-top: .1rem;
+    }
+
+    .instrument .bg {
+      height:6rem;
+      margin-top: 30px;
+    }
+    .main_bg {
+      height: 6rem;
+    }
+    .maintxt {
+      padding-left: 0;
+    }
+  }
+  @media (max-width: 575.98px) {
+    .banner {
+      height: 15rem;
+    }
+    .banner h2 {
+      font-size:1.2rem;
+      border-bottom: none;
+      margin: 0;
+      text-align: center;
+    }
+    .bottom-round {
+      display: none;
+    }
+    .difficult > .row > div h4, .mod-inner h4, .main p, .instrument h4,.point .row>div h4 {
+      font-size: .6rem;
+    }
+    .difficult > .row > div p,.content > .row >p, .mod-inner p,.main .del,.instrument p, .pro-one p, .advance p, .point p{
+      font-size: .58rem;
+      line-height: .8rem;
+    }
+    .mod-inner img {
+      width: 2rem !important;
+    }
+    .difficult > .row > div {
+      height: 9rem;
+    }
+    .content h3, .main h3, .technology h3, .instrument h3, .point h3 {
+      font-size: .8rem;
+    }
+    .content h3:after, .main h3:after, .technology h3:after, .instrument h3:after, .point h3:after {
+      top: 1.5rem;
+    }
+    .instrument .bg {
+      height:11rem;
+    }
+    .main_bg {
+      height: 10rem;
+    }
   }
 </style>
