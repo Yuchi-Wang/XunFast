@@ -23,16 +23,6 @@
         </div>
       </div>
     </div>
-    <!--<div class="container-fluid person" id="person">
-      <h3>专家顾问</h3>
-      <div class="row">
-        <div class="col-md-4 personlist" v-for="item in person" :key="item.person">
-          <img :src="item.imgArray" alt="" width="135" height="135">
-          <h4>{{item.name}}</h4>
-          <p>{{item.introduction}}</p>
-        </div>
-      </div>
-    </div>-->
     <div class="project container-fluid" id="project">
       <h4>创新成果</h4>
       <div class="row">
@@ -91,30 +81,6 @@
           '',
           '',
           ''
-        ],
-        person: [
-          {
-            imgArray: '../../static/bil/imgamge/20180524183027.png', name: '何祖源  公司高级顾问',
-            introduction: '国家“千人计划”特聘专家，上海交通大学讲席教授，“区域光纤通信网与新型光通信系统”国家重点实验室主任，科技部'+
-            '            国家重大基础研究计划（973计划）信息科学领域专家咨询组成员日本东京大学博士，历任日本东京大学助教、讲师、副教授、'+
-            '            教授，曾任美国CIENA公司主任工程师。担任IEEE/OSA Journal of Lightwave Technology 期刊 Associate Editor，OFC、CLEO、'+
-            '            OFS等光电子学领域顶级国际会议技术程序委员会 委员，2014年亚洲通信与光子学国际大会（ACP2014）主席，2016年亚太光'+
-            '            学传感国际大会（APOS2016）主席。在光电子学领域主流国际期刊和学术会议上发表论文400余篇，申请国际发明专利21项，获授权12项。'
-          },
-          {
-            imgArray: '../../static/bil/imgamge/20180524183121.png', name: '周水庚 公司高级顾问',
-            introduction: '复旦大学计算机软件与理论理学博士，复旦大学计算机学院教授、博士生导师。目前研究兴趣包括网络数据管理与搜索、海量数据' +
-            '            挖掘与学习、生物信息学和复杂网络等。近年来，主持和参与包括国家自然科学基金、国家863、97子课题等省部级以上项目二十多项。'+
-            '            目前为IEEE、ACM SIGMOD、IEICE会员、中国人工智能学会理事、中国计算机学会高级会员；中国计算机学会数据库专委会委员、人工'+
-            '            智能和模式识别专委会委员中国人工智能学会机器学习专业委员会常委。'
-          },
-          {
-            imgArray: '../../static/bil/imgamge/20180524183141.png', name: '刘庆文  公司高级研究员',
-            introduction: '  从事光传感与激光技术研究，致力于用原创性技术解决科学研究与工业生产中的技术难题，已发表学术论文80余篇，获授权发明专利22项，2012' +
-            '            年获亚太光纤传感国际会议优秀论文奖、东京大学GCOE优秀发表奖，所指导学生在2017年光纤传感国际大会（OFS25）上获OSA最佳学生论文奖。'
-          },
-
-
         ],
         introduction: '为积极推进中国航油与互联网、大数据、人工智能等新一代信息技术的深度融合，经过合作各方充分的酝酿和协商，中国' +
         '航空油料有限责任公司华东公司、上海交通大学先进产业技术研究院、上海迅发信息技术有限公司共同签署“互联网+航油安全服务”战略合' +
@@ -275,41 +241,8 @@
     color: #787878;
   }
 
-  .learn {
-    width: 1.5rem;
-    margin-top: .3rem;
-    font-size: .178rem;
-    font-weight: 300;
-    border: 1px solid #008fd7;
-    color: #008fd7;
-    padding: .12rem 0;
-    float: left;
-    transition: all .3s;
-    border-radius: 40px;
-  }
-
-  .learn:hover, .detail:hover {
-    background: #008fd7;
-    border: 1px solid transparent;
-    color: white !important;
-  }
-
-  /*专家栏目开始*/
-  /*.person {
-    width: 100%;
-    background: whitesmoke;
-    margin-top: .7rem;
-    position: relative;
-    text-align: center;
-    padding: .7rem 0;
-  }
-
-  .person h3 {
-    font-size: .28rem;
-    margin-bottom: .8rem;
-  }*/
-
-  .person h3:after, .project h4:after {
+  /*项目分类开始*/
+  .project h4:after {
     width: 60px;
     position: absolute;
     left: 50%;
@@ -321,32 +254,6 @@
   .project h4:after {
     border-bottom: 2px solid white;
   }
-
-  .person .row {
-    margin: 0 10%;
-  }
-
-  .person .row > div {
-    padding: 0 30px;
-  }
-
-  .person img {
-    width: 135px;
-  }
-
-  .person h4 {
-    font-size: .18rem;
-    margin:.2rem 0;
-    color: #008fd7;
-  }
-
-  .person p {
-    font-size: .16rem;
-    text-align: justify;
-    color: #6e6e6e;
-  }
-
-  /*项目分类开始*/
   .main .project {
     background:url("../../static/bil/imgamge/20180702172400.jpg") no-repeat;
     background-position: 50% 50%;
@@ -446,46 +353,28 @@
     .f_banner {
       height: 8rem;
     }
-
-    .main .safe, .main .project h4, .person h3 {
+    .main .safe, .main .project h4{
       font-size: .38rem;
     }
-
-    .main .safe:after, .person h3:after, .main .project h4:after {
+    .main .safe:after, .main .project h4:after {
       top: .7rem;
     }
-
-    .main .introduce, .txt h5 {
+    .slider {
+      height:3.5rem;
+    }
+     .txt h5 {
       font-size: .25rem;
       font-weight: bold;
     }
-
-    .main .content, .person p, .txt p {
+    .main .content,.txt p {
       font-size: .25rem;
       line-height: .35rem;
     }
-
-    .learn {
-      width: 1.6rem;
-      font-size: .23rem;
-      font-weight: 500;
-    }
-
-    .person img {
-      width: 100px;
-      height: 100px;
-    }
-
-    .person h4 {
-      font-size: .25rem;
-    }
-
     .project-img, .txt {
-      height: 4rem;
+      height: 5rem;
     }
-
     .project .detail {
-      width: 1.4rem;
+      width: 1.8rem;
       font-size: .22rem;
       font-weight: 500;
     }
@@ -496,62 +385,41 @@
       height: 9rem;
     }
     .slider {
-      height: 9rem;
+      height: 6rem;
+      margin-bottom: 15px;
     }
-
-    .main .safe, .main .project h4, .person h3 {
+    .main .safe, .main .project h4 {
       font-size: .56rem;
     }
-
-    .main .safe:after, .person h3:after, .main .project h4:after {
+    .main .safe:after,.main .project h4:after {
       top: 1rem;
     }
-
-    .main .introduce, .txt h5 {
+    .txt h5 {
       font-size: .4rem;
       margin: 10px 15px;
     }
-
     #introduce {
       padding: 0 !important;
     }
-
-    .main .content, .person p, .txt p {
+    .main .content,.txt p {
       font-size: .35rem;
       line-height: .6rem;
       margin: 0 15px;
     }
-
-    .learn {
-      width: 2.2rem;
-      font-size: .25rem;
-      margin-left: 15px;
-    }
-
-    .person .row {
-      margin: 0 5%;
-    }
-
-    .person h4 {
-      font-size: .4rem;
-    }
-
     .projectlist {
       margin-bottom: 30px;
     }
-
     .project-img {
       height: 6rem;
     }
-
     .txt {
       height: 5rem;
     }
-
     .project .detail {
       width: 2.2rem;
-      font-size: .24rem;
-      padding: .04rem 0;
+      font-size: .25rem;
+      padding: .07rem 0;
+      margin: 0;
     }
   }
 
@@ -559,54 +427,36 @@
     .f_banner {
       height: 15rem;
     }
-
-    .main .safe, .main .project h4, .person h3 {
+    .slider {
+      height: 8rem;
+    }
+    .main .safe, .main .project h4 {
       font-size: .8rem;
     }
-
-    .main .safe:after, .person h3:after, .main .project h4:after {
+    .main .safe:after,.main .project h4:after {
       top: 1.5rem;
     }
-
-    .main .introduce, .txt h5 {
+    .main .txt h5 {
       font-size: .6rem;
     }
-
     #introduce {
       padding: 0 !important;
     }
-
-    .main .content, .person p, .txt p {
+    .main .content,.txt p {
       font-size: .58rem;
       line-height: .8rem;
     }
-
-    .learn {
-      width: 2.2rem;
-      font-size: .25rem;
-      margin-left: 15px;
-    }
-
-    .person .row {
-      margin: 0 5%;
-    }
-
-    .person h4 {
-      font-size: .58rem;
-    }
-
     .project-img {
       height: 8rem;
     }
-
     .txt {
       height: 10rem;
+      padding: 15px 15px 0 15px;
     }
-
     .project .detail {
-      width: 2.5rem;
-      font-size: .24rem;
-      padding: .04rem 0;
+      width: 3rem;
+      font-size: .48rem;
+      padding: .2rem 0;
     }
   }
 </style>

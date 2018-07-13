@@ -26,16 +26,16 @@
     <div class="container-fluid download">
       <h4>服务下载</h4>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <p style="text-align: center">油品标准密度换算</p>
         </div>
-        <div class="col-md-2">
+        <div class="col-sm-2">
             <img src="../../static/bil/imgamge/20180626133453.png" alt="">
         </div>
-        <div class="col-md-3">
+        <div class="col-sm-3">
           <router-link to="/down">使用说明</router-link>
         </div>
-        <div class="col-md-2">
+        <div class="col-sm-2">
           <a href="http://apk.xunfast.com/Densimeter.Convert.apk" class="downloaded">下载</a>
         </div>
       </div>
@@ -183,5 +183,140 @@
     color: white;
     text-align: center;
     margin-top: .265rem;
+  }
+  @media (max-width: 1199.98px) {
+    .news-bg {
+      height: 8rem;
+      background-position: 15% 50%;
+    }
+    .news h3, .download h4 {
+      font-size: .38rem;
+    }
+    .news h3:after, .download h4:after {
+      top: .7rem;
+    }
+    .news p {
+      width: 90%;
+    }
+    .news p, .tel {
+      font-size: .25rem;
+      line-height: .35rem;
+      margin: auto;
+      text-align: left;
+    }
+    .down img {
+      width: 90%;
+      margin-bottom: 30px;
+    }
+    .tel .row {
+      margin: 0 3% 0 4%;
+    }
+    .tel-title {
+      margin-left: 4%;
+    }
+    .download .row {
+      height: 1rem;
+      margin: 0 5% .7rem;
+    }
+    .download .row > div > p, .download .row > div a {
+      font-size: .25rem;
+      line-height: 1rem;
+    }
+    .download .row > div img{
+      width: .5rem;
+    }
+    .download .row > div .downloaded {
+      width: 1rem;
+      height: .4rem;
+      line-height: .4rem;
+    }
+    }
+  @media (max-width: 767.98px) {
+    .news-bg {
+      height: 9rem;
+      background-position: 12% 50%;
+    }
+    .news h3, .download h4 {
+      font-size: .56rem;
+    }
+    .news h3:after, .download h4:after {
+      top: 1rem;
+    }
+    .news p, .tel {
+      font-size: .35rem;
+      line-height: .6rem;
+    }
+    .tel .row {
+      margin: 0 3% 0 4%;
+    }
+    .tel-title {
+      margin-left: 4%;
+    }
+    .download .row {
+      height: 1.5rem;
+      margin: 0 3% .7rem;
+    }
+    .download .row > div > p, .download .row > div a {
+      font-size: .35rem;
+      line-height: 1.5rem;
+    }
+    .download .row > div img{
+      width: .8rem;
+    }
+    .download .row > div .downloaded {
+      width: 1.5rem;
+      height: .6rem;
+      line-height: .6rem;
+      margin-top: .45rem;
+    }
+  }
+  @media (max-width: 575.98px) {
+    .news-bg {
+      height: 15rem;
+    }
+    .bottom-round {
+      display: none;
+    }
+    .news h3, .download h4 {
+      font-size: .8rem;
+    }
+    .news h3:after, .download h4:after {
+      top: 1.5rem;
+    }
+    .news p, .tel {
+      font-size: .58rem;
+      line-height: .8rem;
+    }
+    .tel .row {
+      margin: 0 15px;
+    }
+    .tel-title {
+      margin-left: 15px;
+    }
+    .download .row {
+      height: 7rem;
+      margin: 0 0 2rem 0;
+    }
+    .download .row > div > p, .download .row > div a {
+      font-size: .56rem;
+      line-height: 2rem;
+    }
+    .download .row > div:nth-of-type(1) {
+      padding-left:0;
+    }
+    .download .row > div img{
+      width: .8rem;
+      margin: 0;
+    }
+    .download .row > div:nth-of-type(4) {
+      text-align:center;
+      padding-right:0;
+    }
+    .download .row > div .downloaded {
+      width: 2rem;
+      height: .8rem;
+      line-height: .8rem;
+      margin-top: 0;
+    }
   }
 </style>

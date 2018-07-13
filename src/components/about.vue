@@ -17,15 +17,15 @@
             <li v-for="(item,index) in imgArray" :key="item.index" v-show="index===checkIndex" class="col-sm-12">
               <div v-show="index===0" class="container-fluid m-p-0" style="margin-bottom: 60px;padding-bottom: .7rem">
                 <div class="row m-p-0">
-                  <div class="col-md-6 m-p-0" style="padding-right: 50px">
+                  <div class="col-xl-6 m-p-0" style="padding-right: 50px">
                     <p>{{content}}</p>
                   </div>
-                  <div class="col-md-6 about-bg"></div>
+                  <div class="col-xl-6 about-bg"></div>
                 </div>
               </div>
               <div v-show="index===1" class="development container-fluid">
                 <ul class="list row">
-                    <li v-for="item in certificate" :key="item.certificate" class="col-md-3">
+                    <li v-for="item in certificate" :key="item.certificate" class="col-sm-6  col-lg-4 col-xl-3">
                       <img :src="item.imgArray" alt="">
                         <p>{{item.txt}}</p>
                     </li>
@@ -416,149 +416,181 @@
     padding: 0 !important;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1199.98px) {
+    .about_bg {
+      height: 8rem;
+    }
+    .about_bg h2 {
+      font-size: .58rem;
+    }
     .service_title {
       margin: .1rem 15% 40px;
     }
-
     #content_us {
-      margin: 20px 15% 0;
+      margin: 0 5% 0;
     }
-
-    .about_bg {
-      height: 6rem;
+    .about-bg {
+      height: 3.5rem;
+      margin-top: 30px;
     }
-
     .about h3 {
       font-size: .38rem;
       margin: 30px 0;
     }
-
     .about h3:after {
       top: .7rem;
     }
-
     .service_title > li {
       height: .86rem;
       line-height: .86rem;
       font-size: .25rem;
     }
-
-    #service_content p, #service_content .time-line p, .qualification, #content_us ul li {
+    #service_content p,.qualification, #content_us ul li {
       font-size: .25rem;
       line-height: .35rem;
     }
-
+    .news {
+      margin-bottom: 30px;
+    }
+    #content_us h4 {
+      font-size: .28rem;
+    }
+    .news-content {
+      margin-top: .1rem;
+      height: 1.95rem;
+      padding-left: 30px;
+    }
+    #content_us time {
+      font-size: .23rem;
+      margin-bottom: 10px;
+    }
+    .news-content p:after {
+      bottom: 0;
+    }
     .jobs {
-      font-size: .22rem;
+      font-size: .25rem;
       letter-spacing: 1.2px;
     }
-
     .jobs > li {
       margin-top: .2rem;
+      padding: 0 .2rem;
     }
-
-    .jobName, .about div .salary, .count, .count > span {
+    .jobName, .about div .salary, .count, .count > span,#service_content .development .list li p {
       font-size: .25rem !important;
     }
   }
 
   @media (max-width: 767.98px) {
+    .about_bg {
+      height:9rem;
+    }
+    .about_bg h2 {
+      font-size: .8rem;
+    }
     .service_title {
-      margin: .1rem 10% 0;
+      margin: .1rem 5% 10px;
     }
-
     #content_us {
-      margin: 0 10% 0;
+      margin: 0 5% 0;
     }
-
     .m-p-0 {
       padding: 0 !important;
     }
-
-    .about_bg {
-      height: 8rem;
-    }
-
     .about h3 {
       font-size: .56rem;
     }
-
     .about h3:after {
       top: 1rem;
     }
-
     .about-bg {
-      height: 4rem;
-      margin-top: 30px;
+      height: 4.6rem;
     }
-
     .service_title > li {
       height: 1rem;
       line-height: 1rem;
       font-size: .45rem;
     }
-
-    #service_content p, #service_content .time-line p, .qualification, #content_us ul li {
-      font-size: .34rem;
-      line-height: .66rem;
+    .news-content {
+      margin-top: .3rem;
+      height: 3rem;
+      padding-left:0;
     }
-
+    #content_us h4 {
+      font-size: .4rem;
+    }
+    #content_us time {
+      font-size: .35rem;
+      margin-bottom: 5px;
+    }
+    #service_content p,.qualification, #content_us ul li {
+      font-size: .35rem;
+      line-height: .6rem;
+    }
+    .news-img {
+      height: 6rem;
+    }
+    .news>.row {
+      margin: 0;
+    }
     .jobs {
-      font-size: .34rem;
+      font-size: .35rem;
     }
-
-    .jobName, .about div .salary, .count, .count > span {
-      font-size: .34rem !important;
+    .jobName, .about div .salary, .count, .count > span,#service_content .development .list li p {
+      font-size: .35rem !important;
     }
-
-    .mob-sub {
-      padding: 0;
-    }
-
-    #service_content .mob-sub p, #service_content .mob-sub {
+    #service_content {
       text-align: left;
     }
   }
 
   @media (max-width: 575.98px) {
-    .col-3 {
-      padding: 0;
-    }
-
+   .col-3 {
+     padding: 0;
+   }
     .about_bg {
-      height: 11rem;
+      height: 15rem;
     }
-
+    .about_bg h2 {
+      font-size:1rem;
+    }
+    .bottom-round {
+      display: none;
+    }
     .about h3 {
       font-size: .8rem;
     }
-
     .about h3:after {
       top: 1.5rem;
     }
-
     .about-bg {
-      height: 7rem;
+      height: 8rem;
     }
-
+    .service_title {
+      margin: .1rem 0 10px;
+    }
     .service_title > li {
       height: 1.5rem;
       line-height: 1.5rem;
       font-size: .5rem;
     }
-
-    #service_content p, #service_content .time-line p, .qualification {
-      font-size: .58rem;
+    #content_us h4 {
+      font-size: .6rem;
+    }
+    .news-content {
+      height: 5rem;
+    }
+    #content_us time {
+      font-size: .5rem;
+    }
+    #service_content p,.qualification,#service_content .development .list li p {
+      font-size: .58rem!important;
       line-height: .8rem;
     }
-
     .jobs {
-      font-size: .34rem;
+      font-size: .56rem;
     }
-
     .jobName, .about div .salary, .count, .count > span {
-      font-size: .34rem !important;
+      font-size: .58rem !important;
     }
   }
 </style>
