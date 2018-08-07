@@ -17,7 +17,7 @@ time, mark, audio, video {
     border: 0;
     font: inherit;
     vertical-align: baseline;
-  user-select: none;
+    user-select: none;
 }
 html,body{
     background-color:#FFFFFF;

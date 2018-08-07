@@ -665,6 +665,9 @@
     .imgbox {
       height: 3.5rem;
     }
+    .imgtxt {
+      padding: 30px 25px 0;
+    }
 
     .imgtxt p, .about p {
       font-size: .25rem;
@@ -779,7 +782,7 @@
       font-size: .6rem;
     }
     #slider > div:nth-of-type(2) h3 {
-      margin-top: 3rem;
+      margin-top: 4rem;
       font-size: .58rem;
     }
     #slider > div:nth-of-type(2) h2 {
